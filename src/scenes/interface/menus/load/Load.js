@@ -63,7 +63,7 @@ export default class Load extends BaseScene {
 
         var sprite = Phaser.Math.RND.between(0, 15)
         if (sprite < 6) {
-			this.loading.setPosition(760, 410)
+            this.loading.setPosition(760, 410)
             this.loading.play("shovelling")
         } else if (sprite < 11) {
             this.loading.setPosition(760, 300)
@@ -83,7 +83,7 @@ export default class Load extends BaseScene {
     onWake(sys, data) {
         var sprite = Phaser.Math.RND.between(0, 15)
         if (sprite < 6) {
-			this.loading.setPosition(760, 410)
+            this.loading.setPosition(760, 410)
             this.loading.play("shovelling")
         } else if (sprite < 11) {
             this.loading.setPosition(760, 300)

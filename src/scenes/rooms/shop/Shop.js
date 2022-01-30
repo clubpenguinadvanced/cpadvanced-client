@@ -11,10 +11,42 @@ export default class Shop extends RoomScene {
         super("Shop");
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.phone;
+        this.bg;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.rail;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.speakers;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.chairBody;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.chairArm;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.chairBody_1;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.chairArm_1;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.deskChair;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.desk;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.chest;
         /** @type {Phaser.GameObjects.Sprite} */
         this.register;
-        /** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.spinner;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.door;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.circularStool;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.squareStool;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fg;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.catalog;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.unlock;
+        /** @type {Phaser.GameObjects.Sprite[]} */
         this.sort;
 
 
@@ -35,123 +67,115 @@ export default class Shop extends RoomScene {
         this.load.pack("shop-pack", "assets/media/rooms/shop/shop-pack.json");
 		
 		/* START-USER-CTR-CODE */
-
-        this.load.audio("1173", "assets/media/music/1173.mp3");
-
-        /* END-USER-CTR-CODE */
+		
+		this.load.audio("1169", "assets/media/music/1169.mp3");
+		
+		/* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
     _create() {
 
         // bg
-        const bg = this.add.image(0, 0, "shop", "bg");
-        bg.setOrigin(0, 0);
+        const bg = this.add.sprite(765, 468, "clothesShop", "bg");
 
-        // box
-        const box = this.add.image(22, 933, "shop", "box");
-        box.setOrigin(0.4098360655737705, 0.7272727272727273);
+        // rail
+        const rail = this.add.sprite(363, 472, "clothesShop", "rail");
 
-        // door
-        const door = this.add.image(1028, 132, "shop", "door");
-        door.setOrigin(0, 0);
+        // speakers
+        const speakers = this.add.sprite(762, 224, "clothesShop", "speakers0001");
 
-        // speaker
-        const speaker = this.add.sprite(-2, 175, "shop", "speaker/speaker0003");
-        speaker.setOrigin(0, 0);
+        // chairBody
+        const chairBody = this.add.sprite(282, 640, "clothesShop", "chairBody");
 
-        // container
-        const container = this.add.container(1324.9695028627973, 663.5011002882876);
+        // chairArm
+        const chairArm = this.add.sprite(301, 686, "clothesShop", "chairArm");
 
-        // counter
-        const counter = this.add.image(0.030536885885567244, 1.4989092534428892, "shop", "counter");
-        counter.setOrigin(0.4, 0.8102766798418972);
-        container.add(counter);
+        // chairBody_1
+        const chairBody_1 = this.add.sprite(336, 767, "clothesShop", "chairBody");
 
-        // phone
-        const phone = this.add.sprite(63.03053688588557, -177.5010907465571, "shop", "phone/phone0001");
-        phone.setOrigin(0, 0);
-        container.add(phone);
+        // chairArm_1
+        const chairArm_1 = this.add.sprite(355, 814, "clothesShop", "chairArm");
+
+        // deskChair
+        const deskChair = this.add.sprite(1370, 380, "clothesShop", "deskChair");
+
+        // desk
+        const desk = this.add.sprite(1351, 461, "clothesShop", "desk");
+
+        // chest
+        const chest = this.add.sprite(1353, 539, "clothesShop", "chest");
 
         // register
-        const register = this.add.sprite(-102.96946311411443, -289.5010907465571, "shop", "register/register0001");
-        register.setOrigin(0, 0);
-        container.add(register);
+        const register = this.add.sprite(1289, 369, "clothesShop", "register");
 
-        // registerZone
-        const registerZone = this.add.rectangle(1292, 467, 110, 100);
-        registerZone.alpha = 0.5;
-        registerZone.isFilled = true;
-        registerZone.fillColor = 65280;
+        // spinner
+        const spinner = this.add.sprite(1403, 436, "clothesShop", "spinner0001");
 
-        // phoneZone
-        const phoneZone = this.add.rectangle(1428, 541, 75, 60);
-        phoneZone.alpha = 0.5;
-        phoneZone.isFilled = true;
-        phoneZone.fillColor = 65280;
+        // door
+        const door = this.add.sprite(1103, 248, "clothesShop", "door");
+
+        // circularStool
+        const circularStool = this.add.sprite(1119, 628, "clothesShop", "circularStool");
+
+        // squareStool
+        const squareStool = this.add.sprite(1054, 691, "clothesShop", "squareStool");
+
+        // fg
+        const fg = this.add.sprite(782, 481, "clothesShop", "fg");
 
         // catalog
-        const catalog = this.add.image(1340, 1055, "shop", "catalog");
+        const catalog = this.add.sprite(1340, 1055, "clothesShop", "style");
         catalog.setOrigin(0, 2);
 
+        // unlock
+        const unlock = this.add.sprite(1415, 771, "clothesShop", "unlock");
+        unlock.visible = false;
+
         // lists
-        const sort = [container, box, catalog];
+        const sort = [catalog];
+
+        // register (components)
+        const registerButton = new Button(register);
+        registerButton.spriteName = "register";
+
+        // spinner (components)
+        const spinnerSimpleButton = new SimpleButton(spinner);
+        spinnerSimpleButton.hoverCallback = () => this.onSpinnerOver();
+        spinnerSimpleButton.hoverOutCallback = () => this.onSpinnerOut();
 
         // door (components)
         const doorButton = new Button(door);
         doorButton.spriteName = "door";
-        doorButton.activeFrame = false;
-        doorButton.pixelPerfect = true;
         const doorMoveTo = new MoveTo(door);
-        doorMoveTo.x = 1080;
-        doorMoveTo.y = 466;
-
-        // speaker (components)
-        const speakerSimpleButton = new SimpleButton(speaker);
-        speakerSimpleButton.pixelPerfect = true;
-        const speakerAnimation = new Animation(speaker);
-        speakerAnimation.key = "speaker/speaker";
-        speakerAnimation.end = 30;
-        speakerAnimation.repeat = 0;
-        speakerAnimation.autoPlay = false;
-        speakerAnimation.onHover = true;
-        speakerAnimation.stopOnOut = false;
-
-        // phone (components)
-        const phoneAnimation = new Animation(phone);
-        phoneAnimation.key = "phone/phone";
-        phoneAnimation.end = 55;
-        phoneAnimation.repeat = 0;
-        phoneAnimation.autoPlay = false;
-        phoneAnimation.onHover = true;
-        phoneAnimation.stopOnOut = false;
-
-        // register (components)
-        const registerAnimation = new Animation(register);
-        registerAnimation.key = "register/register";
-        registerAnimation.end = 35;
-        registerAnimation.repeat = 0;
-        registerAnimation.autoPlay = false;
-        registerAnimation.onHover = true;
-        registerAnimation.stopOnOut = false;
-
-        // registerZone (components)
-        const registerZoneZone = new Zone(registerZone);
-        registerZoneZone.hoverCallback = () => this.register.__Animation.play();
-
-        // phoneZone (components)
-        const phoneZoneZone = new Zone(phoneZone);
-        phoneZoneZone.hoverCallback = () => this.phone.__Animation.play();
+        doorMoveTo.x = 1100;
+        doorMoveTo.y = 350;
 
         // catalog (components)
         const catalogButton = new Button(catalog);
-        catalogButton.spriteName = "catalog";
+        catalogButton.spriteName = "style";
         catalogButton.callback = () => this.interface.loadExternal('ClothingCatalog');
         catalogButton.activeFrame = false;
         catalogButton.pixelPerfect = true;
 
-        this.phone = phone;
+        this.bg = bg;
+        this.rail = rail;
+        this.speakers = speakers;
+        this.chairBody = chairBody;
+        this.chairArm = chairArm;
+        this.chairBody_1 = chairBody_1;
+        this.chairArm_1 = chairArm_1;
+        this.deskChair = deskChair;
+        this.desk = desk;
+        this.chest = chest;
         this.register = register;
+        this.spinner = spinner;
+        this.door = door;
+        this.circularStool = circularStool;
+        this.squareStool = squareStool;
+        this.fg = fg;
+        this.catalog = catalog;
+        this.unlock = unlock;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -159,6 +183,20 @@ export default class Shop extends RoomScene {
 
 
     /* START-USER-CODE */
+
+    create(){
+        super.create
+        this.spinner.on('animationcomplete', () => this.spinner.setFrame("clothesShop", "spinner0001"))
+    }
+
+    onSpinnerOver(){
+        this.spinner.play("spinner")
+    }
+
+    onSpinnerOut(){
+        this.spinner.stop("spinner")
+        this.spinner.setFrame("clothesShop", "spinner0001")
+    }
     /* END-USER-CODE */
 }
 
