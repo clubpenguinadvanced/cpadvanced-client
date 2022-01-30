@@ -67,7 +67,7 @@ export default class Shop extends RoomScene {
 		
 		/* START-USER-CTR-CODE */
 
-        this.load.audio("1169", "assets/media/music/1169.mp3");
+        this.load.audio("1173", "assets/media/music/1173.mp3");
 
         /* END-USER-CTR-CODE */
     }
