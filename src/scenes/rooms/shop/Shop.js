@@ -53,8 +53,7 @@ export default class Shop extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'town': () => this.triggerRoom(100, 932, 560),
-            'catalog': () => this.interface.loadExternal('ClothingCatalog')
+            'town': () => this.triggerRoom(100, 932, 560)
         }
         this.music = '1173'
 
@@ -64,13 +63,7 @@ export default class Shop extends RoomScene {
     /** @returns {void} */
     preload() {
 
-        this.load.pack("shop-pack", "assets/media/rooms/shop/shop-pack.json");
-		
-		/* START-USER-CTR-CODE */
-		
-		this.load.audio("1169", "assets/media/music/1169.mp3");
-		
-		/* END-USER-CTR-CODE */
+        this.load.pack("clothesShop-pack", "assets/media/rooms/clothesShop/clothesShop-pack.json");
     }
 
     /** @returns {void} */
@@ -138,6 +131,7 @@ export default class Shop extends RoomScene {
         // register (components)
         const registerButton = new Button(register);
         registerButton.spriteName = "register";
+        registerButton.activeFrame = false;
 
         // spinner (components)
         const spinnerSimpleButton = new SimpleButton(spinner);
@@ -147,6 +141,7 @@ export default class Shop extends RoomScene {
         // door (components)
         const doorButton = new Button(door);
         doorButton.spriteName = "door";
+        doorButton.activeFrame = false;
         const doorMoveTo = new MoveTo(door);
         doorMoveTo.x = 1100;
         doorMoveTo.y = 350;
@@ -184,19 +179,15 @@ export default class Shop extends RoomScene {
 
     /* START-USER-CODE */
 
-    create(){
-        super.create
-        this.spinner.on('animationcomplete', () => this.spinner.setFrame("clothesShop", "spinner0001"))
-    }
-
     onSpinnerOver(){
         this.spinner.play("spinner")
     }
 
     onSpinnerOut(){
         this.spinner.stop("spinner")
-        this.spinner.setFrame("clothesShop", "spinner0001")
+        this.spinner.setFrame("spinner0001")
     }
+
     /* END-USER-CODE */
 }
 

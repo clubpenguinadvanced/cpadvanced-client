@@ -7,7 +7,7 @@
         "exportClass": true,
         "superClassName": "RoomScene",
         "preloadPackFiles": [
-            "yukon/assets/media/rooms/shop/shop-pack.json"
+            "cpadvanced-client/assets/media/rooms/clothesShop/clothesShop-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Shop",
@@ -154,6 +154,7 @@
                 "Button"
             ],
             "Button.spriteName": "register",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "clothesShop",
                 "frame": "register"
@@ -188,6 +189,7 @@
                 "MoveTo"
             ],
             "Button.spriteName": "door",
+            "Button.activeFrame": false,
             "MoveTo.x": 1100,
             "MoveTo.y": 350,
             "texture": {
