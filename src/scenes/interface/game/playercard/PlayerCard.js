@@ -25,6 +25,8 @@ export default class PlayerCard extends BaseContainer {
         this.coins;
         /** @type {Phaser.GameObjects.Text} */
         this.username;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.badge;
         /** @type {InventorySort} */
         this.inventorySort;
         /** @type {Inventory} */
@@ -70,9 +72,9 @@ export default class PlayerCard extends BaseContainer {
         username.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":360,"fontFamily": "Burbank Small", "fontSize": "32px", "fontStyle": "bold" });
         this.add(username);
 
-        // card_badge_member
-        const card_badge_member = scene.add.image(-149, -224, "main", "card-badge-member");
-        this.add(card_badge_member);
+        // badge
+        const badge = scene.add.sprite(-149, -217, "main", "card-badge-member");
+        this.add(badge);
 
         // x_button
         const x_button = scene.add.image(177, -237, "main", "blue-button");
@@ -108,6 +110,7 @@ export default class PlayerCard extends BaseContainer {
         this.stats = stats;
         this.coins = coins;
         this.username = username;
+        this.badge = badge;
         this.inventorySort = inventorySort;
         this.inventory = inventory;
 
@@ -154,6 +157,9 @@ export default class PlayerCard extends BaseContainer {
     _showCard(penguin, items = penguin) {
         // Text
         this.username.text = penguin.username
+
+        if (penguin.rank = 2) this.badge.setFrame("card-badge-moderator")
+        if (penguin.rank = 3) this.badge.setFrame("card-badge-administrator")
 
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)

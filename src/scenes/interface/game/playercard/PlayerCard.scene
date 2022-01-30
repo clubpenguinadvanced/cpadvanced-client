@@ -134,16 +134,17 @@
                     "color": "#000000ff"
                 },
                 {
-                    "type": "Image",
+                    "type": "Sprite",
                     "id": "c872414d-cfa7-46ab-bf78-7618077e1f55",
-                    "label": "card_badge_member",
+                    "label": "badge",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "card-badge-member"
                     },
                     "x": -149,
-                    "y": -224
+                    "y": -217
                 },
                 {
                     "type": "Image",
