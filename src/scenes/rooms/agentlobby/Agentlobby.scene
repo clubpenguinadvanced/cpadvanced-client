@@ -1,0 +1,469 @@
+{
+    "id": "80fd918f-8517-4aa7-a781-126220feeb63",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/everydayPhoningFacility/everydayPhoningFacility-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Agentlobby",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "005ad4b5-a90a-4336-98b6-cfbef06be80e",
+            "label": "waterfall",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "waterfall0001.png"
+            },
+            "x": 763,
+            "y": 68
+        },
+        {
+            "type": "Sprite",
+            "id": "3a6eed83-35e3-4746-98c4-e5a2107bfcd6",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "bg.png"
+            },
+            "x": 758,
+            "y": 486
+        },
+        {
+            "type": "Sprite",
+            "id": "42d31dfa-1214-40e6-9537-236ba40947d2",
+            "label": "phonebox",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "phonebox0001.png"
+            },
+            "x": 1081,
+            "y": 277
+        },
+        {
+            "type": "Sprite",
+            "id": "176d2113-6e02-4b9d-93e3-30d22fdea555",
+            "label": "phonecall",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "phonecall0001.png"
+            },
+            "x": 1126,
+            "y": 271
+        },
+        {
+            "type": "Sprite",
+            "id": "41ab73f5-1814-4fad-9dc8-37489d171402",
+            "label": "phoneboxHover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "phoneboxHover.png"
+            },
+            "x": 1081,
+            "y": 277
+        },
+        {
+            "type": "Sprite",
+            "id": "74f7ba8a-ef32-48e9-8c25-a73a830d80c4",
+            "label": "door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDoorOut()",
+            "MoveTo.x": 110,
+            "MoveTo.y": 350,
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "door0001.png"
+            },
+            "x": 110,
+            "y": 337
+        },
+        {
+            "type": "Sprite",
+            "id": "193fe311-49bb-469c-9b4d-6419614ace54",
+            "label": "doorExterior",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "doorExterior.png"
+            },
+            "x": 267,
+            "y": 370
+        },
+        {
+            "type": "Sprite",
+            "id": "2990f309-8d12-47f7-92f5-7604cb6a9b73",
+            "label": "railing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "railing.png"
+            },
+            "x": 148,
+            "y": 521
+        },
+        {
+            "type": "Sprite",
+            "id": "9524755f-c55b-43aa-b8ba-4c79ca4ba28d",
+            "label": "plantPot",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "plantPot.png"
+            },
+            "x": 161,
+            "y": 560
+        },
+        {
+            "type": "Sprite",
+            "id": "99dcd0a4-ee1c-461a-96f4-70060977d657",
+            "label": "coffeeMachine",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "coffeeMachine.png"
+            },
+            "x": 12,
+            "y": 583
+        },
+        {
+            "type": "Sprite",
+            "id": "545e12d6-ecd8-47de-b45e-0909e74fc093",
+            "label": "coffeeTable",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "coffeeTable.png"
+            },
+            "x": 268,
+            "y": 700
+        },
+        {
+            "type": "Sprite",
+            "id": "d0ecafd9-10f2-43f3-94fd-47d61a69a2a0",
+            "label": "rightDeskChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "rightDeskChair.png"
+            },
+            "x": 1349,
+            "y": 441
+        },
+        {
+            "type": "Sprite",
+            "id": "86dc895c-5ca3-4cf4-b094-6a635f55702e",
+            "label": "rightDeskChairArm",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "rightDeskChairArm.png"
+            },
+            "x": 1404,
+            "y": 455
+        },
+        {
+            "type": "Sprite",
+            "id": "f0e4444f-b501-4a9d-acd9-cd9e5b6f037e",
+            "label": "rightDeskTop",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "rightDeskTop.png"
+            },
+            "x": 1174,
+            "y": 474
+        },
+        {
+            "type": "Sprite",
+            "id": "ac8a07d0-91b3-4483-a424-b50a0e603222",
+            "label": "rightDeskBottom",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "rightDeskBottom.png"
+            },
+            "x": 1348,
+            "y": 562
+        },
+        {
+            "type": "Sprite",
+            "id": "f4f785a3-2249-4011-a822-35bde357ccc9",
+            "label": "rightDeskChairVisitor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "rightDeskChairVisitor.png"
+            },
+            "x": 1162,
+            "y": 616
+        },
+        {
+            "type": "Sprite",
+            "id": "40c1c738-4476-422f-a352-bbd0f18a3792",
+            "label": "rightDeskChairVisitorTop",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "rightDeskChairVisitorTop.png"
+            },
+            "x": 1127,
+            "y": 604
+        },
+        {
+            "type": "Sprite",
+            "id": "6d061c8d-4e75-4df0-b5c0-d1ee798d24a9",
+            "label": "waterCooler",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "waterCooler.png"
+            },
+            "x": 495,
+            "y": 693
+        },
+        {
+            "type": "Sprite",
+            "id": "cd53af30-2344-4e96-89b4-760358b99c16",
+            "label": "desks",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "desks.png"
+            },
+            "x": 909,
+            "y": 750
+        },
+        {
+            "type": "Sprite",
+            "id": "9c476f04-b4e3-4b85-b19c-6aaa276cf6ef",
+            "label": "clockAnim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "clockAnim0001.png"
+            },
+            "x": 1409,
+            "y": 726
+        },
+        {
+            "type": "Sprite",
+            "id": "89e8cff4-a916-4817-aa61-f1cc2c9f0df9",
+            "label": "chairBottomOne",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "chairBottomOne.png"
+            },
+            "x": 684,
+            "y": 713
+        },
+        {
+            "type": "Sprite",
+            "id": "514db41e-a8e6-4ccd-b1b7-add6caf09cf8",
+            "label": "chairBottomTwo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "chairBottomTwo.png"
+            },
+            "x": 755,
+            "y": 775
+        },
+        {
+            "type": "Sprite",
+            "id": "af653678-7998-4dfb-9a8c-0b5c03c3aa0c",
+            "label": "chairBottomThree",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "chairBottomThree.png"
+            },
+            "x": 856,
+            "y": 718
+        },
+        {
+            "type": "Sprite",
+            "id": "0924a5ba-8bc0-4b2a-b1bd-057e403f1f79",
+            "label": "chairBottomFour",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "chairBottomFour.png"
+            },
+            "x": 1122,
+            "y": 746
+        },
+        {
+            "type": "Sprite",
+            "id": "b88dd963-6375-4c3f-9a54-1b8a7bd82463",
+            "label": "chairBottomFive",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "chairBottomFive.png"
+            },
+            "x": 1200,
+            "y": 725
+        },
+        {
+            "type": "Sprite",
+            "id": "fe81a018-2bd2-4c6c-b24a-07b17f16bc4e",
+            "label": "topDeskShadow",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "topDeskShadow.png"
+            },
+            "x": 691,
+            "y": 448
+        },
+        {
+            "type": "Sprite",
+            "id": "1e309192-ab06-402b-aefa-fa4aebcce6d1",
+            "label": "topDeskLeftChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "topDeskLeftChair.png"
+            },
+            "x": 623,
+            "y": 367
+        },
+        {
+            "type": "Sprite",
+            "id": "67cc37a6-168d-4c9f-9e55-4e9c63bae4e1",
+            "label": "topDeskRightChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "topDeskRightChair.png"
+            },
+            "x": 787,
+            "y": 381
+        },
+        {
+            "type": "Sprite",
+            "id": "7b78f8f6-fc99-4466-b367-2c2e11927ca1",
+            "label": "topDeskLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "topDeskLeft.png"
+            },
+            "x": 518,
+            "y": 382
+        },
+        {
+            "type": "Sprite",
+            "id": "9122bfbf-5506-4407-90f6-68c5293a0807",
+            "label": "topDeskRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "topDeskRight.png"
+            },
+            "x": 745,
+            "y": 443
+        },
+        {
+            "type": "Sprite",
+            "id": "44d00766-93bc-47ff-9d7d-a4c7c6e75f4d",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "everydayPhoningFacility",
+                "frame": "fg.png"
+            },
+            "x": 741,
+            "y": 1016,
+            "originY": 1
+        },
+        {
+            "type": "Rectangle",
+            "id": "93847d18-ead4-45e4-80a8-7cecff2067dc",
+            "label": "phonebox_btn",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1082,
+            "y": 287,
+            "fillColor": "#17f5fd",
+            "fillAlpha": 0.5,
+            "width": 180,
+            "height": 300
+        },
+        {
+            "type": "Text",
+            "id": "278db1d8-bc2a-47a3-828e-38c7071068ae",
+            "label": "text",
+            "components": [],
+            "x": 1058,
+            "y": 171,
+            "text": "PHONE",
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "22px",
+            "fontStyle": "bold",
+            "color": "#575949ff"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}

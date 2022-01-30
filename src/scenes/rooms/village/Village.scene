@@ -1,0 +1,218 @@
+{
+    "id": "e8df1568-c0e7-4c72-8833-17ea2bc71c25",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "cpadvanced-client/assets/media/rooms/skiVillage/skiVillage-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Village",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "f59fe75f-67ac-40ea-bf07-297ad7cc0660",
+            "label": "bg_back",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "bg_back"
+            },
+            "x": 749,
+            "y": 481
+        },
+        {
+            "type": "Sprite",
+            "id": "ce67f8c6-966d-4670-9af5-3afa7a18338a",
+            "label": "tubes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "tubes0001"
+            },
+            "x": 137,
+            "y": 303
+        },
+        {
+            "type": "Sprite",
+            "id": "59bc86d1-a0e6-4bc0-80b2-47cde26848a4",
+            "label": "tubepile",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "tubepile0001"
+            },
+            "x": 486,
+            "y": 454
+        },
+        {
+            "type": "Sprite",
+            "id": "2ef880e7-c731-41f8-a538-3f2237d2943f",
+            "label": "liftFront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "liftFront0001"
+            },
+            "x": 208,
+            "y": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "5fd77416-c3a0-49c9-9392-4680d61f0c74",
+            "label": "bg_front",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "bg_front"
+            },
+            "x": 746,
+            "y": 483
+        },
+        {
+            "type": "Sprite",
+            "id": "d57d7bce-d6f5-48fe-94e9-c27dce4d2f8e",
+            "label": "epfdoor",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "epfdoor",
+            "Button.hoverCallback": "() => this.onEpfOver()",
+            "Button.hoverOutCallback": "() => this.onEpfOut()",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1300,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "skiVillage",
+                "frame": "epfdoor"
+            },
+            "x": 1338,
+            "y": 435
+        },
+        {
+            "type": "Sprite",
+            "id": "6acfd3e9-c8c1-4a36-9cad-022aa4a89f6a",
+            "label": "lodgedoor",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "lodgedoor",
+            "Button.hoverCallback": "() => this.onLodgeOver()",
+            "Button.hoverOutCallback": "() => this.onLodgeOut()",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1000,
+            "MoveTo.y": 390,
+            "texture": {
+                "key": "skiVillage",
+                "frame": "lodgedoor"
+            },
+            "x": 1010,
+            "y": 355
+        },
+        {
+            "type": "Sprite",
+            "id": "6e745573-9f88-4f8b-8132-4d5b2bf3a00a",
+            "label": "tourbooth",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "tourbooth",
+            "Button.activeFrame": false,
+            "MoveTo.x": 180,
+            "MoveTo.y": 620,
+            "texture": {
+                "key": "skiVillage",
+                "frame": "tourbooth"
+            },
+            "x": 196,
+            "y": 627.8410268752398,
+            "originY": 0.6600029423359306
+        },
+        {
+            "type": "Sprite",
+            "id": "158a4be3-d51f-49ef-8beb-978eb3e7f208",
+            "label": "bin",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "bin"
+            },
+            "x": 744,
+            "y": 413.1670847675757,
+            "originY": 0.7091750655541994
+        },
+        {
+            "type": "Sprite",
+            "id": "a929918e-7da0-40f5-8f7b-9f6d5f4b6800",
+            "label": "epfsign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "epfsign"
+            },
+            "x": 1323,
+            "y": 261
+        },
+        {
+            "type": "Sprite",
+            "id": "5e5a9629-8ff6-4890-af42-91ee733dd327",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "fg"
+            },
+            "x": 777,
+            "y": 867
+        },
+        {
+            "type": "Sprite",
+            "id": "8467ce12-503f-4f12-b267-008589db126d",
+            "label": "liftBack",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiVillage",
+                "frame": "liftBack0001"
+            },
+            "x": 186,
+            "y": 163
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "6e745573-9f88-4f8b-8132-4d5b2bf3a00a",
+                "158a4be3-d51f-49ef-8beb-978eb3e7f208"
+            ]
+        }
+    ]
+}

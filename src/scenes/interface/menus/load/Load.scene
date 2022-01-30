@@ -1,0 +1,69 @@
+{
+    "id": "886592a3-40db-4a06-9296-c3ffc97cc243",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "yukon/assets/media/interface/menus/load/load-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Load",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "a57c75e9-6bb6-4de4-99aa-f0fac23f918f",
+            "label": "bg",
+            "components": [
+                "Interactive"
+            ],
+            "texture": {
+                "key": "load",
+                "frame": "bg"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Text",
+            "id": "cc4e3627-2803-4fac-b06d-a576ca441cee",
+            "label": "text",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 590,
+            "originX": 0.5,
+            "text": "Loading Content",
+            "fixedWidth": 800,
+            "fixedHeight": 40,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "32px"
+        },
+        {
+            "type": "Sprite",
+            "id": "996b54a4-3527-4189-9ead-ec11dc750649",
+            "label": "loading",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "loading_assets",
+                "frame": "shovelling0001.png"
+            },
+            "x": 760,
+            "y": 410
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

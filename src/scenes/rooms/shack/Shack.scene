@@ -1,0 +1,369 @@
+{
+    "id": "9bbcd058-96f7-4d3d-9662-e6217e72279c",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/mineShack/mineShack-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Shack",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "0b1327b9-ef11-49dd-a0c6-b900e38227bc",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "bg.png"
+            },
+            "x": 753,
+            "y": 458
+        },
+        {
+            "type": "Sprite",
+            "id": "6d0a3e43-823b-4d17-a7dc-71bc6c719da3",
+            "label": "bench",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "bench.png"
+            },
+            "x": 1239,
+            "y": 561
+        },
+        {
+            "type": "Sprite",
+            "id": "b79f8402-530b-47fc-acf6-da4725b7a02e",
+            "label": "schoolExterior",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "schoolExterior.png"
+            },
+            "x": 168,
+            "y": 344
+        },
+        {
+            "type": "Sprite",
+            "id": "68b5941d-e983-4581-ae28-5851366f22d6",
+            "label": "flag",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "flag0001.png"
+            },
+            "x": 292,
+            "y": 126
+        },
+        {
+            "type": "Sprite",
+            "id": "1b43d711-511d-4b12-a19d-3e474ef56747",
+            "label": "flagpole",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "flagpole.png"
+            },
+            "x": 341,
+            "y": 240
+        },
+        {
+            "type": "Sprite",
+            "id": "0bf59a3b-9233-4079-99b0-6cc20f9f9d5d",
+            "label": "bigTree",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "bigTree.png"
+            },
+            "x": 18.18606745103341,
+            "y": 435.1554366855416,
+            "originX": 0.35438931072258273,
+            "originY": 0.7324058219810949
+        },
+        {
+            "type": "Sprite",
+            "id": "5184ce60-012d-427f-815c-09de80b1940e",
+            "label": "gateLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "gateLeft.png"
+            },
+            "x": 40,
+            "y": 606
+        },
+        {
+            "type": "Sprite",
+            "id": "b0240c01-791d-454a-ba02-93d3e5bcd332",
+            "label": "gateRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "gateRight.png"
+            },
+            "x": 478,
+            "y": 756
+        },
+        {
+            "type": "Sprite",
+            "id": "9e189a69-2df7-437e-b705-a4a5321f6310",
+            "label": "book",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "book.png"
+            },
+            "x": 722,
+            "y": 792
+        },
+        {
+            "type": "Sprite",
+            "id": "2f4cbf7f-8a72-4fc0-8bd4-edce8625a052",
+            "label": "guitar",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "guitar.png"
+            },
+            "x": 885,
+            "y": 811
+        },
+        {
+            "type": "Sprite",
+            "id": "f680c224-6f41-45a6-a180-cf382367def0",
+            "label": "unconsciousPeopleDontWantTea",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "unconsciousPeopleDontWantTea.png"
+            },
+            "x": 830,
+            "y": 843
+        },
+        {
+            "type": "Sprite",
+            "id": "928cf9eb-ea51-4d82-be9a-1a9e9d38fb4c",
+            "label": "netLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "netLeft.png"
+            },
+            "x": 1037,
+            "y": 699
+        },
+        {
+            "type": "Sprite",
+            "id": "df9b746b-4c25-4949-86b5-92a62f5c2378",
+            "label": "netMiddle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "netMiddle.png"
+            },
+            "x": 1163,
+            "y": 700
+        },
+        {
+            "type": "Sprite",
+            "id": "b0162d58-330e-454e-a8bb-dec7ff9ada38",
+            "label": "netRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "netRight.png"
+            },
+            "x": 1286,
+            "y": 763
+        },
+        {
+            "type": "Sprite",
+            "id": "fe5a50aa-195c-449b-90eb-f7ed2f2655e0",
+            "label": "schoolDoor",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSchoolOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSchoolOut()",
+            "MoveTo.x": 500,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "mineShack",
+                "frame": "schoolDoor0001.png"
+            },
+            "x": 497,
+            "y": 353
+        },
+        {
+            "type": "Sprite",
+            "id": "5fa69d82-06f7-4542-8827-fda0615ba8f2",
+            "label": "stairway",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onMineOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onMineOut()",
+            "MoveTo.x": 1000,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "mineShack",
+                "frame": "stairway0001.png"
+            },
+            "x": 1004,
+            "y": 363
+        },
+        {
+            "type": "Sprite",
+            "id": "4e00355e-9ead-44a4-b71c-e95259fe9dae",
+            "label": "lantern",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "lantern.png"
+            },
+            "x": 1068,
+            "y": 454
+        },
+        {
+            "type": "Sprite",
+            "id": "74bb1c90-3ee7-470a-b479-d3efc991f2e6",
+            "label": "bucket",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "bucket.png"
+            },
+            "x": 1357,
+            "y": 748
+        },
+        {
+            "type": "Sprite",
+            "id": "4675e793-2a4c-4bf8-a019-c34c7376c122",
+            "label": "tree",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "tree.png"
+            },
+            "x": 1502,
+            "y": 590
+        },
+        {
+            "type": "Sprite",
+            "id": "070f2ba4-64d5-481f-a5c5-03d96a66de04",
+            "label": "rock",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "rock.png"
+            },
+            "x": 1492,
+            "y": 713
+        },
+        {
+            "type": "Sprite",
+            "id": "c37d064c-6e5f-43e1-8f5b-260a4b6a0977",
+            "label": "veggiePatch",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "veggiePatch.png"
+            },
+            "x": 1455,
+            "y": 845
+        },
+        {
+            "type": "Sprite",
+            "id": "dc4ff4ff-ee8e-4b50-9315-1eed2a4ea11b",
+            "label": "volleyball",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "volleyball0001.png"
+            },
+            "x": 1135,
+            "y": 811
+        },
+        {
+            "type": "Sprite",
+            "id": "b9a019e7-2c71-4e26-a214-278618a9995f",
+            "label": "overhead",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mineShack",
+                "frame": "overhead.png"
+            },
+            "x": 989,
+            "y": 291
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "6d0a3e43-823b-4d17-a7dc-71bc6c719da3",
+                "b79f8402-530b-47fc-acf6-da4725b7a02e",
+                "68b5941d-e983-4581-ae28-5851366f22d6",
+                "1b43d711-511d-4b12-a19d-3e474ef56747",
+                "0bf59a3b-9233-4079-99b0-6cc20f9f9d5d",
+                "5184ce60-012d-427f-815c-09de80b1940e",
+                "b0240c01-791d-454a-ba02-93d3e5bcd332",
+                "9e189a69-2df7-437e-b705-a4a5321f6310",
+                "2f4cbf7f-8a72-4fc0-8bd4-edce8625a052",
+                "f680c224-6f41-45a6-a180-cf382367def0",
+                "928cf9eb-ea51-4d82-be9a-1a9e9d38fb4c",
+                "df9b746b-4c25-4949-86b5-92a62f5c2378",
+                "b0162d58-330e-454e-a8bb-dec7ff9ada38",
+                "fe5a50aa-195c-449b-90eb-f7ed2f2655e0",
+                "4e00355e-9ead-44a4-b71c-e95259fe9dae",
+                "74bb1c90-3ee7-470a-b479-d3efc991f2e6",
+                "4675e793-2a4c-4bf8-a019-c34c7376c122",
+                "070f2ba4-64d5-481f-a5c5-03d96a66de04",
+                "c37d064c-6e5f-43e1-8f5b-260a4b6a0977",
+                "dc4ff4ff-ee8e-4b50-9315-1eed2a4ea11b",
+                "b9a019e7-2c71-4e26-a214-278618a9995f"
+            ]
+        }
+    ]
+}

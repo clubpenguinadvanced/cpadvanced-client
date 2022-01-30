@@ -1,0 +1,234 @@
+{
+    "id": "b4f7b2d4-b4d5-4f73-acd6-a4b7bbb28e2a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/skiHill/skiHill-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Mtn",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "2963bf1c-c125-451e-a55d-f315c17c67e8",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "bg.png"
+            },
+            "x": 729,
+            "y": 452
+        },
+        {
+            "type": "Sprite",
+            "id": "e9a1e26b-fd4a-43f4-ae60-cb6de52b485a",
+            "label": "liftBack",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "lift_back0001.png"
+            },
+            "x": 444,
+            "y": 135
+        },
+        {
+            "type": "Image",
+            "id": "53ca3588-8cf3-466c-a2c9-3e090b50ee12",
+            "label": "skiTrack",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "skiTrack.png"
+            },
+            "x": 1174,
+            "y": 357
+        },
+        {
+            "type": "Sprite",
+            "id": "f219b39f-4749-4c61-aa18-643d25cb15ed",
+            "label": "bg2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "bg_2.png"
+            },
+            "x": 744,
+            "y": 485
+        },
+        {
+            "type": "Sprite",
+            "id": "4597157c-b385-43e5-9716-0b1f2ba32a97",
+            "label": "liftFront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "lift_front0001.png"
+            },
+            "x": 479,
+            "y": 145
+        },
+        {
+            "type": "Image",
+            "id": "66d5b142-29e7-4247-9374-61081aa5f9ed",
+            "label": "hutBack",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "hut_back.png"
+            },
+            "x": 1012,
+            "y": 260.9999858471424
+        },
+        {
+            "type": "Sprite",
+            "id": "6da17ff8-fd16-4faf-b521-3754a9e72004",
+            "label": "hut",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "hut.png"
+            },
+            "x": 1062.3900808090457,
+            "y": 287.36862624622466,
+            "originX": 0.48382484494401995,
+            "originY": 0.7612287541540822
+        },
+        {
+            "type": "Sprite",
+            "id": "ee609bfb-2b57-486a-a328-976bdfc4a7f4",
+            "label": "middleSign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "middleSign.png"
+            },
+            "x": 994,
+            "y": 666
+        },
+        {
+            "type": "Sprite",
+            "id": "7cb70fa6-b62e-4b2e-ba51-793aeb91dd65",
+            "label": "rightSign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "rightSign.png"
+            },
+            "x": 1191,
+            "y": 539
+        },
+        {
+            "type": "Sprite",
+            "id": "32dc60e4-211e-4b37-9189-e67327c6ca60",
+            "label": "trees",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "trees.png"
+            },
+            "x": 456,
+            "y": 860
+        },
+        {
+            "type": "Sprite",
+            "id": "6e93481b-b52f-4ed2-8dcb-5381390f05ac",
+            "label": "note",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onShopOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onShopOut()",
+            "texture": {
+                "key": "skiHill",
+                "frame": "note0001.png"
+            },
+            "x": 463,
+            "y": 174
+        },
+        {
+            "type": "Sprite",
+            "id": "bf42e43f-005c-47df-b149-d12eb324c07d",
+            "label": "forwardTracks",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "forwardTracks.png"
+            },
+            "x": 717,
+            "y": 652
+        },
+        {
+            "type": "Sprite",
+            "id": "331e83a1-12b0-4de9-a008-96e19cd3f16d",
+            "label": "leftTracks",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "leftTracks.png"
+            },
+            "x": 252,
+            "y": 575
+        },
+        {
+            "type": "Sprite",
+            "id": "7fa5b4fa-3be1-466f-beaf-292ec82182b6",
+            "label": "rightTracks",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "rightTracks.png"
+            },
+            "x": 1086,
+            "y": 624
+        },
+        {
+            "type": "Sprite",
+            "id": "e0d74516-aeb2-4df2-8ae0-aa11b9d1a1ce",
+            "label": "leftSign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill",
+                "frame": "leftSign.png"
+            },
+            "x": 459,
+            "y": 595
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "6da17ff8-fd16-4faf-b521-3754a9e72004",
+                "66d5b142-29e7-4247-9374-61081aa5f9ed"
+            ]
+        }
+    ]
+}

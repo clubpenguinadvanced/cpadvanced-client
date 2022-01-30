@@ -1,0 +1,254 @@
+{
+    "id": "535fc172-2f5d-4171-8802-47092a1f4004",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/pool/pool-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Rink",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "d7c9e9e3-9fa6-4158-8be0-fe7712a8afbb",
+            "label": "bg_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "bg.png"
+            },
+            "x": 811,
+            "y": 339
+        },
+        {
+            "type": "Sprite",
+            "id": "af41023f-45b1-475d-b566-afdae1d608e6",
+            "label": "forts_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "forts.png"
+            },
+            "x": 52,
+            "y": 351
+        },
+        {
+            "type": "Sprite",
+            "id": "151681b7-9406-4366-8b9d-517daab34709",
+            "label": "poolRim_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "poolRim.png"
+            },
+            "x": 1206,
+            "y": 623
+        },
+        {
+            "type": "Sprite",
+            "id": "328cdfe1-1c69-44b6-b033-1facf60e813d",
+            "label": "planteers_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "planteers.png"
+            },
+            "x": 809,
+            "y": 755
+        },
+        {
+            "type": "Sprite",
+            "id": "254b31fe-d0a8-409d-a1cc-61324429687e",
+            "label": "school_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "school.png"
+            },
+            "x": 1478,
+            "y": 383
+        },
+        {
+            "type": "Sprite",
+            "id": "283c3a8f-8525-4f51-8989-37e241fe9cfd",
+            "label": "railing_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "railing.png"
+            },
+            "x": 1130,
+            "y": 520
+        },
+        {
+            "type": "Sprite",
+            "id": "905e930a-80f0-4866-99f1-eff974ca5804",
+            "label": "deck1_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "deck1.png"
+            },
+            "x": 884,
+            "y": 385
+        },
+        {
+            "type": "Sprite",
+            "id": "edea3ea1-03f5-4825-a581-3675ee1f00a0",
+            "label": "deck2_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "deck2.png"
+            },
+            "x": 1037,
+            "y": 390
+        },
+        {
+            "type": "Sprite",
+            "id": "07c53840-9f80-4113-8fd6-ae9a7c8ff4b7",
+            "label": "deck3_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "deck3.png"
+            },
+            "x": 1183,
+            "y": 387
+        },
+        {
+            "type": "Sprite",
+            "id": "f1e86b24-66e3-45a5-a7e9-dea62b22e24d",
+            "label": "deck4Table_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "deck4Table.png"
+            },
+            "x": 1294,
+            "y": 380
+        },
+        {
+            "type": "Sprite",
+            "id": "0cc900c8-41fd-49d8-815c-740fcb13737a",
+            "label": "deck4_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "deck4.png"
+            },
+            "x": 1338,
+            "y": 412
+        },
+        {
+            "type": "Sprite",
+            "id": "f4a40680-1f58-4aef-bd20-d00b810f61ce",
+            "label": "stall_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "stall.png"
+            },
+            "x": 1068,
+            "y": 163
+        },
+        {
+            "type": "Sprite",
+            "id": "5ebaead4-9dda-4492-9448-df0e3b9b0394",
+            "label": "tree_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "tree.png"
+            },
+            "x": 1486,
+            "y": 63
+        },
+        {
+            "type": "Sprite",
+            "id": "e4c9c146-4f00-48c7-84f3-555e4b6227d8",
+            "label": "waterfallTop_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "waterfallTop.png"
+            },
+            "x": 383,
+            "y": 335
+        },
+        {
+            "type": "Sprite",
+            "id": "bff9c3ab-3fc0-49a9-b91d-20785c5eaf1c",
+            "label": "waterDropletsTop",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "waterDroplets0001.png"
+            },
+            "x": 387,
+            "y": 298
+        },
+        {
+            "type": "Sprite",
+            "id": "b3e4fc5b-d58c-4686-9c0e-38d0d6f0b8d9",
+            "label": "waterDropletsMid",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "waterDroplets0001.png"
+            },
+            "x": 433,
+            "y": 389
+        },
+        {
+            "type": "Sprite",
+            "id": "d1d7c639-446b-4aa6-a399-9bfa1a49081b",
+            "label": "waterDropletsBottom",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pool",
+                "frame": "waterDroplets0001.png"
+            },
+            "x": 506,
+            "y": 476,
+            "scaleX": 1.3,
+            "scaleY": 0.7
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}

@@ -1,0 +1,436 @@
+{
+    "id": "c2ab8ba8-104b-4d3d-85fa-300edcfad0c1",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/coffeeShop/coffeeShop-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Coffee",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "2fcf49dc-fc64-4d07-be28-602718342774",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "bg.png"
+            },
+            "x": 759,
+            "y": 487
+        },
+        {
+            "type": "Sprite",
+            "id": "c2e0924c-365d-4ab7-96d2-0081bc4c5939",
+            "label": "sofaStool",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "sofaStool.png"
+            },
+            "x": 278,
+            "y": 493
+        },
+        {
+            "type": "Sprite",
+            "id": "aeba29bd-cfb6-4a6c-b717-47819ba2367f",
+            "label": "door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDoorOut()",
+            "MoveTo.x": 740,
+            "MoveTo.y": 300,
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "door0001.png"
+            },
+            "x": 738,
+            "y": 261
+        },
+        {
+            "type": "Sprite",
+            "id": "225c39ea-0759-4976-96c0-411cb7761c6f",
+            "label": "railings",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "railings.png"
+            },
+            "x": 673,
+            "y": 539
+        },
+        {
+            "type": "Sprite",
+            "id": "c71a4165-8f91-45f9-9fcc-230c9265d488",
+            "label": "smashBottom",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "smashBottom.png"
+            },
+            "x": 115,
+            "y": 652
+        },
+        {
+            "type": "Container",
+            "id": "2ec85e82-b886-425b-8f9c-4e294445d5fe",
+            "label": "counterBottom",
+            "components": [],
+            "x": 115,
+            "y": 634,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "040a70d5-f95b-4be5-bc6c-ca580813e7ea",
+                    "label": "countertopBottom",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "coffeeShop",
+                        "frame": "countertopBottom.png"
+                    },
+                    "x": 70,
+                    "y": 186
+                },
+                {
+                    "type": "Sprite",
+                    "id": "1c0b4800-4ef7-441e-b174-1e8cf9d753fc",
+                    "label": "countertopBottomExtras",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "coffeeShop",
+                        "frame": "countertopBottomExtras0001.png"
+                    },
+                    "y": 126
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ac3e3549-28e1-4596-acf4-a7d28bd2f829",
+                    "label": "registerBottom",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onRegister2Over()",
+                    "SimpleButton.hoverOutCallback": "() => this.onRegister2Out()",
+                    "texture": {
+                        "key": "coffeeShop",
+                        "frame": "registerBottom0001.png"
+                    },
+                    "x": 192
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "e298cd5f-83a9-4750-82b0-5bbee976505a",
+            "label": "smashTop",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSmoothieOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSmoothieOut()",
+            "MoveTo.x": 100,
+            "MoveTo.y": 700,
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "smashTopDefault.png"
+            },
+            "x": 93,
+            "y": 482
+        },
+        {
+            "type": "Sprite",
+            "id": "f1087a8b-d041-4c86-902a-31d4dba8e4a9",
+            "label": "stool1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "stool.png"
+            },
+            "x": 450,
+            "y": 728
+        },
+        {
+            "type": "Sprite",
+            "id": "1c691bc1-c2f4-4349-80d8-3f943ed7d43a",
+            "label": "stool2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "stool.png"
+            },
+            "x": 431,
+            "y": 821
+        },
+        {
+            "type": "Container",
+            "id": "de0a2026-7e42-464a-8db5-5942fac823ec",
+            "label": "counterTop",
+            "components": [],
+            "x": 933,
+            "y": 412,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "7c10aa30-46dd-4eb8-9cc4-a3cbad66ef74",
+                    "label": "countertopTop",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "coffeeShop",
+                        "frame": "countertopTop.png"
+                    },
+                    "x": 3
+                },
+                {
+                    "type": "Sprite",
+                    "id": "62135bad-617b-43df-a67d-6bb7209442ef",
+                    "label": "registerTop",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onRegister1Over()",
+                    "SimpleButton.hoverOutCallback": "() => this.onRegister1Out()",
+                    "texture": {
+                        "key": "coffeeShop",
+                        "frame": "registerTop0001.png"
+                    },
+                    "y": 37
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "c04ea183-ca8a-4aae-8394-93db7e0d081d",
+            "label": "table",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "table.png"
+            },
+            "x": 476,
+            "y": 421
+        },
+        {
+            "type": "Sprite",
+            "id": "51dc1e7b-2b0c-494b-9922-5acaca536d69",
+            "label": "backSofa",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "backSofa.png"
+            },
+            "x": 488,
+            "y": 292
+        },
+        {
+            "type": "Sprite",
+            "id": "bc712f93-0ad6-40b6-af25-04e0f0c9a156",
+            "label": "frontTable",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "frontTable.png"
+            },
+            "x": 923,
+            "y": 790
+        },
+        {
+            "type": "Sprite",
+            "id": "47558de5-bd19-4911-a5cc-96459be36f93",
+            "label": "chairBottom",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "chairBottom.png"
+            },
+            "x": 748,
+            "y": 779.174180419722,
+            "originY": 0.25803635147584353
+        },
+        {
+            "type": "Sprite",
+            "id": "4c65fa63-74f0-4e13-b520-fcf6a03c4e93",
+            "label": "chairTop",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "chairTop.png"
+            },
+            "x": 744,
+            "y": 782.0150632068667,
+            "originY": 0.6419508028855793
+        },
+        {
+            "type": "Sprite",
+            "id": "47dc4800-043f-4dce-914e-d4d0f2867444",
+            "label": "chairArm",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "chairArm.png"
+            },
+            "x": 719,
+            "y": 819.5879879613924,
+            "originY": 0.6557054924830535
+        },
+        {
+            "type": "Sprite",
+            "id": "b2f4c932-7133-4809-b7ee-bbed992c46f0",
+            "label": "upstairs",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onStairsOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onStairsOut()",
+            "MoveTo.x": 1300,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "upstairsDefault.png"
+            },
+            "x": 1335,
+            "y": 339
+        },
+        {
+            "type": "Sprite",
+            "id": "08156a8e-a29e-4f89-906b-f69251e95b87",
+            "label": "beanTrolley",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBeansOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onBeansOut()",
+            "MoveTo.x": 1360,
+            "MoveTo.y": 760,
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "beanTrolley0001.png"
+            },
+            "x": 1367,
+            "y": 764
+        },
+        {
+            "type": "Sprite",
+            "id": "30b90c8d-b144-4f7f-a5f5-4eeae8992423",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeShop",
+                "frame": "fg.png"
+            },
+            "x": 723,
+            "y": 979.5,
+            "originY": 1
+        },
+        {
+            "type": "Container",
+            "id": "d1c88c6e-5667-4599-8a75-4319fb035288",
+            "label": "sofa",
+            "components": [],
+            "x": 1122,
+            "y": 776,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "af8ea7ed-4eba-4c06-8f9b-5012c8f302c2",
+                    "label": "frontSofaLower",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "coffeeShop",
+                        "frame": "frontSofaLower.png"
+                    },
+                    "y": 69
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d6f19706-9e64-4af0-a520-b6b2fbbadc02",
+                    "label": "frontSofaUpper",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "coffeeShop",
+                        "frame": "frontSofaUpper.png"
+                    },
+                    "x": 110,
+                    "y": 45
+                },
+                {
+                    "type": "Sprite",
+                    "id": "71f15cfd-87a9-4d1b-8ed2-981a54db3832",
+                    "label": "beanBag",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "coffeeShop",
+                        "frame": "beanBag.png"
+                    },
+                    "x": 114
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "c04ea183-ca8a-4aae-8394-93db7e0d081d",
+                "225c39ea-0759-4976-96c0-411cb7761c6f",
+                "30b90c8d-b144-4f7f-a5f5-4eeae8992423",
+                "08156a8e-a29e-4f89-906b-f69251e95b87",
+                "bc712f93-0ad6-40b6-af25-04e0f0c9a156",
+                "1c691bc1-c2f4-4349-80d8-3f943ed7d43a",
+                "f1087a8b-d041-4c86-902a-31d4dba8e4a9",
+                "c2e0924c-365d-4ab7-96d2-0081bc4c5939",
+                "2ec85e82-b886-425b-8f9c-4e294445d5fe",
+                "de0a2026-7e42-464a-8db5-5942fac823ec",
+                "d1c88c6e-5667-4599-8a75-4319fb035288",
+                "47558de5-bd19-4911-a5cc-96459be36f93",
+                "4c65fa63-74f0-4e13-b520-fcf6a03c4e93",
+                "47dc4800-043f-4dce-914e-d4d0f2867444"
+            ]
+        }
+    ]
+}

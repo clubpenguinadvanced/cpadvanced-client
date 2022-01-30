@@ -1,0 +1,312 @@
+{
+    "id": "e515d391-1e01-40ce-8d2e-cb33230f9839",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/plaza/plaza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Plaza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "f4b2c11c-7b47-4793-9830-c395c49c70a0",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "bg.png"
+            },
+            "x": 765,
+            "y": 428
+        },
+        {
+            "type": "Sprite",
+            "id": "b1e5063b-4be5-4e38-b3b0-172d996405d1",
+            "label": "parkGate",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "parkGate0001.png"
+            },
+            "x": -32,
+            "y": 330
+        },
+        {
+            "type": "Sprite",
+            "id": "b84d1695-b8b0-4c68-a270-9aa97e40ba77",
+            "label": "shopsBg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "shopsBg.png"
+            },
+            "x": 802,
+            "y": 316
+        },
+        {
+            "type": "Sprite",
+            "id": "b7ef1bcc-4671-43ab-a539-7dfe92835037",
+            "label": "cannon",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCannonOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCannonOut()",
+            "texture": {
+                "key": "plaza",
+                "frame": "cannon0001.png"
+            },
+            "x": 305,
+            "y": 422
+        },
+        {
+            "type": "Sprite",
+            "id": "dee93641-ab3c-4ea4-88f4-ae3b3cc40d19",
+            "label": "shopfronts",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "shopfronts.png"
+            },
+            "x": 820,
+            "y": 252
+        },
+        {
+            "type": "Sprite",
+            "id": "c4edf2d3-05f1-4185-949c-1e5bd12f9897",
+            "label": "cannonSmoke",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "cannonSmoke0002.png"
+            },
+            "x": 236,
+            "y": 221,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "a5a136e0-d0fc-41a0-9136-5254f0cc1db2",
+            "label": "cannonPuffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "cannonPuffle0002.png"
+            },
+            "x": 29,
+            "y": 494,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "a9520869-5626-4a6c-a49a-0705c875b90f",
+            "label": "flagLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "flagLeft0001.png"
+            },
+            "x": 807,
+            "y": 68
+        },
+        {
+            "type": "Sprite",
+            "id": "2978f8d1-eab4-415a-bf2f-ed15de6a5681",
+            "label": "flagRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "flagRight0001.png"
+            },
+            "x": 1145,
+            "y": 69
+        },
+        {
+            "type": "Sprite",
+            "id": "ed18662b-c20b-47fa-ba55-6b0f90c33a9f",
+            "label": "hotelDoor",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onHotelOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onHotelOut()",
+            "MoveTo.x": 680,
+            "MoveTo.y": 450,
+            "texture": {
+                "key": "plaza",
+                "frame": "hotelDoor0001.png"
+            },
+            "x": 679,
+            "y": 396
+        },
+        {
+            "type": "Sprite",
+            "id": "7b49fc4f-4543-4651-a9b8-e4a8385ff899",
+            "label": "petDoor",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPetOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPetOut()",
+            "MoveTo.x": 420,
+            "MoveTo.y": 450,
+            "texture": {
+                "key": "plaza",
+                "frame": "petDooe0001.png"
+            },
+            "x": 419,
+            "y": 424
+        },
+        {
+            "type": "Sprite",
+            "id": "27e7716a-ae22-49ff-9094-92f4d43d90e7",
+            "label": "mallDoor",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onMallOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onMallOut()",
+            "MoveTo.x": 950,
+            "MoveTo.y": 450,
+            "texture": {
+                "key": "plaza",
+                "frame": "mallDoor0001.png"
+            },
+            "x": 952,
+            "y": 392
+        },
+        {
+            "type": "Sprite",
+            "id": "d6458183-7d8b-4b40-932c-42f433ef02f0",
+            "label": "pizzaDoor",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPizzaOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPizzaOut()",
+            "MoveTo.x": 1260,
+            "MoveTo.y": 450,
+            "texture": {
+                "key": "plaza",
+                "frame": "pizzaDoor0001.png"
+            },
+            "x": 1257,
+            "y": 408
+        },
+        {
+            "type": "Sprite",
+            "id": "fad08d03-f4bc-4db6-be81-a34c33242529",
+            "label": "manhole",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "manhole0011.png"
+            },
+            "x": 544,
+            "y": 484,
+            "scaleX": 1.05
+        },
+        {
+            "type": "Sprite",
+            "id": "96869ebb-a2a1-45ef-9df5-39d260414329",
+            "label": "shopSign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "shopSign0001.png"
+            },
+            "x": 402,
+            "y": 288
+        },
+        {
+            "type": "Sprite",
+            "id": "b0d658ea-89eb-458b-91b0-3d570e0b8cd4",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "fg.png"
+            },
+            "x": 776,
+            "y": 811
+        },
+        {
+            "type": "Rectangle",
+            "id": "0cd57da3-6bef-414d-b396-6129a3131280",
+            "label": "parkGate_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onParkOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onParkOut()",
+            "MoveTo.x": 170,
+            "MoveTo.y": 450,
+            "x": 164,
+            "y": 334,
+            "fillColor": "#09d1e9",
+            "fillAlpha": 0.5,
+            "width": 200,
+            "height": 250
+        },
+        {
+            "type": "Rectangle",
+            "id": "ba501f07-84ac-4226-b5ce-5bd94a19062e",
+            "label": "manhole_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onManholeOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onManholeOut()",
+            "MoveTo.x": 545,
+            "MoveTo.y": 532,
+            "x": 545,
+            "y": 532,
+            "fillColor": "#09d1e9",
+            "fillAlpha": 0.5,
+            "width": 100,
+            "height": 80
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}

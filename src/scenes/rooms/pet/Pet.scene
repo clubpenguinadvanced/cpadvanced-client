@@ -1,0 +1,695 @@
+{
+    "id": "b597012f-8f30-4a42-adee-243d7fc03649",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "cpadvanced-client/assets/media/rooms/petShop/petShop-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pet",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "1ed5c6f8-dd05-4d41-a805-e9e6f0bf7b77",
+            "label": "bg_outside",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "bg_outside.png"
+            },
+            "x": 929,
+            "y": 311
+        },
+        {
+            "type": "Sprite",
+            "id": "26e89580-ebb1-4996-97bb-2e00ab28a12a",
+            "label": "pufflescape",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "pufflescape_bg.png"
+            },
+            "x": 990,
+            "y": 187
+        },
+        {
+            "type": "Sprite",
+            "id": "22aed092-cbc0-4074-9259-6b369942a1dc",
+            "label": "pufflescape_ball",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "pufflescape_ball0001.png"
+            },
+            "x": 1001,
+            "y": 218
+        },
+        {
+            "type": "Sprite",
+            "id": "96958960-f9a9-41d8-bafe-fd838beb0741",
+            "label": "pufflescape_top",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "pufflescape_top.png"
+            },
+            "x": 1011,
+            "y": 120
+        },
+        {
+            "type": "Sprite",
+            "id": "268cd9a6-6716-4436-8765-daa999111f61",
+            "label": "puffle_launch_door",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_launch_door0001.png"
+            },
+            "x": 1197,
+            "y": 166
+        },
+        {
+            "type": "Sprite",
+            "id": "aa55e888-e9a5-4a20-83e1-37350166410a",
+            "label": "puffle_launch_bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_launch_bg.png"
+            },
+            "x": 1218,
+            "y": 285
+        },
+        {
+            "type": "Sprite",
+            "id": "7ea63c57-0b15-4935-913d-c365952d11ef",
+            "label": "puffle_launch_cannon",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_launch_cannon0001.png"
+            },
+            "x": 1243,
+            "y": 234
+        },
+        {
+            "type": "Sprite",
+            "id": "83ba8e7e-fe86-4731-b02e-141d6e53d256",
+            "label": "puffle_launch_foreground",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_launch_foreground.png"
+            },
+            "x": 1214,
+            "y": 195
+        },
+        {
+            "type": "Sprite",
+            "id": "bda603f8-2654-4f04-a84d-31db84cf5c81",
+            "label": "plaza_door",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "plaza_door0001.png"
+            },
+            "x": 766,
+            "y": 192
+        },
+        {
+            "type": "Sprite",
+            "id": "e4ca09ab-fed9-4e3d-b76b-9817cbb095b4",
+            "label": "room_bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "room_bg.png"
+            },
+            "x": 774,
+            "y": 478
+        },
+        {
+            "type": "Sprite",
+            "id": "af19e7c2-dfa4-46b0-a175-162c732b582a",
+            "label": "park_door",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "park_door0001.png"
+            },
+            "x": 1461,
+            "y": 340
+        },
+        {
+            "type": "Sprite",
+            "id": "61cbbc22-2627-4ad1-9ea4-598eada8d3be",
+            "label": "room_bg_higher",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "room_bg_higher.png"
+            },
+            "x": 775,
+            "y": 478
+        },
+        {
+            "type": "Sprite",
+            "id": "38ad658a-f851-45f8-835f-3d0e23344972",
+            "label": "exit",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "exit0001.png"
+            },
+            "x": 1473,
+            "y": 142
+        },
+        {
+            "type": "Sprite",
+            "id": "9a01c665-4e26-427b-965a-88b081b6f0d5",
+            "label": "rug",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "rug.png"
+            },
+            "x": 765,
+            "y": 686
+        },
+        {
+            "type": "Sprite",
+            "id": "3093ca8c-cbcc-46ce-a67e-c5b451ac27e0",
+            "label": "rug_puffles",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "rug_puffles0001.png"
+            },
+            "x": 777,
+            "y": 680
+        },
+        {
+            "type": "Sprite",
+            "id": "ec271e64-a907-4b58-8973-c04dadac70b9",
+            "label": "pipes_pink",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "pipes_pink.png"
+            },
+            "x": 849,
+            "y": 199
+        },
+        {
+            "type": "Sprite",
+            "id": "835d7b7f-6adf-4536-8acf-ed4c69482225",
+            "label": "goldberrymachine",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "goldberrymachine0001.png"
+            },
+            "x": 557,
+            "y": 170
+        },
+        {
+            "type": "Sprite",
+            "id": "9410a7cc-8218-49d6-a004-b107f7621acc",
+            "label": "goldberry_bottom",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "goldberry_bottom.png"
+            },
+            "x": 551,
+            "y": 378
+        },
+        {
+            "type": "Sprite",
+            "id": "a9249178-e507-4c63-a78c-b37817ebd4b5",
+            "label": "goldberry_spout",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "goldberry_spout0001.png"
+            },
+            "x": 506,
+            "y": 292
+        },
+        {
+            "type": "Sprite",
+            "id": "f0590951-49db-48ae-a1e7-303cb1b992a1",
+            "label": "house_puffles",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "house_puffles.png"
+            },
+            "x": 316,
+            "y": 345
+        },
+        {
+            "type": "Sprite",
+            "id": "663066d9-69c9-4c4e-b795-68af0d105455",
+            "label": "wood_bar",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "wood_bar.png"
+            },
+            "x": 313,
+            "y": 463
+        },
+        {
+            "type": "Sprite",
+            "id": "842c164a-ec0c-4a76-af8b-17154dd2e519",
+            "label": "puffle_items_eight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_items_eight.png"
+            },
+            "x": 1217,
+            "y": 476
+        },
+        {
+            "type": "Sprite",
+            "id": "4e25505c-36ee-4252-a04f-63550d318885",
+            "label": "house_light",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "house_light0001.png"
+            },
+            "x": 87,
+            "y": 333
+        },
+        {
+            "type": "Sprite",
+            "id": "217a80a6-2eb9-44ad-a5bb-59bf6eace144",
+            "label": "hut_foreground",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "hut_foreground.png"
+            },
+            "x": 766,
+            "y": 402
+        },
+        {
+            "type": "Sprite",
+            "id": "c1721301-4972-4450-8cbe-0d7b1fbb913e",
+            "label": "railing_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "railing.png"
+            },
+            "x": 1322,
+            "y": 482
+        },
+        {
+            "type": "Sprite",
+            "id": "c28fd55d-869c-432a-bf96-57a76a1fbcc6",
+            "label": "railing_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "railing.png"
+            },
+            "x": 1419,
+            "y": 570,
+            "angle": -6
+        },
+        {
+            "type": "Sprite",
+            "id": "97ce26e3-fe48-4ce3-9c02-4f069db5bfdd",
+            "label": "adoption_sign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "adoption_sign0001.png"
+            },
+            "x": 324,
+            "y": 138
+        },
+        {
+            "type": "Sprite",
+            "id": "1cc3f71b-46df-4ae1-8fae-a1141cc7ed04",
+            "label": "top_puffles",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "top_puffles.png"
+            },
+            "x": 353,
+            "y": 175
+        },
+        {
+            "type": "Sprite",
+            "id": "e326f561-9d47-422c-889a-1b53da6dc3d2",
+            "label": "puffle_items_seven",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_items_seven.png"
+            },
+            "x": 1440,
+            "y": 616
+        },
+        {
+            "type": "Sprite",
+            "id": "cb52ec88-ea36-405c-afd4-7506a82d04ac",
+            "label": "puffle_items_six",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_items_six.png"
+            },
+            "x": 1325,
+            "y": 817
+        },
+        {
+            "type": "Sprite",
+            "id": "6c745628-0599-4fe9-bc67-24c7dbc535f6",
+            "label": "book",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "book0001.png"
+            },
+            "x": 268,
+            "y": 522
+        },
+        {
+            "type": "Sprite",
+            "id": "b6473473-2cdd-406a-b442-5e1eba9727b6",
+            "label": "goldberry_pad",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "goldberry_pad0001.png"
+            },
+            "x": 254,
+            "y": 431
+        },
+        {
+            "type": "Sprite",
+            "id": "f50c0ba1-c7b3-47a0-9b9b-f51548162d36",
+            "label": "hotel_door",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "hotel_door0001.png"
+            },
+            "x": 20,
+            "y": 566
+        },
+        {
+            "type": "Sprite",
+            "id": "564b3724-c546-415e-a8b6-16bd07f45436",
+            "label": "arch",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "arch.png"
+            },
+            "x": 22,
+            "y": 569
+        },
+        {
+            "type": "Sprite",
+            "id": "20b047ca-5f9f-4dff-9fbb-5cdba138729e",
+            "label": "hotel_puffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "hotel_puffle.png"
+            },
+            "x": 81,
+            "y": 315
+        },
+        {
+            "type": "Sprite",
+            "id": "4533b0ff-33b6-4b5b-8e72-9898e68e8cff",
+            "label": "puffle_items_five",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_items_five.png"
+            },
+            "x": 1006,
+            "y": 833
+        },
+        {
+            "type": "Sprite",
+            "id": "5d79a4c8-3603-4ed3-9ee3-a1ee858ed8f2",
+            "label": "puffle_items_four",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_items_four.png"
+            },
+            "x": 921,
+            "y": 418
+        },
+        {
+            "type": "Sprite",
+            "id": "3910a199-0f5d-4428-b060-8630986b991d",
+            "label": "puffle_items_two",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_items_two.png"
+            },
+            "x": 409,
+            "y": 864
+        },
+        {
+            "type": "Sprite",
+            "id": "59b1b6f2-fda7-42a4-9c98-e070673975b3",
+            "label": "puffle_items_three",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_items_three.png"
+            },
+            "x": 475,
+            "y": 409
+        },
+        {
+            "type": "Sprite",
+            "id": "2834ff3d-d0ea-4a4c-8725-e54af2d058f6",
+            "label": "puffle_items_one",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "puffle_items_one.png"
+            },
+            "x": 284,
+            "y": 584
+        },
+        {
+            "type": "Sprite",
+            "id": "138a08a7-b787-4a4c-8446-5bbdf116ae9f",
+            "label": "disco_ball",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "disco_ball.png"
+            },
+            "x": 46,
+            "y": 74
+        },
+        {
+            "type": "Sprite",
+            "id": "4bfb4a66-c8e2-47f0-b261-35b3cfcf55a1",
+            "label": "foreground",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet",
+                "frame": "foreground.png"
+            },
+            "x": 695,
+            "y": 856
+        },
+        {
+            "type": "Rectangle",
+            "id": "7046b252-dc31-4042-b7c3-f224d415bfc5",
+            "label": "hotelDoor_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onHotelDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onHotelDoorOut()",
+            "MoveTo.x": 100,
+            "MoveTo.y": 700,
+            "x": 84,
+            "y": 550,
+            "angle": -5,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 128,
+            "height": 350
+        },
+        {
+            "type": "Rectangle",
+            "id": "b8cb2e8d-2fae-47b5-833d-e975dbec10d2",
+            "label": "puffle_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPufflesOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPufflesOut()",
+            "MoveTo.x": 300,
+            "MoveTo.y": 500,
+            "x": 321,
+            "y": 347,
+            "angle": -5,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 250,
+            "height": 250
+        },
+        {
+            "type": "Rectangle",
+            "id": "e9cd9396-e9bb-4831-9f29-bf893495696e",
+            "label": "outside_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onOutsideOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onOutsideOut()",
+            "MoveTo.x": 750,
+            "MoveTo.y": 300,
+            "x": 764,
+            "y": 200,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 230,
+            "height": 180
+        },
+        {
+            "type": "Rectangle",
+            "id": "6c67e9b2-724f-4247-bb69-e49d517fca07",
+            "label": "pufflescape_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPufflescapeOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPufflescapeOut()",
+            "MoveTo.x": 1000,
+            "MoveTo.y": 300,
+            "x": 1009,
+            "y": 194,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 150,
+            "height": 180
+        },
+        {
+            "type": "Rectangle",
+            "id": "0ab12224-fc7e-4182-ad14-11f62f70bd7b",
+            "label": "cannon_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCannonOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCannonOut()",
+            "MoveTo.x": 1250,
+            "MoveTo.y": 450,
+            "x": 1251,
+            "y": 320,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 150,
+            "height": 230
+        },
+        {
+            "type": "Rectangle",
+            "id": "914ec899-bc40-4fc0-ade0-c94d818009d2",
+            "label": "park_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onParkDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onParkDoorOut()",
+            "MoveTo.x": 1450,
+            "MoveTo.y": 500,
+            "x": 1457,
+            "y": 337,
+            "angle": 5,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 150,
+            "height": 290
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}

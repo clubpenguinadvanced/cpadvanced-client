@@ -1,0 +1,369 @@
+{
+    "id": "bc5d5ed3-9075-4784-b657-6e05cdce00ad",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "yukon/assets/media/rooms/lodge/lodge-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Lodge",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "76eaef0a-15dc-43f1-9bc8-5622f0ec228e",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "bg"
+            },
+            "x": -17,
+            "y": -2,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "88448b99-23ca-4433-82a8-40b75fe91423",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 184,
+            "MoveTo.y": 626,
+            "texture": {
+                "key": "lodge",
+                "frame": "door"
+            },
+            "x": 136,
+            "y": 461
+        },
+        {
+            "type": "Image",
+            "id": "53e3dc25-0ed5-456d-ab6b-fcf13df0fceb",
+            "label": "footrest",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "footrest"
+            },
+            "x": 1279,
+            "y": 747,
+            "originX": 0.49295775,
+            "originY": 0.47222222
+        },
+        {
+            "type": "Image",
+            "id": "c015247e-c4dd-45b4-a287-6530da7dbc01",
+            "label": "chair",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "chair"
+            },
+            "x": 1365,
+            "y": 763,
+            "originX": 0.5017064846416383,
+            "originY": 0.5018450184501845
+        },
+        {
+            "type": "Sprite",
+            "id": "043cb8a8-f3ae-44fd-ad07-20c2ca07c4a2",
+            "label": "fire",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 10,
+            "texture": {
+                "key": "lodge",
+                "frame": "fire0001"
+            },
+            "x": 1334,
+            "y": 473,
+            "originX": 0.5061728395061729
+        },
+        {
+            "type": "Image",
+            "id": "a63ca841-5066-4bac-9805-f6730b8850a4",
+            "label": "fishing_door",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "fishing_door",
+            "Button.hoverCallback": "() => this.onFishOver()",
+            "Button.hoverOutCallback": "() => this.onFishOut()",
+            "Button.activeFrame": false,
+            "MoveTo.x": 960,
+            "MoveTo.y": 460,
+            "ShowHint.text": "Go Fishing",
+            "texture": {
+                "key": "lodge",
+                "frame": "fishing_door"
+            },
+            "x": 949,
+            "y": 249,
+            "originX": 0.2916666666666667,
+            "originY": 0.3961218836565097
+        },
+        {
+            "type": "Image",
+            "id": "77cd1882-69fd-448c-979f-f284c45113b8",
+            "label": "rods",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "rods"
+            },
+            "x": 820,
+            "y": 328
+        },
+        {
+            "type": "Image",
+            "id": "62189c22-d3e4-4dbd-9c11-3402e58a1215",
+            "label": "bait",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "bait",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "lodge",
+                "frame": "bait"
+            },
+            "x": 838,
+            "y": 416,
+            "originX": 0.5060240963855421
+        },
+        {
+            "type": "Sprite",
+            "id": "1bcadf52-0e40-4659-a7fd-d782d5681eda",
+            "label": "catalog_small",
+            "components": [
+                "Animation",
+                "SimpleButton"
+            ],
+            "Animation.key": "catalog_small",
+            "Animation.end": 7,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "Animation.onHover": true,
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "lodge",
+                "frame": "catalog_small0001"
+            },
+            "x": 830,
+            "y": 240,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "74960a23-c275-47bd-89f3-9f7d6f6e3cd1",
+            "label": "catalog_small_tape",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "catalog_small_tape"
+            },
+            "x": 847,
+            "y": 238,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "815121c9-6c0c-4a5c-9bfa-44290eeb376c",
+            "label": "table3",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table3",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Play Find Four",
+            "texture": {
+                "key": "lodge",
+                "frame": "table3"
+            },
+            "x": 600,
+            "y": 515,
+            "originY": 0.6985294117647058
+        },
+        {
+            "type": "Image",
+            "id": "116a3627-102f-4436-ade3-2a3a1d84b925",
+            "label": "table2",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table2",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Play Find Four",
+            "texture": {
+                "key": "lodge",
+                "frame": "table2"
+            },
+            "x": 583,
+            "y": 792,
+            "originY": 0.7586206896551724
+        },
+        {
+            "type": "Image",
+            "id": "92344cad-eff7-4748-9a84-6ce047322bc4",
+            "label": "table4",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table4",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Play Find Four",
+            "texture": {
+                "key": "lodge",
+                "frame": "table4"
+            },
+            "x": 1020,
+            "y": 812,
+            "originY": 0.7727272727272727
+        },
+        {
+            "type": "Image",
+            "id": "0503fb33-c16c-42c7-8a78-de9df070e30f",
+            "label": "candle",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCandleOver()",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "lodge",
+                "frame": "candle"
+            },
+            "x": 453,
+            "y": 259,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "e8d1f6c0-99c5-4d3b-b85e-7caa97bdc37b",
+            "label": "flame",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "lodge",
+                "frame": "flame0001"
+            },
+            "x": 518,
+            "y": 230,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "4c73c395-fe4c-4c5e-bf81-76e1385e4876",
+            "label": "flame_out",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame_out",
+            "Animation.end": 30,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "Animation.showOnStart": true,
+            "Animation.hideOnComplete": true,
+            "texture": {
+                "key": "lodge",
+                "frame": "flame_out0001"
+            },
+            "x": 518,
+            "y": 198,
+            "originX": 0,
+            "originY": 0,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "d96d756f-7e3a-4a54-ba16-adf5fd7580d7",
+            "label": "fish",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fish",
+            "Animation.end": 18,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "Animation.showOnStart": true,
+            "texture": {
+                "key": "lodge",
+                "frame": "fish0001"
+            },
+            "x": 1010,
+            "y": 365,
+            "originX": 0,
+            "originY": 0,
+            "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "5769c896-bdcb-4fa6-b7e7-e2d1871577be",
+            "label": "zone",
+            "components": [
+                "Zone"
+            ],
+            "Zone.callback": "() => this.onZoneClick()",
+            "x": 1227,
+            "y": 215,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 115,
+            "height": 430
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "c17b59e1-6b76-4fd3-8fcf-ba6c957a2587",
+            "label": "sort",
+            "objectIds": [
+                "88448b99-23ca-4433-82a8-40b75fe91423",
+                "815121c9-6c0c-4a5c-9bfa-44290eeb376c",
+                "116a3627-102f-4436-ade3-2a3a1d84b925",
+                "92344cad-eff7-4748-9a84-6ce047322bc4",
+                "53e3dc25-0ed5-456d-ab6b-fcf13df0fceb",
+                "c015247e-c4dd-45b4-a287-6530da7dbc01"
+            ]
+        }
+    ]
+}

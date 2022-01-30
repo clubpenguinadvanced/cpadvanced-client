@@ -1,0 +1,301 @@
+{
+    "id": "68c7f68e-bb6c-4f1f-922d-22721bbfe4b1",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/snowForts/snowForts-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Forts",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "3c146d63-3490-4d12-8fcc-429173b60852",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "bg.png"
+            },
+            "x": 803,
+            "y": 497
+        },
+        {
+            "type": "Sprite",
+            "id": "a69d0e8d-29fb-4245-a6ab-13abccd76593",
+            "label": "clockTower",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "clockTower.png"
+            },
+            "x": 1203,
+            "y": 220
+        },
+        {
+            "type": "Sprite",
+            "id": "25fcc1c2-8524-45a7-a95e-76b2722ad8af",
+            "label": "leftFortMain",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "leftFortMain.png"
+            },
+            "x": 497.38907969285145,
+            "y": 676.8232144028275,
+            "originX": 0.5117042125142706,
+            "originY": 0.5499413881899945
+        },
+        {
+            "type": "Sprite",
+            "id": "dc398758-62ac-4a9b-a4ed-a6614c2d5d13",
+            "label": "leftFortTower",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "leftFortTower.png"
+            },
+            "x": 875,
+            "y": 685.9549449828754,
+            "originY": 0.27346685456250674
+        },
+        {
+            "type": "Sprite",
+            "id": "bc2b75ef-7688-42a3-b6fd-142ddb7e7df0",
+            "label": "leftFortOut",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "leftFortOut.png"
+            },
+            "x": 777.7556318771406,
+            "y": 738.7010303413978,
+            "originX": 0.505775104859015,
+            "originY": 0.5991674909681916
+        },
+        {
+            "type": "Sprite",
+            "id": "68e2472a-4b5c-4566-b7d6-667168fd59c8",
+            "label": "leftFortStick",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "leftFortStick.png"
+            },
+            "x": 567.3241398001211,
+            "y": 744.903467901271,
+            "originX": 0.46121941739305927,
+            "originY": 0.2011007223539471
+        },
+        {
+            "type": "Sprite",
+            "id": "ec68a234-053d-4c4f-8efc-b601b7eec060",
+            "label": "leftFlag",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "flagLeft0001.png"
+            },
+            "x": 449,
+            "y": 482
+        },
+        {
+            "type": "Sprite",
+            "id": "17178eab-9417-40fc-b5c7-17c6d2785434",
+            "label": "rightFortTower",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "rightFortTower.png"
+            },
+            "x": 764.9559415571031,
+            "y": 454.44058442896954,
+            "originX": 0.5115173681578684,
+            "originY": 0.35732215565626185
+        },
+        {
+            "type": "Sprite",
+            "id": "0b61d4ac-aed9-47a2-a46f-1a65c8d72424",
+            "label": "rightFortMain",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "rightFortMain.png"
+            },
+            "x": 847,
+            "y": 507.83084099435837,
+            "originY": 0.710682450282821
+        },
+        {
+            "type": "Sprite",
+            "id": "f2ddf39e-513c-4554-9965-ca3c875f6b50",
+            "label": "rightFortOut2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "rightFortOut2.png"
+            },
+            "x": 1206,
+            "y": 589.1897665871167,
+            "originY": 0.6565098185047802
+        },
+        {
+            "type": "Sprite",
+            "id": "0c4d1e3b-02b1-4d0e-8b0f-262d4120d34c",
+            "label": "rightFortStick",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "rightFortStick.png"
+            },
+            "x": 1070,
+            "y": 472.55631877140576,
+            "originY": 0.7017967674874225
+        },
+        {
+            "type": "Sprite",
+            "id": "b9670d5e-fbf6-4f81-8533-1e950296c177",
+            "label": "rightFortOut",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "rightFortOut.png"
+            },
+            "x": 1072.2443681228594,
+            "y": 587.0355084985065,
+            "originX": 0.4914775151595118,
+            "originY": 0.7464803374310665
+        },
+        {
+            "type": "Sprite",
+            "id": "da2b2494-3225-460e-a26e-ba3300a74c68",
+            "label": "rightFlag",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "flagRight0001.png"
+            },
+            "x": 791,
+            "y": 354
+        },
+        {
+            "type": "Sprite",
+            "id": "969b9ba0-eedd-4973-af8c-fe35a631e20c",
+            "label": "target",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "target0001.png"
+            },
+            "x": 1310,
+            "y": 213
+        },
+        {
+            "type": "Sprite",
+            "id": "7bf13ed8-005a-4dfa-ba11-90d09bd29b2e",
+            "label": "snowman",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "snowForts",
+                "frame": "snowman.png"
+            },
+            "x": 1398,
+            "y": 721
+        },
+        {
+            "type": "Text",
+            "id": "2120d0c6-9735-43e4-bf97-1a2cf590c008",
+            "label": "clockTime",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1111,
+            "y": 191,
+            "scaleY": 1.5,
+            "angle": 1,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "12:58",
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "45px"
+        },
+        {
+            "type": "Text",
+            "id": "271f284d-d593-40d5-9ed4-c1d4be94c616",
+            "label": "am_pm",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1188,
+            "y": 176,
+            "angle": 1,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "AM",
+            "fontFamily": "Burbank Small",
+            "fontSize": "20px"
+        },
+        {
+            "type": "Text",
+            "id": "5241ccbb-1e3e-4347-81dc-a0fdd87567b6",
+            "label": "day",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1122,
+            "y": 254,
+            "angle": 5,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "WEDNESDAY",
+            "fontFamily": "Burbank Small",
+            "fontSize": "18px",
+            "fontStyle": "bold"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "25fcc1c2-8524-45a7-a95e-76b2722ad8af",
+                "da2b2494-3225-460e-a26e-ba3300a74c68",
+                "b9670d5e-fbf6-4f81-8533-1e950296c177",
+                "0c4d1e3b-02b1-4d0e-8b0f-262d4120d34c",
+                "f2ddf39e-513c-4554-9965-ca3c875f6b50",
+                "0b61d4ac-aed9-47a2-a46f-1a65c8d72424",
+                "17178eab-9417-40fc-b5c7-17c6d2785434",
+                "ec68a234-053d-4c4f-8efc-b601b7eec060",
+                "68e2472a-4b5c-4566-b7d6-667168fd59c8",
+                "bc2b75ef-7688-42a3-b6fd-142ddb7e7df0",
+                "dc398758-62ac-4a9b-a4ed-a6614c2d5d13"
+            ]
+        }
+    ]
+}

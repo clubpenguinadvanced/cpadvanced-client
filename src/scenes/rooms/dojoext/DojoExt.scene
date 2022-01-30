@@ -1,0 +1,147 @@
+{
+    "id": "6666b5c2-d8d5-4c64-ac30-ad95597c4cce",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/dojoCourtyard/dojoCourtyard-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "DojoExt",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "52fe422c-d663-4300-92e0-1906ed5e9460",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojoCourtyard",
+                "frame": "bg.png"
+            },
+            "x": 766,
+            "y": 459
+        },
+        {
+            "type": "Sprite",
+            "id": "d82e8271-ef6f-415c-af39-7a0edfbad2d1",
+            "label": "water",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojoCourtyard",
+                "frame": "water0001.png"
+            },
+            "x": 320,
+            "y": 357
+        },
+        {
+            "type": "Sprite",
+            "id": "d35580be-e1c3-4f03-833c-059b8c34c551",
+            "label": "bg_upper",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojoCourtyard",
+                "frame": "bg_upper.png"
+            },
+            "x": 860,
+            "y": 545
+        },
+        {
+            "type": "Sprite",
+            "id": "ad1e0ad4-ed26-4509-b491-ef51f3bf73c5",
+            "label": "door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDojoOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDojoOut()",
+            "MoveTo.x": 800,
+            "MoveTo.y": 600,
+            "texture": {
+                "key": "dojoCourtyard",
+                "frame": "door0001.png"
+            },
+            "x": 791,
+            "y": 496
+        },
+        {
+            "type": "Sprite",
+            "id": "0771a1cb-c18f-4bef-8e8b-ed833838efc5",
+            "label": "dojo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojoCourtyard",
+                "frame": "dojo.png"
+            },
+            "x": 679,
+            "y": 475
+        },
+        {
+            "type": "Sprite",
+            "id": "c828d683-7d86-46bf-b8fe-1a8e7b3f31ad",
+            "label": "leftStatue",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojoCourtyard",
+                "frame": "leftStatue.png"
+            },
+            "x": 477,
+            "y": 835
+        },
+        {
+            "type": "Sprite",
+            "id": "e2348520-b945-4581-a4fd-7240ed84b411",
+            "label": "rightStatue",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojoCourtyard",
+                "frame": "rightStatue.png"
+            },
+            "x": 1125,
+            "y": 826
+        },
+        {
+            "type": "Sprite",
+            "id": "37d66160-0239-4700-9bb9-50a9b8101893",
+            "label": "trees",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dojoCourtyard",
+                "frame": "trees.png"
+            },
+            "x": 1392,
+            "y": 783
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "c828d683-7d86-46bf-b8fe-1a8e7b3f31ad",
+                "e2348520-b945-4581-a4fd-7240ed84b411",
+                "37d66160-0239-4700-9bb9-50a9b8101893"
+            ]
+        }
+    ]
+}

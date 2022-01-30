@@ -1,0 +1,433 @@
+{
+    "id": "080865d9-a779-4eb0-ae75-56efe0a00201",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/danceClub/danceClub-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Dance",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "fec53d40-49f2-46dc-aa87-03265683729a",
+            "label": "rectangle",
+            "components": [],
+            "x": 164,
+            "y": 296,
+            "isFilled": true,
+            "fillColor": "#3f3a46",
+            "width": 200,
+            "height": 500
+        },
+        {
+            "type": "Sprite",
+            "id": "2e638dd0-cce5-4e2f-a10a-38221fa4c8d2",
+            "label": "danceFloor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "danceFloor0001.png"
+            },
+            "x": 704,
+            "y": 660
+        },
+        {
+            "type": "Sprite",
+            "id": "755706ea-e258-4b25-b812-9566acb35fdb",
+            "label": "door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDoorOut()",
+            "MoveTo.x": 200,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "danceClub",
+                "frame": "doorAnim.png0001.png"
+            },
+            "x": 139,
+            "y": 270
+        },
+        {
+            "type": "Sprite",
+            "id": "e3e99d89-5965-4f7d-80e0-2ecaaedd6a33",
+            "label": "upstairs",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onStairsOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onStairsOut()",
+            "MoveTo.x": 1400,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "danceClub",
+                "frame": "upstairs0001.png"
+            },
+            "x": 1361,
+            "y": 327
+        },
+        {
+            "type": "Sprite",
+            "id": "a7d50089-75ec-4917-bfdd-0e7eca650ed6",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "bg.png"
+            },
+            "x": 751,
+            "y": 483
+        },
+        {
+            "type": "Sprite",
+            "id": "9fd86187-602a-419b-ba60-c362eaf67192",
+            "label": "leftRailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "leftRailing.png"
+            },
+            "x": 407,
+            "y": 320
+        },
+        {
+            "type": "Sprite",
+            "id": "69e056f0-ccc6-450d-8e6e-40399c673ec5",
+            "label": "floorSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "floorSpeaker0001.png"
+            },
+            "x": 339,
+            "y": 339
+        },
+        {
+            "type": "Sprite",
+            "id": "71dbd575-d76e-4f7f-9cae-bd8db91f4cf0",
+            "label": "doorRailingLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "doorRailingLeft.png"
+            },
+            "x": 152,
+            "y": 561
+        },
+        {
+            "type": "Sprite",
+            "id": "5babf86d-bc5b-45bd-b8cd-b7930d32e36c",
+            "label": "doorRailingRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "doorRailingRight.png"
+            },
+            "x": 273,
+            "y": 430
+        },
+        {
+            "type": "Sprite",
+            "id": "3c416bb4-f43f-4a65-89a6-ce56d5bc5bbb",
+            "label": "backChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "backChair.png"
+            },
+            "x": 1445,
+            "y": 683
+        },
+        {
+            "type": "Sprite",
+            "id": "e8f2f0b9-1019-4158-9c1d-aa1171a028c0",
+            "label": "rightChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "rightChair.png"
+            },
+            "x": 1541,
+            "y": 799
+        },
+        {
+            "type": "Sprite",
+            "id": "c4c0bbdd-064c-4294-b972-ccfb6f6bca1f",
+            "label": "table",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "table.png"
+            },
+            "x": 1423,
+            "y": 778
+        },
+        {
+            "type": "Sprite",
+            "id": "e7574811-4577-4ec0-ac5c-32d2cf808927",
+            "label": "leftChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "leftChair.png"
+            },
+            "x": 1340,
+            "y": 880
+        },
+        {
+            "type": "Sprite",
+            "id": "7ae54632-1c1a-43e6-8399-79171b804faf",
+            "label": "leftChairBack",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "leftChairBack.png"
+            },
+            "x": 1301,
+            "y": 886
+        },
+        {
+            "type": "Sprite",
+            "id": "cf7ed55d-0fb3-45c3-a4a9-a0acd86389ad",
+            "label": "soundStudio",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSoundStudioOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSoundStudioOut()",
+            "MoveTo.x": 700,
+            "MoveTo.y": 350,
+            "texture": {
+                "key": "danceClub",
+                "frame": "soundStudio0001.png"
+            },
+            "x": 692,
+            "y": 392
+        },
+        {
+            "type": "Sprite",
+            "id": "b52a3506-282a-4ad2-878c-f997ddcfa2be",
+            "label": "sofa",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "sofa.png"
+            },
+            "x": 149.36760765951857,
+            "y": 627.7627502053078,
+            "originX": 0.6049295941144784,
+            "originY": 0.15003229044350086
+        },
+        {
+            "type": "Sprite",
+            "id": "0ab944cc-a228-4687-ae62-0d76bde27d99",
+            "label": "rightRailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "rightRailing.png"
+            },
+            "x": 962,
+            "y": 324
+        },
+        {
+            "type": "Sprite",
+            "id": "ea2d9470-6990-4938-8473-a89411cde292",
+            "label": "boilerSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "boilerSpeakerClosed0001.png"
+            },
+            "x": 1033,
+            "y": 314
+        },
+        {
+            "type": "Sprite",
+            "id": "74dc6d92-bae0-4f39-b3e9-3265f8977b0e",
+            "label": "danceContest",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onContestOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onContestOut()",
+            "MoveTo.x": 1100,
+            "MoveTo.y": 480,
+            "texture": {
+                "key": "danceClub",
+                "frame": "danceContest0001.png"
+            },
+            "x": 1149,
+            "y": 319
+        },
+        {
+            "type": "Sprite",
+            "id": "3e943668-445c-45bd-a979-15f7b4ec45aa",
+            "label": "rightSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "rightSpeaker0001.png"
+            },
+            "x": 1081,
+            "y": 55
+        },
+        {
+            "type": "Sprite",
+            "id": "fd843215-c59e-4a44-899f-785cb07c2541",
+            "label": "corner",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "corner.png"
+            },
+            "x": 1301,
+            "y": 240
+        },
+        {
+            "type": "Sprite",
+            "id": "49813809-8ee0-4cc3-8b50-dec5c24620da",
+            "label": "upstairsRailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "upstairsRailing.png"
+            },
+            "x": 1176,
+            "y": 500
+        },
+        {
+            "type": "Sprite",
+            "id": "c2079cbb-5acd-490e-bd6d-e68fa0ea1479",
+            "label": "neonSign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "neonSign0001.png"
+            },
+            "x": 1135,
+            "y": 109
+        },
+        {
+            "type": "Sprite",
+            "id": "ffa863ca-b009-49c5-a585-e4450373671d",
+            "label": "leftSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "leftSpeaker0001.png"
+            },
+            "x": 290,
+            "y": 73
+        },
+        {
+            "type": "Sprite",
+            "id": "0f04354c-3a44-4e9a-b88c-dd8504631ad8",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "fg.png"
+            },
+            "x": 734,
+            "y": 1007.5,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "2f0e9307-41f6-4391-8d36-c1daaa2ff2c3",
+            "label": "keeper",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "danceClub",
+                "frame": "keeperAnim0001.png"
+            },
+            "x": 1039,
+            "y": 218
+        },
+        {
+            "type": "Rectangle",
+            "id": "a5a8980d-0d17-4859-8182-4b0502c23f64",
+            "label": "boiler_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSpeakerOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSpeakerOut()",
+            "MoveTo.x": 1000,
+            "MoveTo.y": 400,
+            "x": 1030,
+            "y": 306,
+            "fillColor": "#00d9da",
+            "fillAlpha": 0.5,
+            "width": 128,
+            "height": 200
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "0f04354c-3a44-4e9a-b88c-dd8504631ad8",
+                "71dbd575-d76e-4f7f-9cae-bd8db91f4cf0",
+                "69e056f0-ccc6-450d-8e6e-40399c673ec5",
+                "5babf86d-bc5b-45bd-b8cd-b7930d32e36c",
+                "a5a8980d-0d17-4859-8182-4b0502c23f64",
+                "9fd86187-602a-419b-ba60-c362eaf67192",
+                "e7574811-4577-4ec0-ac5c-32d2cf808927",
+                "7ae54632-1c1a-43e6-8399-79171b804faf",
+                "c4c0bbdd-064c-4294-b972-ccfb6f6bca1f",
+                "e8f2f0b9-1019-4158-9c1d-aa1171a028c0",
+                "3c416bb4-f43f-4a65-89a6-ce56d5bc5bbb",
+                "49813809-8ee0-4cc3-8b50-dec5c24620da",
+                "b52a3506-282a-4ad2-878c-f997ddcfa2be"
+            ]
+        }
+    ]
+}

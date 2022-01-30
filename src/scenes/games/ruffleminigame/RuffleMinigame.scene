@@ -1,0 +1,23 @@
+{
+    "id": "d77c918e-b680-462b-b5b8-0575fc45469d",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "GameScene",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "RuffleMinigame",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

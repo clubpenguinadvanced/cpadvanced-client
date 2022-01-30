@@ -1,0 +1,585 @@
+{
+    "id": "a8e42312-8db5-45ef-8a14-6e5269c273ae",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/cove/cove-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Cove",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "1ec01715-36a1-4521-8cc8-d4ce3538df92",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "bg.png"
+            },
+            "x": 746,
+            "y": 443
+        },
+        {
+            "type": "Sprite",
+            "id": "632a7ea5-6a4e-4671-a815-4908c0a05645",
+            "label": "campfire",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "campfire0001.png"
+            },
+            "x": 370,
+            "y": 616
+        },
+        {
+            "type": "Sprite",
+            "id": "5ea8e018-7805-4d6c-a0a0-0111ba96941c",
+            "label": "deckArm",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "deckArm.png"
+            },
+            "x": 460,
+            "y": 212.4238683127572,
+            "originY": 0.22565157750342943
+        },
+        {
+            "type": "Sprite",
+            "id": "81977014-56ef-4712-8184-4bcfb8265149",
+            "label": "lifesaver",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "lifesaver.png"
+            },
+            "x": 467,
+            "y": 344
+        },
+        {
+            "type": "Sprite",
+            "id": "08e4754e-c376-4240-bfdd-9d05ebf11600",
+            "label": "shack",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "shack.png"
+            },
+            "x": 1296,
+            "y": 218
+        },
+        {
+            "type": "Sprite",
+            "id": "3482f804-d4e4-4bf5-89a7-28ed8846d31b",
+            "label": "leftChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "leftChair.png"
+            },
+            "x": 1115.1653601642527,
+            "y": 462.78474579065283,
+            "originX": 0.4856668762832239,
+            "originY": 0.5615392817022191
+        },
+        {
+            "type": "Sprite",
+            "id": "66d57d4c-cd4f-4bf8-8c7a-15184852b421",
+            "label": "table",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "table.png"
+            },
+            "x": 1203.7191162109375,
+            "y": 468.85032453653906,
+            "originX": 0.47859586858294617,
+            "originY": 0.6436766136428687
+        },
+        {
+            "type": "Sprite",
+            "id": "8794e9e7-c42b-496e-93df-06c4869ab0e6",
+            "label": "rightChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "rightChair.png"
+            },
+            "x": 1302,
+            "y": 537
+        },
+        {
+            "type": "Sprite",
+            "id": "f6304c98-4de0-47c1-800e-590a23b89923",
+            "label": "rightChairBack",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "rightChairBack.png"
+            },
+            "x": 1332.6115466119159,
+            "y": 542.1888692879219,
+            "originX": 0.507457885511169,
+            "originY": 0.7150957048807296
+        },
+        {
+            "type": "Sprite",
+            "id": "d4df7694-3adf-4f53-b2dd-8ef051c09ed3",
+            "label": "rope1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "rope1.png"
+            },
+            "x": 1031,
+            "y": 496
+        },
+        {
+            "type": "Sprite",
+            "id": "f94672fc-e05e-49c1-8c92-6757152ec19b",
+            "label": "rope2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "rope2.png"
+            },
+            "x": 1090,
+            "y": 538
+        },
+        {
+            "type": "Sprite",
+            "id": "733b602f-d675-4c0d-9043-a4f2344e9fbd",
+            "label": "rope3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "rope3.png"
+            },
+            "x": 1280,
+            "y": 567
+        },
+        {
+            "type": "Sprite",
+            "id": "c394e7f1-b02b-42e0-abb3-b6fe80925b81",
+            "label": "rightTree",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "rightTree.png"
+            },
+            "x": 1493.0544561694467,
+            "y": 621.9653327805138,
+            "originX": 0.4878784204503978,
+            "originY": 0.6563277451969659
+        },
+        {
+            "type": "Sprite",
+            "id": "858e084f-9e80-424f-b842-5ff19d6e9f81",
+            "label": "shop",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onShopOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onShopOut()",
+            "SimpleButton.callback": "() => this.onShopClick()",
+            "texture": {
+                "key": "cove",
+                "frame": "uncurl0001.png"
+            },
+            "x": 1013,
+            "y": 276,
+            "scaleX": -1
+        },
+        {
+            "type": "Sprite",
+            "id": "4ef71d0f-b1c5-4e0b-b123-e3a2ba861a04",
+            "label": "log",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "log.png"
+            },
+            "x": 207,
+            "y": 477
+        },
+        {
+            "type": "Sprite",
+            "id": "c02a5031-6e47-4e09-9c76-73fc306e1640",
+            "label": "medicWall",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "medicWall.png"
+            },
+            "x": 892,
+            "y": 193
+        },
+        {
+            "type": "Sprite",
+            "id": "5104535a-a294-43b8-9feb-1b5234519796",
+            "label": "cooler",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "cooler.png"
+            },
+            "x": 117,
+            "y": 519
+        },
+        {
+            "type": "Sprite",
+            "id": "acc80901-29d5-4849-9dcc-e46815763dac",
+            "label": "rock",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "rock.png"
+            },
+            "x": 507,
+            "y": 885
+        },
+        {
+            "type": "Sprite",
+            "id": "a3a9ff0e-312a-47f6-aa48-20530653a375",
+            "label": "leftTree",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "leftTree.png"
+            },
+            "x": 34,
+            "y": 703
+        },
+        {
+            "type": "Sprite",
+            "id": "c3049d0d-4d19-43b3-80dd-4f49f34bf708",
+            "label": "drink",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "drink.png"
+            },
+            "x": 911,
+            "y": 515
+        },
+        {
+            "type": "Sprite",
+            "id": "0042a0fb-739a-49f9-9369-d57f5e0881df",
+            "label": "water1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water1.png"
+            },
+            "x": 1166,
+            "y": 651
+        },
+        {
+            "type": "Sprite",
+            "id": "f8ac5296-d628-451f-bf91-49289fbb1bd5",
+            "label": "water2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water2.png"
+            },
+            "x": 1043,
+            "y": 673
+        },
+        {
+            "type": "Sprite",
+            "id": "df4b2d49-13b0-4815-a4cd-1b95528c8f89",
+            "label": "water3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water3.png"
+            },
+            "x": 989,
+            "y": 695
+        },
+        {
+            "type": "Sprite",
+            "id": "4c46d518-3b58-4377-9f9f-2716c06dc5b3",
+            "label": "water4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water4.png"
+            },
+            "x": 966,
+            "y": 717
+        },
+        {
+            "type": "Sprite",
+            "id": "ce579cbd-5bf9-4644-a78e-9b8c3d9fc52f",
+            "label": "water5",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water5.png"
+            },
+            "x": 1016,
+            "y": 738.5
+        },
+        {
+            "type": "Sprite",
+            "id": "ab56d9c9-7366-4fe7-85c5-7fc71455788b",
+            "label": "water6",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water6.png"
+            },
+            "x": 1006,
+            "y": 760
+        },
+        {
+            "type": "Sprite",
+            "id": "d3a6e6a3-9c8d-4bc0-9b43-7f07386fdc78",
+            "label": "water7",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water7.png"
+            },
+            "x": 1006,
+            "y": 782
+        },
+        {
+            "type": "Sprite",
+            "id": "0e683f40-b357-4938-aabb-060d2cd2df39",
+            "label": "water8",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water8.png"
+            },
+            "x": 1006,
+            "y": 804
+        },
+        {
+            "type": "Sprite",
+            "id": "f52fc720-88ab-4178-8061-0e9a775e7899",
+            "label": "water9",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water9.png"
+            },
+            "x": 1053.5,
+            "y": 826
+        },
+        {
+            "type": "Sprite",
+            "id": "7a94e195-5c0b-4e7b-b403-53c28c65eb57",
+            "label": "water10",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water10.png"
+            },
+            "x": 1077,
+            "y": 848
+        },
+        {
+            "type": "Sprite",
+            "id": "2abd7872-c11b-4a0d-8c6f-18b895cec838",
+            "label": "water11",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water11.png"
+            },
+            "x": 1086,
+            "y": 870
+        },
+        {
+            "type": "Sprite",
+            "id": "b09e3925-db37-4b53-8491-f90b703d4072",
+            "label": "water12",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water12.png"
+            },
+            "x": 1029.5,
+            "y": 892
+        },
+        {
+            "type": "Sprite",
+            "id": "bf9278ed-04f7-4246-8e1b-f53721358619",
+            "label": "water13",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water13.png"
+            },
+            "x": 1086,
+            "y": 914
+        },
+        {
+            "type": "Sprite",
+            "id": "c67bb58b-b467-4333-b8db-a12da96b4b82",
+            "label": "water14",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water14.png"
+            },
+            "x": 1088,
+            "y": 936
+        },
+        {
+            "type": "Sprite",
+            "id": "c14d7ce1-b119-471b-9c61-ed845f7d71da",
+            "label": "water15",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "water15.png"
+            },
+            "x": 1089,
+            "y": 958
+        },
+        {
+            "type": "Sprite",
+            "id": "e5dd5dd8-a00a-4e85-b2ef-f29bf82fb822",
+            "label": "waves",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onWavesOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onWavesOut()",
+            "MoveTo.x": 1250,
+            "MoveTo.y": 670,
+            "texture": {
+                "key": "cove",
+                "frame": "waves0001.png"
+            },
+            "x": 1248,
+            "y": 672
+        },
+        {
+            "type": "Sprite",
+            "id": "d38c6745-b746-4f37-93ac-970cf5e2ff3a",
+            "label": "fg_left",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "fg_left.png"
+            },
+            "x": 175,
+            "y": 980,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "5d492374-0511-471e-9909-d825155e2187",
+            "label": "fg_right",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cove",
+                "frame": "fg_right.png"
+            },
+            "x": 1356,
+            "y": 972,
+            "originY": 1
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "08e4754e-c376-4240-bfdd-9d05ebf11600",
+                "3482f804-d4e4-4bf5-89a7-28ed8846d31b",
+                "66d57d4c-cd4f-4bf8-8c7a-15184852b421",
+                "f6304c98-4de0-47c1-800e-590a23b89923",
+                "733b602f-d675-4c0d-9043-a4f2344e9fbd",
+                "d4df7694-3adf-4f53-b2dd-8ef051c09ed3",
+                "8794e9e7-c42b-496e-93df-06c4869ab0e6",
+                "f94672fc-e05e-49c1-8c92-6757152ec19b",
+                "c394e7f1-b02b-42e0-abb3-b6fe80925b81",
+                "4ef71d0f-b1c5-4e0b-b123-e3a2ba861a04",
+                "c02a5031-6e47-4e09-9c76-73fc306e1640",
+                "5104535a-a294-43b8-9feb-1b5234519796",
+                "acc80901-29d5-4849-9dcc-e46815763dac",
+                "a3a9ff0e-312a-47f6-aa48-20530653a375",
+                "c3049d0d-4d19-43b3-80dd-4f49f34bf708",
+                "d38c6745-b746-4f37-93ac-970cf5e2ff3a",
+                "c14d7ce1-b119-471b-9c61-ed845f7d71da",
+                "c67bb58b-b467-4333-b8db-a12da96b4b82",
+                "bf9278ed-04f7-4246-8e1b-f53721358619",
+                "b09e3925-db37-4b53-8491-f90b703d4072",
+                "7a94e195-5c0b-4e7b-b403-53c28c65eb57",
+                "2abd7872-c11b-4a0d-8c6f-18b895cec838",
+                "f52fc720-88ab-4178-8061-0e9a775e7899",
+                "0e683f40-b357-4938-aabb-060d2cd2df39",
+                "d3a6e6a3-9c8d-4bc0-9b43-7f07386fdc78",
+                "ab56d9c9-7366-4fe7-85c5-7fc71455788b",
+                "4c46d518-3b58-4377-9f9f-2716c06dc5b3",
+                "ce579cbd-5bf9-4644-a78e-9b8c3d9fc52f",
+                "df4b2d49-13b0-4815-a4cd-1b95528c8f89",
+                "f8ac5296-d628-451f-bf91-49289fbb1bd5",
+                "0042a0fb-739a-49f9-9369-d57f5e0881df",
+                "5ea8e018-7805-4d6c-a0a0-0111ba96941c",
+                "e5dd5dd8-a00a-4e85-b2ef-f29bf82fb822",
+                "5d492374-0511-471e-9909-d825155e2187"
+            ]
+        }
+    ]
+}

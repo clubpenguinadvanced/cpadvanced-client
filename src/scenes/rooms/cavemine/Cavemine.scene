@@ -1,0 +1,308 @@
+{
+    "id": "18745ab7-94e4-445c-9f62-e5f0c85e4135",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/goldMine/goldMine-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Cavemine",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "0b8a05ae-2fca-48dc-a9ef-7b6dec6f8015",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "bg.png"
+            },
+            "x": 795,
+            "y": 514
+        },
+        {
+            "type": "Sprite",
+            "id": "3c968264-2be7-4229-a371-0d99b9138924",
+            "label": "goldPuffleAdopt",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "goldPuffleAdopt0001.png"
+            },
+            "x": 391,
+            "y": 220
+        },
+        {
+            "type": "Sprite",
+            "id": "586c4e81-a40c-42a1-8a87-05a9eb1a1809",
+            "label": "backRightRope",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "backRightRope.png"
+            },
+            "x": 459,
+            "y": 347
+        },
+        {
+            "type": "Sprite",
+            "id": "7fac9840-854e-44a8-9531-8bca19d20666",
+            "label": "backLeftRope",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "backLeftRope.png"
+            },
+            "x": 309,
+            "y": 357
+        },
+        {
+            "type": "Sprite",
+            "id": "f732927d-05ea-42bf-b332-d343d8a5ac19",
+            "label": "rightRope",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "rightRope.png"
+            },
+            "x": 579,
+            "y": 411
+        },
+        {
+            "type": "Sprite",
+            "id": "ee64a790-d32a-4a8b-abf1-ebd6b846923b",
+            "label": "leftRope",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "leftRope.png"
+            },
+            "x": 364,
+            "y": 436
+        },
+        {
+            "type": "Sprite",
+            "id": "da6f54db-3ac6-4666-9e7f-6207e3bc0cef",
+            "label": "rock1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "rock1.png"
+            },
+            "x": 320,
+            "y": 515
+        },
+        {
+            "type": "Sprite",
+            "id": "61adc33e-88c3-4a9a-9524-008fbc06f5b3",
+            "label": "mineDoor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "mineDoor.png"
+            },
+            "x": 170,
+            "y": 561
+        },
+        {
+            "type": "Sprite",
+            "id": "9c27640c-9938-45cf-b27a-2a84d5875372",
+            "label": "stool1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "stool1.png"
+            },
+            "x": 309,
+            "y": 794
+        },
+        {
+            "type": "Sprite",
+            "id": "8f3cdce1-e7db-4da4-b6fa-832c78bb88ea",
+            "label": "stool2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "stool2.png"
+            },
+            "x": 433,
+            "y": 845
+        },
+        {
+            "type": "Sprite",
+            "id": "3f665adc-37ec-4695-8937-28e1ea16c27c",
+            "label": "table",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "table.png"
+            },
+            "x": 259,
+            "y": 885
+        },
+        {
+            "type": "Sprite",
+            "id": "7c273997-2489-44e2-b217-cbcd38ac796d",
+            "label": "mineHover",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onMineOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onMineOut()",
+            "MoveTo.x": 170,
+            "MoveTo.y": 600,
+            "texture": {
+                "key": "goldMine",
+                "frame": "mineHover.png"
+            },
+            "x": 170,
+            "y": 573,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Sprite",
+            "id": "556e609d-7314-47dc-931c-7507fa075119",
+            "label": "leftWall",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "leftWall.png"
+            },
+            "x": 92,
+            "y": 387
+        },
+        {
+            "type": "Sprite",
+            "id": "86b50bb9-aa92-4af7-ba8f-53ac9c7b0bcd",
+            "label": "hiddenLakeHover",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onHiddenLakeOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onHiddenLakeOut()",
+            "MoveTo.x": 1000,
+            "texture": {
+                "key": "goldMine",
+                "frame": "hiddenLakeHover.png"
+            },
+            "x": 999,
+            "y": 399,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Sprite",
+            "id": "f66091d4-d2cc-48c3-b763-7bdd299fd39c",
+            "label": "machinary",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "machinary.png"
+            },
+            "x": 1055,
+            "y": 519
+        },
+        {
+            "type": "Sprite",
+            "id": "e79ffa52-f307-4c57-a96f-3ecb91691d93",
+            "label": "rock2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "rock2.png"
+            },
+            "x": 431,
+            "y": 588
+        },
+        {
+            "type": "Sprite",
+            "id": "849523fd-c192-4a3a-a87c-4faf7e1e2ddc",
+            "label": "itemBox",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "itemBox0001.png"
+            },
+            "x": 761,
+            "y": 477
+        },
+        {
+            "type": "Sprite",
+            "id": "fc4daaba-b62a-4d66-a86b-aacde38de19e",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "goldMine",
+                "frame": "fg.png"
+            },
+            "x": 750,
+            "y": 484
+        },
+        {
+            "type": "Rectangle",
+            "id": "6b9b4418-23d0-421c-b4b6-376907550778",
+            "label": "hat_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onHatOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onHatOut()",
+            "MoveTo.x": 720,
+            "MoveTo.y": 500,
+            "x": 744,
+            "y": 396,
+            "angle": 10,
+            "fillColor": "#38e5fa",
+            "fillAlpha": 0.5,
+            "width": 200,
+            "height": 250
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}

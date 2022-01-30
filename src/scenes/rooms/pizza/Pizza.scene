@@ -1,0 +1,446 @@
+{
+    "id": "c1e4045d-05e1-41e4-b69a-3565770b7413",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/pizzaParlor/pizzaParlor-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pizza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "21723a37-b46b-4abd-b1be-f598ec95d3b2",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "bg.png"
+            },
+            "x": 692,
+            "y": 473
+        },
+        {
+            "type": "Sprite",
+            "id": "8be71d8e-7fca-4509-99e0-b592dd459a95",
+            "label": "autocooker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "autocooker.png0001.png"
+            },
+            "x": 1246,
+            "y": 224
+        },
+        {
+            "type": "Sprite",
+            "id": "4ad5ea3e-d9af-4b2a-9463-f7b48f0790e5",
+            "label": "stageFloor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "stageFloor.png"
+            },
+            "x": 1066,
+            "y": 506
+        },
+        {
+            "type": "Sprite",
+            "id": "d68e7923-fec1-4335-a3a2-373c6f173dc3",
+            "label": "stageBg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "stageBg.png"
+            },
+            "x": 1382,
+            "y": 247
+        },
+        {
+            "type": "Sprite",
+            "id": "daeb36ac-cfc9-4796-8475-08330ecc00df",
+            "label": "microphone",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "microphone.png"
+            },
+            "x": 1323,
+            "y": 550
+        },
+        {
+            "type": "Sprite",
+            "id": "aee24712-d3d2-4ca1-8603-9c74b0383e8e",
+            "label": "amp",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "amp.png"
+            },
+            "x": 1466,
+            "y": 590
+        },
+        {
+            "type": "Sprite",
+            "id": "d10e8280-b5f2-4081-b933-b5bb0c99b68e",
+            "label": "stageFg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "stageFg.png"
+            },
+            "x": 1363,
+            "y": 353
+        },
+        {
+            "type": "Sprite",
+            "id": "b66adce3-dc73-4d4d-b04a-bdf930da7faa",
+            "label": "sofaSection",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "sofaSection.png"
+            },
+            "x": 708.1503773436751,
+            "y": 751.4323582016651,
+            "originX": 0.503112010479562,
+            "originY": 0.655227756107674
+        },
+        {
+            "type": "Sprite",
+            "id": "5db52407-7300-4544-9854-075e0ddc92b2",
+            "label": "pianoStool",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "pianoStool.png"
+            },
+            "x": 1289,
+            "y": 475
+        },
+        {
+            "type": "Sprite",
+            "id": "37f7e65f-5bcd-4792-84f4-b34c79efa137",
+            "label": "pizzatronFlap",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPizzatronOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPizzatronOut()",
+            "MoveTo.x": 320,
+            "MoveTo.y": 300,
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "pizzatronFlap0001.png"
+            },
+            "x": 343,
+            "y": 224
+        },
+        {
+            "type": "Sprite",
+            "id": "9f03a9b6-cf1f-42e0-95e3-c71cff27f280",
+            "label": "doors",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDoorOut()",
+            "MoveTo.x": 800,
+            "MoveTo.y": 300,
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "doors0001.png"
+            },
+            "x": 766,
+            "y": 187
+        },
+        {
+            "type": "Sprite",
+            "id": "0d351632-eab6-49e1-ba01-f845a15c1e21",
+            "label": "overDoor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "overDoor.png"
+            },
+            "x": 771,
+            "y": 183
+        },
+        {
+            "type": "Sprite",
+            "id": "119a84d9-8d3c-4855-ad19-53ce213e3ba8",
+            "label": "desk_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "desk.png"
+            },
+            "x": 547,
+            "y": 296
+        },
+        {
+            "type": "Container",
+            "id": "10eae981-b69a-4e8c-85e2-d87560c8e5aa",
+            "label": "counterContainer",
+            "components": [],
+            "x": 356,
+            "y": 360,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "67c04817-8603-4fc2-a47a-cb47664f9a88",
+                    "label": "counterBack",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pizzaParlor",
+                        "frame": "counterBack.png"
+                    },
+                    "x": 18,
+                    "y": 120
+                },
+                {
+                    "type": "Sprite",
+                    "id": "31cff35b-bbc0-4272-a678-b62d4e0695d5",
+                    "label": "register",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onRegisterOver()",
+                    "SimpleButton.hoverOutCallback": "() => this.onRegisterOut()",
+                    "texture": {
+                        "key": "pizzaParlor",
+                        "frame": "register0001.png"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "d3d453f4-ef01-4adf-93d2-85b6a36e22fd",
+            "label": "counterFront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "counterFront.png"
+            },
+            "x": 320,
+            "y": 539
+        },
+        {
+            "type": "Sprite",
+            "id": "857fc779-5a77-4947-a7bf-9d92e81735b6",
+            "label": "stool1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "stool.png"
+            },
+            "x": 506,
+            "y": 455
+        },
+        {
+            "type": "Sprite",
+            "id": "b0e216a7-b4d9-41d5-90cc-7b5914d374f8",
+            "label": "stool2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "stool.png"
+            },
+            "x": 506,
+            "y": 539
+        },
+        {
+            "type": "Sprite",
+            "id": "28b46aa0-f319-4958-b66d-997db3c40063",
+            "label": "stool3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "stool.png"
+            },
+            "x": 451,
+            "y": 615
+        },
+        {
+            "type": "Sprite",
+            "id": "bb55e01e-13a5-4a6c-aa5f-a66d40a9404e",
+            "label": "chair1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "chairFacingForwards.png"
+            },
+            "x": 677,
+            "y": 476
+        },
+        {
+            "type": "Sprite",
+            "id": "abf19c8e-7621-490b-865b-4d28cc91c239",
+            "label": "chair2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "chairFacingLeft.png"
+            },
+            "x": 825,
+            "y": 439
+        },
+        {
+            "type": "Sprite",
+            "id": "d4a94b9e-e5e4-433b-809c-b5b733d6adac",
+            "label": "chair3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "chairFacingRight.png"
+            },
+            "x": 907,
+            "y": 604
+        },
+        {
+            "type": "Sprite",
+            "id": "4e3b7c57-7603-4826-a279-19f8f73a3a89",
+            "label": "chair4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "chairFacingForwards.png"
+            },
+            "x": 1020,
+            "y": 504
+        },
+        {
+            "type": "Sprite",
+            "id": "1cf5c694-c141-4999-921c-b95b514ba89f",
+            "label": "tableLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "tableLeft.png"
+            },
+            "x": 765,
+            "y": 516
+        },
+        {
+            "type": "Sprite",
+            "id": "0c58d1f1-b402-44ee-9b9d-c1301cfb7cd9",
+            "label": "tableRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "tableRight.png"
+            },
+            "x": 1044,
+            "y": 597
+        },
+        {
+            "type": "Sprite",
+            "id": "686a48d8-b4d7-43cd-a97d-9677a7aba843",
+            "label": "railing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "railing.png"
+            },
+            "x": 923,
+            "y": 311
+        },
+        {
+            "type": "Sprite",
+            "id": "e31fc56d-95e0-4c39-a5a3-36165278cf07",
+            "label": "careStationPad",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "careStationPad0001.png"
+            },
+            "x": 1010,
+            "y": 366
+        },
+        {
+            "type": "Sprite",
+            "id": "6e709493-24ae-4063-ba1a-0d2b1b976d62",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizzaParlor",
+                "frame": "fg.png"
+            },
+            "x": 807,
+            "y": 982,
+            "originY": 1
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "686a48d8-b4d7-43cd-a97d-9677a7aba843",
+                "0c58d1f1-b402-44ee-9b9d-c1301cfb7cd9",
+                "1cf5c694-c141-4999-921c-b95b514ba89f",
+                "4e3b7c57-7603-4826-a279-19f8f73a3a89",
+                "d4a94b9e-e5e4-433b-809c-b5b733d6adac",
+                "abf19c8e-7621-490b-865b-4d28cc91c239",
+                "bb55e01e-13a5-4a6c-aa5f-a66d40a9404e",
+                "28b46aa0-f319-4958-b66d-997db3c40063",
+                "b0e216a7-b4d9-41d5-90cc-7b5914d374f8",
+                "857fc779-5a77-4947-a7bf-9d92e81735b6",
+                "d3d453f4-ef01-4adf-93d2-85b6a36e22fd",
+                "119a84d9-8d3c-4855-ad19-53ce213e3ba8",
+                "5db52407-7300-4544-9854-075e0ddc92b2",
+                "b66adce3-dc73-4d4d-b04a-bdf930da7faa",
+                "d10e8280-b5f2-4081-b933-b5bb0c99b68e",
+                "aee24712-d3d2-4ca1-8603-9c74b0383e8e",
+                "daeb36ac-cfc9-4796-8475-08330ecc00df",
+                "d68e7923-fec1-4335-a3a2-373c6f173dc3",
+                "10eae981-b69a-4e8c-85e2-d87560c8e5aa",
+                "6e709493-24ae-4063-ba1a-0d2b1b976d62"
+            ]
+        }
+    ]
+}

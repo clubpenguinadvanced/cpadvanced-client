@@ -1,0 +1,331 @@
+{
+    "id": "edc25d32-222f-4a3d-840e-7d4392cfb6f3",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "yukon/assets/media/rooms/town/town-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Town",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "b02a0e8c-2335-4030-bf92-ca2a63c7390c",
+            "label": "sky",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "bg_sky.png"
+            },
+            "x": -79,
+            "y": -72,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "45c376b0-16f4-4ce4-91c9-05d953d60e72",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "background.png"
+            },
+            "x": -61.80423540374727,
+            "y": 986.0732936798435,
+            "originX": 0.0006852446809371995,
+            "originY": 1.0032013740410073
+        },
+        {
+            "type": "Image",
+            "id": "4520c8c4-fd96-428a-b0f0-032014596656",
+            "label": "noticeboard",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "noticeboard.png"
+            },
+            "x": 278,
+            "y": 532.0810695829088,
+            "originY": -0.0009630584300948194
+        },
+        {
+            "type": "Image",
+            "id": "424f5b17-aa6a-412d-b8ca-3318ed0e462e",
+            "label": "front_trees",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "front_trees.png"
+            },
+            "x": -140.0645866423041,
+            "y": 732.6692749019403,
+            "originX": -0.000037033625174373305,
+            "originY": 0.012728011654378707
+        },
+        {
+            "type": "Sprite",
+            "id": "7e619715-6870-4820-a4fb-dbc7754d7da6",
+            "label": "dc_door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.DiscoDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.DiscoDoorOut()",
+            "MoveTo.x": 890,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "town",
+                "frame": "danceclubdoor0001.png"
+            },
+            "x": 888.6224744531738,
+            "y": 191.5476374205231,
+            "originX": 0.5579637817944546,
+            "originY": -0.002307969050704048
+        },
+        {
+            "type": "Sprite",
+            "id": "771a84f3-40a9-4afb-b750-e7dca2c36a66",
+            "label": "coffee_door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.CoffeeDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.CoffeeDoorOut()",
+            "MoveTo.x": 460,
+            "MoveTo.y": 450,
+            "texture": {
+                "key": "town",
+                "frame": "coffeedoor0001.png"
+            },
+            "x": 461.0580922656529,
+            "y": 330.6070121767309,
+            "originX": 0.5507261533206609,
+            "originY": -0.0027676246941171125
+        },
+        {
+            "type": "Sprite",
+            "id": "a3b207dd-4095-43c9-9f6e-906253c7aed2",
+            "label": "clothes_door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.ShopDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.ShopDoorOut()",
+            "MoveTo.x": 1130,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "town",
+                "frame": "clothesdoor0001.png"
+            },
+            "x": 1149.9854670312639,
+            "y": 270.80911446172684,
+            "originX": 0.4877768305251397,
+            "originY": -0.01994307153677468
+        },
+        {
+            "type": "Image",
+            "id": "03b28df9-1fb3-4a93-b455-80adc9238eee",
+            "label": "bench_arm",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "bench_arm.png"
+            },
+            "x": 298.5309753417969,
+            "y": 528.4562288520525,
+            "originX": 0.47839655086139365,
+            "originY": 0.7665475678359499
+        },
+        {
+            "type": "Image",
+            "id": "1e3e34e9-f414-4512-b87f-57efe82e1db4",
+            "label": "clothes_rack",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "clothesrack.png"
+            },
+            "x": 1234.8140929688152,
+            "y": 391.8275851517446,
+            "originX": 0.5072043625558867,
+            "originY": 0.011544218710822484
+        },
+        {
+            "type": "Image",
+            "id": "33c052ee-0d6c-4d8b-93bb-901b5ab28bac",
+            "label": "left_chair",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "chair_left.png"
+            },
+            "x": 588.0159298652105,
+            "y": 429.7304992897617,
+            "originX": 0.43846826392076804,
+            "originY": 0.2992761373118083
+        },
+        {
+            "type": "Image",
+            "id": "697a7fcd-b903-41a1-8cfa-c7e88a9fd619",
+            "label": "right_chair",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "chair_right.png"
+            },
+            "x": 738.9279176653323,
+            "y": 415.18392931025767,
+            "originX": 0.5418277481710252,
+            "originY": 0.27855253873250896
+        },
+        {
+            "type": "Sprite",
+            "id": "77eb9d59-9065-47c1-a6a1-771c1fc0579c",
+            "label": "coloured_lights",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "colouredlights0001.png"
+            },
+            "x": 873.7591937679998,
+            "y": -86.67256088001315,
+            "originX": 0.49671744383068733,
+            "originY": 0.00587362442472057
+        },
+        {
+            "type": "Image",
+            "id": "67a1312c-13b8-44f8-aa5e-16f6d2bf4b2c",
+            "label": "dance_cover",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "danceclubcover.png"
+            },
+            "x": 890.2408062320002,
+            "y": 332.31435637599895,
+            "originX": 0.5079538861025653,
+            "originY": 0.4574233155686223
+        },
+        {
+            "type": "Sprite",
+            "id": "945b3959-653f-4e3a-9fe1-d70f27f06b34",
+            "label": "main_lights",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "lights0001.png"
+            },
+            "x": 623.1898850479691,
+            "y": -34.59901073601432,
+            "originX": 0.00036237604574263714,
+            "originY": 0.009681408322522898
+        },
+        {
+            "type": "Image",
+            "id": "9cb6d7cf-785a-4ee0-a61d-196ccb0c8222",
+            "label": "shopfronts",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "shopfronts.png"
+            },
+            "x": 240.98832704793267,
+            "y": 106.30728331998318,
+            "originX": -0.002646461293556528,
+            "originY": 0.007956149379252361
+        },
+        {
+            "type": "Sprite",
+            "id": "a4550482-d18e-403b-b74b-7f0d1e8f0315",
+            "label": "speakers",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "speakers0001.png"
+            },
+            "x": 710.5279337519796,
+            "y": 266.49823173599606,
+            "originX": 0.004390614229826486,
+            "originY": -0.0234651291250616
+        },
+        {
+            "type": "Sprite",
+            "id": "78bc6a8b-ef9d-419e-bf39-17a5a48554d5",
+            "label": "stars_anim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "stars_animations0001.png"
+            },
+            "x": 827.2004946319928,
+            "y": 275.1838753599971,
+            "originX": 0.01746424311105394,
+            "originY": 0.02276683384609813,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "e81c4430-9c80-43c1-a537-6365c38a6313",
+            "label": "stars",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "stars.png"
+            },
+            "x": 831.9229133279932,
+            "y": 278.66548782399735,
+            "originX": 0.016295875660959563,
+            "originY": 0.014467126608638104
+        },
+        {
+            "type": "Image",
+            "id": "bd7b650f-d3db-4874-a535-671655944b1e",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "table.png"
+            },
+            "x": 664.362414669051,
+            "y": 476.3085517350086,
+            "originX": 0.5222867233277427,
+            "originY": 0.7080516274288713
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "03b28df9-1fb3-4a93-b455-80adc9238eee",
+                "33c052ee-0d6c-4d8b-93bb-901b5ab28bac",
+                "697a7fcd-b903-41a1-8cfa-c7e88a9fd619",
+                "bd7b650f-d3db-4874-a535-671655944b1e"
+            ]
+        }
+    ]
+}

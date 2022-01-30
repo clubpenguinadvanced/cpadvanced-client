@@ -1,0 +1,301 @@
+{
+    "id": "aa757c41-13ee-4b12-bb99-ec6a4a505a92",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/undergroundPool/undergroundPool-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Cave",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "420e4d9d-ae9b-4772-b6d7-fe53bd1e3662",
+            "label": "bg_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "bg.png"
+            },
+            "x": 751,
+            "y": 484
+        },
+        {
+            "type": "Sprite",
+            "id": "2473f83a-e739-4fd9-a291-8ab2791a9021",
+            "label": "caveHover",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "caveHover.png"
+            },
+            "x": 1189,
+            "y": 495,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Sprite",
+            "id": "990be076-bd3e-4073-8c82-ecb2a1037a4b",
+            "label": "wall_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "wall.png"
+            },
+            "x": 1314,
+            "y": 392
+        },
+        {
+            "type": "Sprite",
+            "id": "fc0eeaf9-82d8-436e-a653-7fb7cbfe13bb",
+            "label": "fg_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "fg.png"
+            },
+            "x": 761,
+            "y": 973,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "4222233b-fa39-4472-9132-9d9e4421f3c1",
+            "label": "pool_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "pool.png"
+            },
+            "x": 692,
+            "y": 694
+        },
+        {
+            "type": "Sprite",
+            "id": "a668b205-006a-4b1b-87e3-df8caabaf855",
+            "label": "splash1_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "splash1.png"
+            },
+            "x": 725,
+            "y": 872
+        },
+        {
+            "type": "Sprite",
+            "id": "a2525204-11ba-4d0b-b146-77006ee1ef89",
+            "label": "splash2_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "splash2.png"
+            },
+            "x": 926,
+            "y": 807
+        },
+        {
+            "type": "Sprite",
+            "id": "d6af77e1-10d6-4665-96e0-3cc80756bb28",
+            "label": "splash3_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "splash3.png"
+            },
+            "x": 919,
+            "y": 521
+        },
+        {
+            "type": "Sprite",
+            "id": "17fe9dae-c04b-4b54-8767-8bc61d54fa8a",
+            "label": "splash4_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "splash4.png"
+            },
+            "x": 714,
+            "y": 514
+        },
+        {
+            "type": "Sprite",
+            "id": "24b02ca3-f624-4b92-b842-4f819fc6a81e",
+            "label": "sprite_42_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "Sprite 42.png"
+            },
+            "x": 270,
+            "y": 638
+        },
+        {
+            "type": "Sprite",
+            "id": "beaebfde-13de-4d0b-b8be-e843197f3fcf",
+            "label": "splash3_png_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "splash3.png"
+            },
+            "x": 383,
+            "y": 854
+        },
+        {
+            "type": "Sprite",
+            "id": "8c573459-5262-4421-bf11-e05d3b53b1fd",
+            "label": "lifeguardChair_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "lifeguardChair.png"
+            },
+            "x": 333,
+            "y": 408
+        },
+        {
+            "type": "Sprite",
+            "id": "4945cbab-86d4-4988-a8b4-d2435bde88fe",
+            "label": "lifeguardArm_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "lifeguardArm.png"
+            },
+            "x": 287,
+            "y": 391
+        },
+        {
+            "type": "Sprite",
+            "id": "0aaf4773-f518-47aa-86af-d73f4fe7e7cc",
+            "label": "ladder_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "ladder.png"
+            },
+            "x": 782,
+            "y": 203
+        },
+        {
+            "type": "Sprite",
+            "id": "1c0d6989-06b0-4bf6-953d-a43fd36709b2",
+            "label": "windowBottom_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "windowBottom.png"
+            },
+            "x": 559,
+            "y": 260,
+            "angle": -5
+        },
+        {
+            "type": "Sprite",
+            "id": "c37d438d-3a8b-483b-89cb-1aa108790fe1",
+            "label": "fishAnim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "fishAnim0001.png"
+            },
+            "x": 560,
+            "y": 300,
+            "angle": -5
+        },
+        {
+            "type": "Sprite",
+            "id": "71ea2206-07ef-47c0-9e9d-9b8f83b9aabc",
+            "label": "crabAnim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "crabAnim0001.png"
+            },
+            "x": 553,
+            "y": 210,
+            "angle": -5
+        },
+        {
+            "type": "Sprite",
+            "id": "bda2e04f-0747-468a-a3c1-8e50fd3bce62",
+            "label": "windowTop_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "undergroundPool",
+                "frame": "windowTop.png"
+            },
+            "x": 559,
+            "y": 260,
+            "angle": -5
+        },
+        {
+            "type": "Rectangle",
+            "id": "94e5b62e-64e9-4091-80e8-fdb1db6c7c8a",
+            "label": "caveHover_btn",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCaveHoverOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCaveHoverOut()",
+            "MoveTo.x": 1200,
+            "MoveTo.y": 500,
+            "x": 1233,
+            "y": 444,
+            "fillColor": "#0ca3fd",
+            "fillAlpha": 0.5,
+            "width": 150,
+            "height": 150
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "0aaf4773-f518-47aa-86af-d73f4fe7e7cc",
+                "4945cbab-86d4-4988-a8b4-d2435bde88fe",
+                "990be076-bd3e-4073-8c82-ecb2a1037a4b",
+                "fc0eeaf9-82d8-436e-a653-7fb7cbfe13bb"
+            ]
+        }
+    ]
+}

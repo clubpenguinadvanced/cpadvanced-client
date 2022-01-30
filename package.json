@@ -1,0 +1,38 @@
+{
+  "name": "cpadvanced",
+  "version": "0.1.0",
+  "description": "A HTML5 Club Penguin Private Server",
+  "scripts": {
+    "dev": "webpack serve",
+    "editor": "phasereditor2d-launcher -project . -max-number-files 50000",
+    "build": "webpack --mode production --env obfuscate=true",
+    "build-crumbs": "node ./utils/build-crumbs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizguin/yukon.git"
+  },
+  "author": "floogal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wizguin/yukon/issues"
+  },
+  "homepage": "https://github.com/wizguin/yukon#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.16.4",
+    "javascript-obfuscator": "^3.0.0",
+    "phasereditor2d-launcher": "^3.32.0",
+    "socket.io-client": "^4.4.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.7.3",
+    "webpack-obfuscator": "^3.5.0"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "phaser3-rex-plugins": "^1.1.66"
+  }
+}

@@ -1,0 +1,346 @@
+{
+    "id": "2c756245-4c69-4c6e-a070-f6a7c3e08d5b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/mine/mine-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Mine",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "534c5f38-9a29-482b-948d-b0ef0fa55c86",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "bg.png"
+            },
+            "x": 746,
+            "y": 468
+        },
+        {
+            "type": "Sprite",
+            "id": "2f09a0fd-4661-4c0e-abf1-fd117d98804e",
+            "label": "cartAnim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "cartAnim0001.png"
+            },
+            "x": 1360,
+            "y": 320
+        },
+        {
+            "type": "Sprite",
+            "id": "b5e9940d-5026-42eb-b656-00bce5e40508",
+            "label": "cartBack",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "cartBack.png"
+            },
+            "x": 1142,
+            "y": 294
+        },
+        {
+            "type": "Sprite",
+            "id": "919e7fcd-2774-4781-9141-fd84fb8cbafe",
+            "label": "cartFront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "cartFront.png"
+            },
+            "x": 1151,
+            "y": 420
+        },
+        {
+            "type": "Sprite",
+            "id": "56dfb0e2-19e4-468a-a81a-023c7f54e6b7",
+            "label": "surferSign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "surferSign.png"
+            },
+            "x": 1395,
+            "y": 295
+        },
+        {
+            "type": "Sprite",
+            "id": "64cc0c5a-7642-43d5-8130-b9abdd72fb75",
+            "label": "goldMineWalkway",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "goldMineWalkway.png"
+            },
+            "x": 1230,
+            "y": 654
+        },
+        {
+            "type": "Sprite",
+            "id": "8258ec09-dade-4273-bf10-761f8f6372ca",
+            "label": "goldMineLight",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onGoldMineOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onGoldMineOut()",
+            "MoveTo.x": 1350,
+            "MoveTo.y": 700,
+            "texture": {
+                "key": "mine",
+                "frame": "goldMineLight.png"
+            },
+            "x": 1348,
+            "y": 697,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Sprite",
+            "id": "f474b4e4-7f67-4eab-ad32-798bdb570ebd",
+            "label": "floorRocksGoldMine",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "floorRocksGoldMine.png"
+            },
+            "x": 956,
+            "y": 839
+        },
+        {
+            "type": "Sprite",
+            "id": "13a44718-cd3e-4be4-95a3-f055c391de70",
+            "label": "caveEntrance",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "caveEntrance.png"
+            },
+            "x": 101,
+            "y": 339
+        },
+        {
+            "type": "Sprite",
+            "id": "e634af11-424b-4b69-96fc-efd9c640380c",
+            "label": "floorRocksMiddle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "floorRocksMiddle.png"
+            },
+            "x": 368,
+            "y": 839
+        },
+        {
+            "type": "Sprite",
+            "id": "60f607e5-4490-4a42-bbdf-28fdec4f1c99",
+            "label": "rescueBoard",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onRescueOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onRescueOut()",
+            "MoveTo.x": 540,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "mine",
+                "frame": "rescueBoard0001.png"
+            },
+            "x": 480,
+            "y": 186
+        },
+        {
+            "type": "Sprite",
+            "id": "7a6d9f6d-cf7d-4a31-87a5-ccef180c8030",
+            "label": "rescueTable",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "rescueTable.png"
+            },
+            "x": 457,
+            "y": 374
+        },
+        {
+            "type": "Sprite",
+            "id": "079fdc57-34f4-4b1f-a224-629db05e915b",
+            "label": "puffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "puffle0001.png"
+            },
+            "x": 353,
+            "y": 398
+        },
+        {
+            "type": "Sprite",
+            "id": "08fb0321-880b-48f0-803d-dad1fb6d9987",
+            "label": "puffleBed",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "puffleBed.png"
+            },
+            "x": 355,
+            "y": 434
+        },
+        {
+            "type": "Sprite",
+            "id": "dc348f6c-b140-4820-98ea-60f048bf1f6a",
+            "label": "floorRocksPuffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "floorRocksPuffle.png"
+            },
+            "x": 333,
+            "y": 509
+        },
+        {
+            "type": "Sprite",
+            "id": "9ba35ade-ffe0-44ed-b051-a10fe22150cc",
+            "label": "surfaceLight",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSurfaceOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSurfaceOut()",
+            "MoveTo.x": 820,
+            "MoveTo.y": 300,
+            "texture": {
+                "key": "mine",
+                "frame": "surfaceLight.png"
+            },
+            "x": 820,
+            "y": 207,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Sprite",
+            "id": "8c199076-79e9-4766-84f2-fe28bd4b851b",
+            "label": "caveLight",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCaveOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCaveOut()",
+            "MoveTo.x": 150,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "mine",
+                "frame": "caveLight.png"
+            },
+            "x": 107,
+            "y": 405,
+            "alpha": 0.01,
+            "alphaTopLeft": 0.01,
+            "alphaTopRight": 0.01,
+            "alphaBottomLeft": 0.01,
+            "alphaBottomRight": 0.01
+        },
+        {
+            "type": "Sprite",
+            "id": "a2574239-e63c-4ffe-a47d-d1ed4ca0682b",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "fg.png"
+            },
+            "x": 746,
+            "y": 982,
+            "originY": 1
+        },
+        {
+            "type": "Rectangle",
+            "id": "dacbf339-f573-4114-953b-7adc8772ea95",
+            "label": "cart_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCartOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCartOut()",
+            "MoveTo.x": 1230,
+            "MoveTo.y": 370,
+            "x": 1228,
+            "y": 370,
+            "angle": -25,
+            "fillColor": "#26ebfd",
+            "fillAlpha": 0.5,
+            "width": 250,
+            "height": 150
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "b5e9940d-5026-42eb-b656-00bce5e40508",
+                "919e7fcd-2774-4781-9141-fd84fb8cbafe",
+                "56dfb0e2-19e4-468a-a81a-023c7f54e6b7",
+                "8258ec09-dade-4273-bf10-761f8f6372ca",
+                "f474b4e4-7f67-4eab-ad32-798bdb570ebd",
+                "13a44718-cd3e-4be4-95a3-f055c391de70",
+                "e634af11-424b-4b69-96fc-efd9c640380c",
+                "7a6d9f6d-cf7d-4a31-87a5-ccef180c8030",
+                "079fdc57-34f4-4b1f-a224-629db05e915b",
+                "08fb0321-880b-48f0-803d-dad1fb6d9987",
+                "dc348f6c-b140-4820-98ea-60f048bf1f6a",
+                "9ba35ade-ffe0-44ed-b051-a10fe22150cc",
+                "8c199076-79e9-4766-84f2-fe28bd4b851b",
+                "a2574239-e63c-4ffe-a47d-d1ed4ca0682b",
+                "dacbf339-f573-4114-953b-7adc8772ea95"
+            ]
+        }
+    ]
+}

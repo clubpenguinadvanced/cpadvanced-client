@@ -1,0 +1,716 @@
+{
+    "id": "084453fe-3a0d-4bed-86a2-0bc0051d3a48",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [
+            "testEnvironment/assets/media/rooms/school/school-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "School",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "8ee4e9ea-436c-4dc9-bed0-3f04e0277d1b",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "bg.png"
+            },
+            "x": 776,
+            "y": 451
+        },
+        {
+            "type": "Sprite",
+            "id": "bb68faff-1581-42c0-b19f-eb8cffeaf2be",
+            "label": "table3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table3.png"
+            },
+            "x": 400,
+            "y": 373
+        },
+        {
+            "type": "Container",
+            "id": "278fdb5e-9019-4bb5-903e-87ef8d82df46",
+            "label": "chair3_container",
+            "components": [],
+            "x": 322,
+            "y": 403,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "1ad4adbb-557a-4cae-845b-f83693c76de3",
+                    "label": "chair3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair234.png"
+                    },
+                    "x": 20,
+                    "y": 2,
+                    "originY": 0
+                },
+                {
+                    "type": "Sprite",
+                    "id": "6ee3cc76-597c-4054-9aa2-7b937e36fa0b",
+                    "label": "chair3_back",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair234back.png"
+                    },
+                    "y": 22.760789923319408,
+                    "originY": 0.7395872623507306
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "96011a60-4190-4193-980a-57734d6d6055",
+            "label": "chair4_container",
+            "components": [],
+            "x": 421,
+            "y": 404,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "f438bfba-019a-4462-ab20-0ffb4f6f6fc1",
+                    "label": "chair4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair234.png"
+                    },
+                    "x": 20,
+                    "y": 1,
+                    "originY": 0
+                },
+                {
+                    "type": "Sprite",
+                    "id": "3b9a80a0-9c2e-4b8b-8cfa-00aceb12c7b0",
+                    "label": "chair4_back",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair234back.png"
+                    },
+                    "x": 4.3983237644104705,
+                    "y": 21.314953627527643,
+                    "originX": 0.5483332281803348,
+                    "originY": 0.7243679329213436
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "8c0be6b9-a673-4204-8271-bb98dd1692ce",
+            "label": "table1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table1.png"
+            },
+            "x": 337,
+            "y": 500
+        },
+        {
+            "type": "Sprite",
+            "id": "9cb1ece6-0de4-493d-9701-45db3316030f",
+            "label": "teacherChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "teacherChair.png"
+            },
+            "x": 749,
+            "y": 290
+        },
+        {
+            "type": "Sprite",
+            "id": "dc38d517-ae10-4158-81a9-9f7cc9850135",
+            "label": "teacherDesk",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "teacherDesk.png"
+            },
+            "x": 692,
+            "y": 329
+        },
+        {
+            "type": "Sprite",
+            "id": "23efc2ad-a06a-449d-9247-49ebaccb152c",
+            "label": "chair1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "chair1.png"
+            },
+            "x": 260,
+            "y": 533.5,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "2ad3d2bf-fa10-4671-a8a3-5968615a2d3d",
+            "label": "table4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table4.png"
+            },
+            "x": 712,
+            "y": 387
+        },
+        {
+            "type": "Container",
+            "id": "54a661cc-974a-4a36-bd9c-90316dc80aaa",
+            "label": "rightWall_container",
+            "components": [],
+            "x": 1352,
+            "y": 319,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "4cbb05a4-9656-47fa-b9f5-65726cf84bd0",
+                    "label": "canteenServer",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "canteenServer.png"
+                    }
+                },
+                {
+                    "type": "Sprite",
+                    "id": "89fb4ef4-9a97-44ca-b15e-91d601b94ea7",
+                    "label": "canteenHood",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "canteenHood.png"
+                    },
+                    "x": 20,
+                    "y": -189
+                },
+                {
+                    "type": "Sprite",
+                    "id": "1cfb84c5-36fe-43be-a04e-7e74ce5817c3",
+                    "label": "rightWall",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "rightWall.png"
+                    },
+                    "x": 78,
+                    "y": 98
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "1c922228-e3eb-479d-89a9-65aa2dbaac7e",
+            "label": "rightDoor",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onRightDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onRightDoorOut()",
+            "MoveTo.x": 1400,
+            "MoveTo.y": 750,
+            "texture": {
+                "key": "school",
+                "frame": "rightDoor0001.png"
+            },
+            "x": 1472,
+            "y": 579
+        },
+        {
+            "type": "Container",
+            "id": "3953c549-7fac-46f5-96b0-ba26361523ba",
+            "label": "chair7_container",
+            "components": [],
+            "x": 659,
+            "y": 421,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "2d55dafd-63ef-48f6-a1dd-b9af4a0d5f3e",
+                    "label": "chair7",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair567.png"
+                    },
+                    "x": 2,
+                    "y": -10,
+                    "originY": 0
+                },
+                {
+                    "type": "Sprite",
+                    "id": "72af533d-6c64-41b0-a14d-4669418f1a2c",
+                    "label": "chair7_back",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair567back.png"
+                    },
+                    "x": 1.197936311753665,
+                    "y": 21.5628536115658,
+                    "originX": 0.514261146568496,
+                    "originY": 0.7269774064375347
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "59ab2546-1a25-4363-8549-c36654b3f8b6",
+            "label": "chair8_container",
+            "components": [],
+            "x": 767,
+            "y": 418,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "92cbf516-48ff-4486-91e8-20ba7136d3e5",
+                    "label": "chair8",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair8.png"
+                    },
+                    "y": -16.5,
+                    "originY": 0
+                },
+                {
+                    "type": "Sprite",
+                    "id": "72dc8eea-d2ba-49de-8756-3865282d8b70",
+                    "label": "chair8_back",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair8back.png"
+                    },
+                    "x": 13.39587262350733,
+                    "y": 21.5628536115658,
+                    "originX": 0.5299484077938417,
+                    "originY": 0.7073351308804404
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "0c0a6f04-8dfb-49f9-8a76-0542749c5a63",
+            "label": "table2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "table2.png"
+            },
+            "x": 715,
+            "y": 500
+        },
+        {
+            "type": "Container",
+            "id": "6b6d9f7c-f86a-4756-83ca-2d6feaaca5b3",
+            "label": "chair2_container",
+            "components": [],
+            "x": 373,
+            "y": 531,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "c98a466f-97a9-48cd-bd41-2a825b104147",
+                    "label": "chair2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair234.png"
+                    },
+                    "x": 22,
+                    "y": -1,
+                    "originY": 0
+                },
+                {
+                    "type": "Sprite",
+                    "id": "428f4189-1674-412b-9de5-7925d8ba3ed3",
+                    "label": "chair2_back",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair234back.png"
+                    },
+                    "x": 3.593808935260938,
+                    "y": 19.166980988058526,
+                    "originX": 0.5394924058819883,
+                    "originY": 0.7017576946111423
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "9f1981ef-b8fb-40cc-9cf6-05e364e5f40f",
+            "label": "chair6_container",
+            "components": [],
+            "x": 769,
+            "y": 547,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "53639e36-e21c-4ac0-b754-adb2e940b018",
+                    "label": "chair6",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair567.png"
+                    },
+                    "x": 1.5634976625442505,
+                    "y": -16.98732852935791,
+                    "originY": 0
+                },
+                {
+                    "type": "Sprite",
+                    "id": "0962c1c4-bfb0-471d-8631-fdf0460a607c",
+                    "label": "chair6_back",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair567back.png"
+                    },
+                    "x": 0.5634976625442505,
+                    "y": 15.179652935537774,
+                    "originY": 0.7017576946111423
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "6e7433ae-abe1-47a7-b4d8-111cc3e23a26",
+            "label": "chair5_container",
+            "components": [],
+            "x": 656,
+            "y": 546,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "dac7b9ca-9240-49a1-b5a9-150eb38a434e",
+                    "label": "chair5",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair567.png"
+                    },
+                    "x": 1.5634976625442505,
+                    "y": -16.98732852935791,
+                    "originY": 0
+                },
+                {
+                    "type": "Sprite",
+                    "id": "cbf31d55-86cd-4612-a7dd-6a2ba8ab61aa",
+                    "label": "chair5_back",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "chair567back.png"
+                    },
+                    "x": -0.6344386492094145,
+                    "y": 13.98171662378411,
+                    "originX": 0.48573885343150397,
+                    "originY": 0.6891478386979459
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "88cdca40-7772-4b40-97db-b21ee40090b5",
+            "label": "leftWall_container",
+            "components": [],
+            "x": 218.7298705687275,
+            "y": 676.2769277264274,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "a316fc0a-f0c0-45e2-b946-32070762674c",
+                    "label": "leftWall",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "leftWall.png"
+                    },
+                    "x": -52.729866396966784,
+                    "y": -259.2769228420844
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "dffa14ce-2aa6-4b94-95e9-6b3f0724c0a5",
+            "label": "leftDoor",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onLeftDoorOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onLeftDoorOut()",
+            "MoveTo.x": 160,
+            "MoveTo.y": 750,
+            "texture": {
+                "key": "school",
+                "frame": "leftDoor0001.png"
+            },
+            "x": 67,
+            "y": 851.4999949524841,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "2f71357e-199d-4cc9-b4e6-49a3e7f8dde8",
+            "label": "dividingWall",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "dividingWall.png"
+            },
+            "x": 720.9706106456971,
+            "y": 630.364914403714,
+            "originX": 0.38968657589760514,
+            "originY": 0.8916872021144354
+        },
+        {
+            "type": "Sprite",
+            "id": "c6934841-e1fa-489e-9e17-5d0b27df0377",
+            "label": "cafeChair2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "cafeChair24.png"
+            },
+            "x": 1314,
+            "y": 488
+        },
+        {
+            "type": "Sprite",
+            "id": "1633eb75-ae21-4ab9-bd0c-4daa15616ccb",
+            "label": "cafeChair3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "cafeChair3.png"
+            },
+            "x": 1022,
+            "y": 354
+        },
+        {
+            "type": "Sprite",
+            "id": "c7ba9a5b-e5c9-4817-a3f0-948e332fe207",
+            "label": "cafeTable1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "cafeTable1.png"
+            },
+            "x": 1235,
+            "y": 553
+        },
+        {
+            "type": "Sprite",
+            "id": "d35cef88-2e80-4f52-82aa-5ba0c396515b",
+            "label": "cafeChair4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "cafeChair24.png"
+            },
+            "x": 1229,
+            "y": 374
+        },
+        {
+            "type": "Container",
+            "id": "e1248a0c-f4cc-458d-86a6-bae5436ba716",
+            "label": "cafeChair1_container",
+            "components": [],
+            "x": 1080,
+            "y": 564,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "74f1a1ea-6506-4a73-bee3-d3653e9aa738",
+                    "label": "cafeChair1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "cafeChair1.png"
+                    },
+                    "x": 20,
+                    "y": -12.5,
+                    "originY": 0
+                },
+                {
+                    "type": "Sprite",
+                    "id": "286185eb-45ba-4a5f-b4b1-89445e7abc22",
+                    "label": "cafeChair1_back",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "school",
+                        "frame": "cafeChair1Back.png"
+                    },
+                    "y": 28.750471482087733,
+                    "originY": 0.7521971182639274
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "a76f389d-251a-4190-b752-0252385c2d61",
+            "label": "cafeTable2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "cafeTable2.png"
+            },
+            "x": 1124,
+            "y": 407
+        },
+        {
+            "type": "Sprite",
+            "id": "08d07e83-2dc1-4f4a-b1b6-f530faa74a89",
+            "label": "exitSignLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "exitSignLeft.png"
+            },
+            "x": 27,
+            "y": 372
+        },
+        {
+            "type": "Sprite",
+            "id": "195a2fd0-08ca-443f-99b7-6e25a0946d08",
+            "label": "exitSignRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "exitSignRight.png"
+            },
+            "x": 1511,
+            "y": 375
+        },
+        {
+            "type": "Sprite",
+            "id": "0a9ea56c-53cf-4968-a549-a5c66669c8d5",
+            "label": "microphone",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "microphone.png"
+            },
+            "x": 1100,
+            "y": 269
+        },
+        {
+            "type": "Sprite",
+            "id": "8dd17047-a60f-43c1-9286-41fa4d38bfeb",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "school",
+                "frame": "fg.png"
+            },
+            "x": 760.0000241551735,
+            "y": 993.0000008777695,
+            "originY": 1
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "4cbb05a4-9656-47fa-b9f5-65726cf84bd0",
+                "0a9ea56c-53cf-4968-a549-a5c66669c8d5",
+                "195a2fd0-08ca-443f-99b7-6e25a0946d08",
+                "08d07e83-2dc1-4f4a-b1b6-f530faa74a89",
+                "a76f389d-251a-4190-b752-0252385c2d61",
+                "e1248a0c-f4cc-458d-86a6-bae5436ba716",
+                "d35cef88-2e80-4f52-82aa-5ba0c396515b",
+                "c7ba9a5b-e5c9-4817-a3f0-948e332fe207",
+                "1633eb75-ae21-4ab9-bd0c-4daa15616ccb",
+                "c6934841-e1fa-489e-9e17-5d0b27df0377",
+                "2f71357e-199d-4cc9-b4e6-49a3e7f8dde8",
+                "6e7433ae-abe1-47a7-b4d8-111cc3e23a26",
+                "9f1981ef-b8fb-40cc-9cf6-05e364e5f40f",
+                "6b6d9f7c-f86a-4756-83ca-2d6feaaca5b3",
+                "0c0a6f04-8dfb-49f9-8a76-0542749c5a63",
+                "59ab2546-1a25-4363-8549-c36654b3f8b6",
+                "3953c549-7fac-46f5-96b0-ba26361523ba",
+                "2ad3d2bf-fa10-4671-a8a3-5968615a2d3d",
+                "dc38d517-ae10-4158-81a9-9f7cc9850135",
+                "9cb1ece6-0de4-493d-9701-45db3316030f",
+                "8c0be6b9-a673-4204-8271-bb98dd1692ce",
+                "96011a60-4190-4193-980a-57734d6d6055",
+                "278fdb5e-9019-4bb5-903e-87ef8d82df46",
+                "bb68faff-1581-42c0-b19f-eb8cffeaf2be",
+                "23efc2ad-a06a-449d-9247-49ebaccb152c",
+                "88cdca40-7772-4b40-97db-b21ee40090b5",
+                "8dd17047-a60f-43c1-9286-41fa4d38bfeb",
+                "dffa14ce-2aa6-4b94-95e9-6b3f0724c0a5"
+            ]
+        }
+    ]
+}

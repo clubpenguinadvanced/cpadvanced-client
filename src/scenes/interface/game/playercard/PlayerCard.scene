@@ -1,0 +1,216 @@
+{
+    "id": "aa26f680-5a55-46f1-b89f-e40211af8a8d",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 20,
+        "snapHeight": 20,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "80b40d42-bac6-4d3b-ac21-b81f37ee9a54",
+            "label": "container_1",
+            "components": [
+                "DraggableContainer"
+            ],
+            "DraggableContainer.handle": "card_bg",
+            "x": 760,
+            "y": 460,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "8621979a-5a8b-4fb0-a9f5-7591660d7e29",
+                    "label": "card_photo",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-photo"
+                    },
+                    "y": -2
+                },
+                {
+                    "prefabId": "7b4017c1-c8f3-4f6b-9aae-61bbce16ce08",
+                    "id": "d6bbac10-17e0-44da-902d-f6dfbbe8bc93",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "paperDoll",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": -2,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Image",
+                    "id": "fe294108-b9df-4ff7-8a4c-2b4ee0d81d76",
+                    "label": "card_bg",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-bg-player"
+                    }
+                },
+                {
+                    "prefabId": "8808181a-7877-4aef-982e-f4ba2441da75",
+                    "id": "b958363f-47ef-45d1-ab73-8ee745452d50",
+                    "unlock": [
+                        "visible",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buttons",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": 255,
+                    "visible": false,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Container",
+                    "id": "b173b409-a478-4303-9fbc-f0300fea9f35",
+                    "label": "stats",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -13,
+                    "y": 255,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "6e0b3192-1f75-484c-ba84-d76ccd3a3345",
+                            "label": "card_coin",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "card-coin"
+                            },
+                            "x": 177
+                        },
+                        {
+                            "type": "Text",
+                            "id": "41323b7b-a2e7-4992-b3c1-b2c6e3078c0e",
+                            "label": "coins",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Your Coins: 000000",
+                            "fixedWidth": 300,
+                            "align": "right",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "color": "#000000ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "id": "e96707d4-a8b8-4cf9-bdd5-3babddd9ac5c",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -238,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 360,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c872414d-cfa7-46ab-bf78-7618077e1f55",
+                    "label": "card_badge_member",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-badge-member"
+                    },
+                    "x": -149,
+                    "y": -224
+                },
+                {
+                    "type": "Image",
+                    "id": "274b2a17-fd19-4625-8207-2ce436778aba",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => { this.visible = false }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 177,
+                    "y": -237
+                },
+                {
+                    "type": "Image",
+                    "id": "0a074237-0457-4002-a588-2d9705f5aaf4",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 177,
+                    "y": -239
+                },
+                {
+                    "prefabId": "676b9d5e-1fcd-4a27-8667-0f19254fc582",
+                    "id": "1e195136-b37b-4455-8b80-df6580175885",
+                    "unlock": [
+                        "visible",
+                        "x",
+                        "y"
+                    ],
+                    "label": "inventorySort",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 434,
+                    "y": 315,
+                    "visible": false,
+                    "nestedPrefabs": []
+                },
+                {
+                    "prefabId": "092e5111-82e2-4289-8f29-b8d9568e9497",
+                    "id": "2c78d474-38e5-4639-85d4-0191679ebb81",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "inventory",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -135,
+                    "y": 33,
+                    "nestedPrefabs": []
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
