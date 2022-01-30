@@ -120,47 +120,57 @@
             "y": 380
         },
         {
-            "type": "Sprite",
-            "id": "7057c1fb-d5d6-4adf-9afa-65d3c1d1b128",
-            "label": "desk",
-            "scope": "CLASS",
+            "type": "Container",
+            "id": "d2d7764b-16e7-4f12-9916-1fb5e00eec4e",
+            "label": "desk_container",
             "components": [],
-            "texture": {
-                "key": "clothesShop",
-                "frame": "desk"
-            },
-            "x": 1351,
-            "y": 461
-        },
-        {
-            "type": "Sprite",
-            "id": "95dca7d3-d9f2-4c70-b3f7-f49a4ada0c8a",
-            "label": "chest",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "clothesShop",
-                "frame": "chest"
-            },
-            "x": 1353,
-            "y": 539
-        },
-        {
-            "type": "Sprite",
-            "id": "f96aae91-1544-4534-ac8e-9c16c961f5d4",
-            "label": "register",
-            "scope": "CLASS",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "register",
-            "Button.activeFrame": false,
-            "texture": {
-                "key": "clothesShop",
-                "frame": "register"
-            },
-            "x": 1289,
-            "y": 369
+            "x": 1337.3141623444612,
+            "y": 415.3218257529371,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "7057c1fb-d5d6-4adf-9afa-65d3c1d1b128",
+                    "label": "desk",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "clothesShop",
+                        "frame": "desk"
+                    },
+                    "x": 13.685837655538762,
+                    "y": 45.678174247062884
+                },
+                {
+                    "type": "Sprite",
+                    "id": "95dca7d3-d9f2-4c70-b3f7-f49a4ada0c8a",
+                    "label": "chest",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "clothesShop",
+                        "frame": "chest"
+                    },
+                    "x": 15.685837655538762,
+                    "y": 123.67817424706288
+                },
+                {
+                    "type": "Sprite",
+                    "id": "f96aae91-1544-4534-ac8e-9c16c961f5d4",
+                    "label": "register",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "register",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothesShop",
+                        "frame": "register"
+                    },
+                    "x": -48.31416234446124,
+                    "y": -46.321825752937116
+                }
+            ]
         },
         {
             "type": "Sprite",
@@ -209,8 +219,10 @@
                 "key": "clothesShop",
                 "frame": "circularStool"
             },
-            "x": 1119,
-            "y": 628
+            "x": 1105.0536438593308,
+            "y": 585.1647632822302,
+            "originX": 0.3927203373794677,
+            "originY": 0.1307307179502602
         },
         {
             "type": "Sprite",
@@ -222,8 +234,10 @@
                 "key": "clothesShop",
                 "frame": "squareStool"
             },
-            "x": 1054,
-            "y": 691
+            "x": 1032.9632984323307,
+            "y": 645.1017420341761,
+            "originX": 0.3475601335676138,
+            "originY": 0.1008847133406621
         },
         {
             "type": "Sprite",
@@ -236,7 +250,8 @@
                 "frame": "fg"
             },
             "x": 782,
-            "y": 481
+            "y": 980.5,
+            "originY": 1
         },
         {
             "type": "Sprite",
@@ -286,7 +301,20 @@
             "id": "74808b14-d54a-4e8f-8e73-510aada4154f",
             "label": "sort",
             "objectIds": [
-                "d9d3f441-7715-4324-826e-6839691ce8d1"
+                "d9d3f441-7715-4324-826e-6839691ce8d1",
+                "8d2f885f-611e-42a9-b908-4efe197cfe28",
+                "90e4f212-6161-4e69-89ae-d8585ff4f8f7",
+                "59433cdd-ad0f-4718-b647-1f946cb10ee1",
+                "4b189892-eca8-42d9-aae1-5c7d7fd33e67",
+                "f4162a4e-747e-4772-bca8-396dccf68162",
+                "9b597891-27a5-40ba-b16f-c3e1fd53b72c",
+                "51cefb19-f416-41c3-831f-00260702a087",
+                "fb69f112-3dbc-4f08-8a1a-dbeaec08534f",
+                "b2290f7c-b762-45dd-9b80-8c904c3b0dfe",
+                "518abe88-668d-4610-919e-64e852a89337",
+                "f1bc8b1a-ad5c-481e-b127-45102e638997",
+                "246db7d8-dd44-452b-908a-a1d5ee23d5a6",
+                "d2d7764b-16e7-4f12-9916-1fb5e00eec4e"
             ]
         }
     ]

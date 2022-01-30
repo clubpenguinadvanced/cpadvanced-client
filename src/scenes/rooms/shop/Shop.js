@@ -46,7 +46,7 @@ export default class Shop extends RoomScene {
         this.catalog;
         /** @type {Phaser.GameObjects.Sprite} */
         this.unlock;
-        /** @type {Phaser.GameObjects.Sprite[]} */
+        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
         this.sort;
 
 
@@ -99,14 +99,20 @@ export default class Shop extends RoomScene {
         // deskChair
         const deskChair = this.add.sprite(1370, 380, "clothesShop", "deskChair");
 
+        // desk_container
+        const desk_container = this.add.container(1337.3141623444612, 415.3218257529371);
+
         // desk
-        const desk = this.add.sprite(1351, 461, "clothesShop", "desk");
+        const desk = this.add.sprite(13.685837655538762, 45.678174247062884, "clothesShop", "desk");
+        desk_container.add(desk);
 
         // chest
-        const chest = this.add.sprite(1353, 539, "clothesShop", "chest");
+        const chest = this.add.sprite(15.685837655538762, 123.67817424706288, "clothesShop", "chest");
+        desk_container.add(chest);
 
         // register
-        const register = this.add.sprite(1289, 369, "clothesShop", "register");
+        const register = this.add.sprite(-48.31416234446124, -46.321825752937116, "clothesShop", "register");
+        desk_container.add(register);
 
         // spinner
         const spinner = this.add.sprite(1403, 436, "clothesShop", "spinner0001");
@@ -115,13 +121,16 @@ export default class Shop extends RoomScene {
         const door = this.add.sprite(1103, 248, "clothesShop", "door");
 
         // circularStool
-        const circularStool = this.add.sprite(1119, 628, "clothesShop", "circularStool");
+        const circularStool = this.add.sprite(1105.0536438593308, 585.1647632822302, "clothesShop", "circularStool");
+        circularStool.setOrigin(0.3927203373794677, 0.1307307179502602);
 
         // squareStool
-        const squareStool = this.add.sprite(1054, 691, "clothesShop", "squareStool");
+        const squareStool = this.add.sprite(1032.9632984323307, 645.1017420341761, "clothesShop", "squareStool");
+        squareStool.setOrigin(0.3475601335676138, 0.1008847133406621);
 
         // fg
-        const fg = this.add.sprite(782, 481, "clothesShop", "fg");
+        const fg = this.add.sprite(782, 980.5, "clothesShop", "fg");
+        fg.setOrigin(0.5, 1);
 
         // catalog
         const catalog = this.add.sprite(1340, 1055, "clothesShop", "style");
@@ -132,7 +141,7 @@ export default class Shop extends RoomScene {
         unlock.visible = false;
 
         // lists
-        const sort = [catalog];
+        const sort = [catalog, fg, squareStool, circularStool, door, spinner, deskChair, chairArm_1, chairBody_1, chairArm, chairBody, speakers, rail, desk_container];
 
         // register (components)
         const registerButton = new Button(register);
@@ -184,6 +193,12 @@ export default class Shop extends RoomScene {
 
 
     /* START-USER-CODE */
+
+    create(){
+        super.create()
+        this.speakers.play("clothesSpeakers")
+        this.spinner.on('animationcomplete', () => this.spinner.setFrame("spinner0001"))
+    }
 
     onSpinnerOver(){
         this.spinner.play("spinner")
