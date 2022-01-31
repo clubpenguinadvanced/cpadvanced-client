@@ -1,0 +1,40 @@
+{
+    "id": "edc25d32-222f-4a3d-840e-7d4392cfb6f3",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "RuffleMinigame",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "cb286770-4726-4772-8c2e-6238cff0d5a9",
+            "label": "bg",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "width": 1520,
+            "height": 960
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}

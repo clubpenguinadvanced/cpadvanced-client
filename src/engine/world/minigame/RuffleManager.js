@@ -38,6 +38,8 @@ export default class RuffleManager {
 				allowScriptAccess: true,
 				quality: "low",
 			});
+		
+		this.inMinigame = true
             
 	}
 	
@@ -54,24 +56,35 @@ export default class RuffleManager {
 	
 	killMinigame(game, roomid, coins, stamps){
 		
+		if (this.inMinigame != true){
+			return
+			// punish player for cheating?
+		}
+		
 		if (coins > 15000){
-			console.log("nah fam u cappin'")
+			return
+			// punish player for cheating?
 		}
 		
 		stamps.forEach(stamp => checkLegit(stamp, this.crumbs));
 		
 		function checkLegit(stamp, crumbs){
 			if (crumbs.allowedstamps[game].allowedstamps.includes(stamp) == false){
-				console.log("nah fam u cappin'")
+				return
+				// punish player for cheating?
 			}
 		}
 		
 		this.currentGame = this.rufflePlayer.destroy();
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")
+		var canvas = ruffleplayer[0].shadowRoot.children[2].children[2]
+		canvas.remove()
 		ruffleplayer[0].style.visibility = "hidden";
 		
 		let room = this.crumbs.rooms[roomid]
         this.world.client.sendJoinRoom(roomid, room.key)
+		
+		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game, stamps: stamps })
 		
 	}
 	

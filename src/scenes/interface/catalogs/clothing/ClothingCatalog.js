@@ -28,6 +28,9 @@ export default class ClothingCatalog extends Book {
 	/** @returns {void} */
 	_create() {
 
+		// blocker
+		const blocker = this.add.rectangle(760, 480, 1520, 960);
+
 		// container
 		const container = this.add.container(0, 0);
 
@@ -3694,6 +3697,9 @@ export default class ClothingCatalog extends Book {
 		// lists
 		const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14, page15, page16, page17, page18, page19, page20];
 
+		// blocker (components)
+		new Interactive(blocker);
+
 		// closeBtn_3 (components)
 		const closeBtn_3SimpleButton = new SimpleButton(closeBtn_3);
 		closeBtn_3SimpleButton.callback = () => super.close();
@@ -6140,6 +6146,7 @@ export default class ClothingCatalog extends Book {
 		const prevPageSimpleButton = new SimpleButton(prevPage);
 		prevPageSimpleButton.callback = () => super.prevPage();
 
+		this.blocker = blocker;
 		this.page20 = page20;
 		this.page21Bg = page21Bg;
 		this.closeBtn_3 = closeBtn_3;
@@ -6688,6 +6695,8 @@ export default class ClothingCatalog extends Book {
 		this.events.emit("scene-awake");
 	}
 
+	/** @type {Phaser.GameObjects.Rectangle} */
+	blocker;
 	/** @type {Phaser.GameObjects.Container} */
 	page20;
 	/** @type {Phaser.GameObjects.Image} */

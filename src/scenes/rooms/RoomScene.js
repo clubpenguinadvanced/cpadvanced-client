@@ -183,7 +183,7 @@ export default class RoomScene extends BaseScene {
 	
 	triggerGame(minigame) {
 		let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showWindow('Do you want to play ' + minigame + '?', "dual",  () => this.joinGame(minigame))
+        prompt.showWindow('Do you want to play ' + this.getString(minigame) + '?', "dual",  () => this.joinGame(minigame))
     }
 	
 	joinGame(minigame){

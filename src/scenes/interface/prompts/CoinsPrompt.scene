@@ -1,0 +1,169 @@
+{
+    "id": "696895f6-c65a-4a40-b979-a77ca1735137",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "bb4d2198-5ce9-4999-b83f-8ab252d88b7e",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "122082e3-8384-43a3-9fe1-1f944e5dec49",
+                    "label": "block",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "b1d2b3c9-97eb-44a3-b924-b6118c43f33e",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
+                    "y": -93,
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 600,
+                    "height": 270
+                },
+                {
+                    "type": "Text",
+                    "id": "c76c64cd-daab-44f2-93c8-0a368c62070b",
+                    "label": "game",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -176,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Game",
+                    "fixedWidth": 628,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#012234ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "f2646bbd-cdb0-4a52-9024-6d9495c3dbf6",
+                    "label": "youearned",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -139,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "You've earned:",
+                    "fixedWidth": 628,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Text",
+                    "id": "3f6117bb-1651-4791-9c16-f6d81f06af7d",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -54,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "69 coins",
+                    "fixedWidth": 628,
+                    "paddingLeft": 175,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "shadow.offsetX": 3,
+                    "shadow.offsetY": 2,
+                    "shadow.fill": true,
+                    "shadow.color": "#012855ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "1e58f3f9-a14a-47e6-b954-f1b11882d56e",
+                    "label": "yourcoins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -17,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Your total coins: 420",
+                    "fixedWidth": 628,
+                    "paddingLeft": 175,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#ffffffff",
+                    "shadow.offsetX": 3,
+                    "shadow.offsetY": 2,
+                    "shadow.color": "#012855ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d2aa088d-d28a-4c04-b58b-4ebddce2c7b4",
+                    "label": "close_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.visible = false",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 251,
+                    "y": -184
+                },
+                {
+                    "type": "Image",
+                    "id": "497544c1-e795-43b6-99b7-782ad35ba62b",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 251,
+                    "y": -186
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

@@ -2,6 +2,7 @@ import ErrorPrompt from './ErrorPrompt'
 import ItemPrompt from '@scenes/interface/prompts/ItemPrompt'
 import LoadingPrompt from '@scenes/interface/prompts/LoadingPrompt'
 import WindowPrompt from '@scenes/interface/prompts/WindowPrompt'
+import CoinsPrompt from '@scenes/interface/prompts/CoinsPrompt'
 
 
 export default class PromptController {
@@ -13,11 +14,13 @@ export default class PromptController {
         this.item = new ItemPrompt(_interface, 760, 480)
         this.loading = new LoadingPrompt(_interface, 760, 480)
         this.window = new WindowPrompt(_interface, 760, 480)
+		this.coins = new CoinsPrompt(_interface, 760, 480)
 
         _interface.add.existing(this.error)
         _interface.add.existing(this.item)
         _interface.add.existing(this.loading)
         _interface.add.existing(this.window)
+		_interface.add.existing(this.coins)
     }
 
     showError(text, buttonText = 'Okay', callback = () => this.error.visible = false) {
@@ -42,6 +45,11 @@ export default class PromptController {
 
     showWindow(text, buttonLayout = 'single', callback = () => {}, noCallback = () => this.window.visible = false) {
         this.window.show(text, buttonLayout, callback, noCallback)
+        this.setCursor()
+    }
+	
+	showCoins(game, coins) {
+        this.coins.show(game, coins)
         this.setCursor()
     }
 

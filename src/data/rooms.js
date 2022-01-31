@@ -163,7 +163,7 @@ const rooms = {
     },
 	69420: {
         key: 'RuffleMinigame',
-        scene: require('@games/ruffleminigame/RuffleMinigame').default
+        scene: require('@rooms/ruffleminigame/RuffleMinigame').default
     },
     999: {
         key: 'Sled',
