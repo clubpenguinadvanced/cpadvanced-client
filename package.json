@@ -1,6 +1,6 @@
 {
   "name": "cpadvanced",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A HTML5 Club Penguin Private Server",
   "scripts": {
     "dev": "webpack serve",
