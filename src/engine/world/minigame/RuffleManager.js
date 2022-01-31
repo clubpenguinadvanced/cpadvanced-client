@@ -12,12 +12,12 @@ export default class RuffleManager {
 		}
 
 		this.ruffle = window.RufflePlayer.newest();
-        this.rufflePlayer = this.ruffle.createPlayer();
-        this.rufflePlayer.style.width = '1520px';
-        this.rufflePlayer.style.height = '960px';
-		this.rufflePlayer.style.pointerEvents = 'auto';
+        window.rufflePlayer = this.ruffle.createPlayer();
+        window.rufflePlayer.style.width = '1520px';
+        window.rufflePlayer.style.height = '960px';
+		window.rufflePlayer.style.pointerEvents = 'auto';
 
-        this.RuffleHolder.add.dom(760, 480, this.rufflePlayer)
+        this.RuffleHolder.add.dom(760, 480, window.rufflePlayer)
 		
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")
 		ruffleplayer[0].style.visibility = "hidden";
@@ -37,7 +37,7 @@ export default class RuffleManager {
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")
 		ruffleplayer[0].style.visibility = "visible";
 		
-        this.currentGame = this.rufflePlayer.load({
+        this.currentGame = window.rufflePlayer.load({
 				url: "assets/media/games/swf/" + minigame + "/loader.swf",
 				allowScriptAccess: true,
 				quality: "low",
@@ -79,10 +79,8 @@ export default class RuffleManager {
 			}
 		}
 		
-		this.currentGame = this.rufflePlayer.destroy();
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")
-		var canvas = ruffleplayer[0].shadowRoot.children[2].children[2]
-		canvas.remove()
+		ruffleplayer[0].destroy();
 		ruffleplayer[0].style.visibility = "hidden";
 		
 		let room = this.crumbs.rooms[roomid]
