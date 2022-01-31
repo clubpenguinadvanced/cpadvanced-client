@@ -157,9 +157,35 @@ export default class PlayerCard extends BaseContainer {
     _showCard(penguin, items = penguin) {
         // Text
         this.username.text = penguin.username
+		
+		let oneDay = 1000 * 60 * 60 * 24
+        let timeDiff = Date.now() - Date.parse(penguin.joinTime)
+        let daysDiff = Math.round(timeDiff / oneDay)
 
-        if (penguin.rank = 2) this.badge.setFrame("card-badge-moderator")
-        if (penguin.rank = 3) this.badge.setFrame("card-badge-administrator")
+        if (penguin.rank == 2){
+			this.badge.setFrame("card-badge-designer")
+		}
+		else if (penguin.rank == 3){
+			this.badge.setFrame("card-badge-moderator")
+		}
+		else if (penguin.rank == 4){
+			this.badge.setFrame("card-badge-developer")
+		}
+        else if (penguin.rank == 5){
+			this.badge.setFrame("card-badge-administrator")
+		}
+		else if (daysDiff > 91){
+			this.badge.setFrame("card-badge-member-three")
+		}
+		else if (daysDiff > 182){
+			this.badge.setFrame("card-badge-member-six")
+		}
+		else if (daysDiff > 273){
+			this.badge.setFrame("card-badge-member-nine")
+		}
+		else if (daysDiff > 364){
+			this.badge.setFrame("card-badge-member-twelve")
+		}
 
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)
