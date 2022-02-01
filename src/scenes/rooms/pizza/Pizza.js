@@ -16,8 +16,8 @@ export default class Pizza extends RoomScene {
             'pizzatron': () => this.triggerGame("pizzatron")
             //                                         id   xpos  ypos
         }
-		
-		this.music = 676
+
+        this.music = 676
 
         /* END-USER-CTR-CODE */
     }
@@ -26,12 +26,6 @@ export default class Pizza extends RoomScene {
     preload() {
 
         this.load.pack("pizzaParlor-pack", "assets/media/rooms/pizzaParlor/pizzaParlor-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("676", "assets/media/music/676.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
@@ -92,13 +86,16 @@ export default class Pizza extends RoomScene {
         const counterFront = this.add.sprite(320, 539, "pizzaParlor", "counterFront.png");
 
         // stool1
-        const stool1 = this.add.sprite(506, 455, "pizzaParlor", "stool.png");
+        const stool1 = this.add.sprite(505.5240206303339, 425.0133015172807, "pizzaParlor", "stool.png");
+        stool1.setOrigin(0.49412371148560363, 0.20886698748579122);
 
         // stool2
-        const stool2 = this.add.sprite(506, 539, "pizzaParlor", "stool.png");
+        const stool2 = this.add.sprite(505.04804126066784, 507.10938223237207, "pizzaParlor", "stool.png");
+        stool2.setOrigin(0.48824742297120793, 0.19038235177060261);
 
         // stool3
-        const stool3 = this.add.sprite(451, 615, "pizzaParlor", "stool.png");
+        const stool3 = this.add.sprite(449.57206189100174, 584.0613409717042, "pizzaParlor", "stool.png");
+        stool3.setOrigin(0.48237113445681157, 0.19962466962819636);
 
         // chair1
         const chair1 = this.add.sprite(677, 476, "pizzaParlor", "chairFacingForwards.png");

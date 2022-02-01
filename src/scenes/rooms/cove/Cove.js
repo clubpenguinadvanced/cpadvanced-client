@@ -26,12 +26,6 @@ export default class Cove extends RoomScene {
     preload() {
 
         this.load.pack("cove-pack", "assets/media/rooms/cove/cove-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1164", "assets/media/music/1164.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
@@ -41,28 +35,31 @@ export default class Cove extends RoomScene {
         const bg = this.add.sprite(746, 443, "cove", "bg.png");
 
         // campfire
-        const campfire = this.add.sprite(370, 616, "cove", "campfire0001.png");
+        const campfire = this.add.sprite(357.04089918545844, 615.7945041176556, "cove", "campfire0001.png");
+        campfire.setOrigin(0.43972517449756354, 0.49901665969551984);
 
         // deckArm
-        const deckArm = this.add.sprite(460, 212.4238683127572, "cove", "deckArm.png");
-        deckArm.setOrigin(0.5, 0.22565157750342943);
+        const deckArm = this.add.sprite(484.5345796315084, 261.4930217621434, "cove", "deckArm.png");
+        deckArm.setOrigin(0.7555684683718482, 0.8799068565353616);
 
         // lifesaver
         const lifesaver = this.add.sprite(467, 344, "cove", "lifesaver.png");
 
         // shack
-        const shack = this.add.sprite(1296, 218, "cove", "shack.png");
+        const shack = this.add.sprite(1292.3077813782786, 366.6118371156327, "cove", "shack.png");
+        shack.setOrigin(0.4927603544416989, 0.8464145086201211);
 
         // leftChair
-        const leftChair = this.add.sprite(1115.1653601642527, 462.78474579065283, "cove", "leftChair.png");
-        leftChair.setOrigin(0.4856668762832239, 0.5615392817022191);
+        const leftChair = this.add.sprite(1106.33552020297, 456.4076203039245, "cove", "leftChair.png");
+        leftChair.setOrigin(0.41668339917019637, 0.5214314878810877);
 
         // table
-        const table = this.add.sprite(1203.7191162109375, 468.85032453653906, "cove", "table.png");
-        table.setOrigin(0.47859586858294617, 0.6436766136428687);
+        const table = this.add.sprite(1203.7191162109375, 501.7171057082594, "cove", "table.png");
+        table.setOrigin(0.47859586858294617, 0.8416693511667394);
 
         // rightChair
-        const rightChair = this.add.sprite(1302, 537, "cove", "rightChair.png");
+        const rightChair = this.add.sprite(1296.1134099530216, 497.7560663534776, "cove", "rightChair.png");
+        rightChair.setOrigin(0.4573435503842143, 0.0639562928164177);
 
         // rightChairBack
         const rightChairBack = this.add.sprite(1332.6115466119159, 542.1888692879219, "cove", "rightChairBack.png");
@@ -160,7 +157,7 @@ export default class Cove extends RoomScene {
         fg_right.setOrigin(0.5, 1);
 
         // lists
-        const sort = [shack, leftChair, table, rightChairBack, rope3, rope1, rightChair, rope2, rightTree, log, medicWall, cooler, rock, leftTree, drink, fg_left, water15, water14, water13, water12, water10, water11, water9, water8, water7, water6, water4, water5, water3, water2, water1, deckArm, waves, fg_right];
+        const sort = [shack, leftChair, table, rightChairBack, rope3, rope1, rightChair, rope2, rightTree, log, medicWall, cooler, rock, leftTree, drink, fg_left, water15, water14, water13, water12, water10, water11, water9, water8, water7, water6, water4, water5, water3, water2, water1, deckArm, waves, fg_right, campfire];
 
         // shop (components)
         const shopSimpleButton = new SimpleButton(shop);

@@ -14,7 +14,7 @@ export default class Pet extends RoomScene {
 
         this.roomTriggers = {
             'adoption': () => this.unimplementedPrompt(),
-            'cannon': () => this.unimplementedPrompt(),
+            'cannon': () => this.triggerGame("puffleLaunch"),
             'hotel': () => this.unimplementedPrompt(),
             'park': () => this.unimplementedPrompt(),
             'plaza': () => this.triggerRoom(300, 1200, 400),

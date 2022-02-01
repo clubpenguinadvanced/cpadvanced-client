@@ -12,23 +12,23 @@ export default class RuffleManager {
 		}
 
 		this.ruffle = window.RufflePlayer.newest();
-        window.rufflePlayer = this.ruffle.createPlayer();
-        window.rufflePlayer.style.width = '1520px';
-        window.rufflePlayer.style.height = '960px';
-		window.rufflePlayer.style.pointerEvents = 'auto';
+        this.rufflePlayer = this.ruffle.createPlayer();
+        this.rufflePlayer.style.width = '1520px';
+        this.rufflePlayer.style.height = '960px';
+		this.rufflePlayer.style.pointerEvents = 'auto';
 
-        this.RuffleHolder.add.dom(760, 480, window.rufflePlayer)
+        this.RuffleHolder.add.dom(760, 480, this.rufflePlayer)
 		
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")
 		ruffleplayer[0].style.visibility = "hidden";
 
 		this.ruffle = window.RufflePlayer;
 		
-		window.unbound_getMyPlayerHex = this.getMyPlayerHex
-		window.getMyPlayerHex = unbound_getMyPlayerHex.bind(this)
+		window.getMyPlayerHex = this.getMyPlayerHex
+		window.getMyPlayerHex = getMyPlayerHex.bind(this)
 		
-		window.unbound_killMinigame = this.killMinigame
-		window.killMinigame = unbound_killMinigame.bind(this)
+		window.killMinigame = this.killMinigame
+		window.killMinigame = killMinigame.bind(this)
 	}
 	
 
@@ -37,7 +37,7 @@ export default class RuffleManager {
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")
 		ruffleplayer[0].style.visibility = "visible";
 		
-        this.currentGame = window.rufflePlayer.load({
+        this.currentGame = this.rufflePlayer.load({
 				url: "assets/media/games/swf/" + minigame + "/loader.swf",
 				allowScriptAccess: true,
 				quality: "low",
@@ -80,13 +80,13 @@ export default class RuffleManager {
 		}
 		
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")
-		ruffleplayer[0].destroy();
+		this.rufflePlayer.pause();
 		ruffleplayer[0].style.visibility = "hidden";
 		
 		let room = this.crumbs.rooms[roomid]
         this.world.client.sendJoinRoom(roomid, room.key)
 		
-		this.world.network.send('JrKvJh5xBaQgJad7KXB56ty7uY77rhnVPLHe5M4caj2fDCW3gnTvBePwDcbnrre3fhyaEcRNVYRt3g8wzzbWPAyppa4pUzT5mLHXpSMHEe5NzA3E2JFhkvnhQQMGDLtH4wuLkKtLUXDKadNhpgxsrdpXc9YnzLEvEQpvxcsZtuWHteXP44AHNWxbJTX9g995zEK7PmUUmjEEHJ3WsFPHm5Y82tQDerKQKDrZtCfNxwYV7JBKPNGw55MvYBfrYb7AHxXajK2YGrvw3SamnT2cLQttd3WxE8b6M3MwCFr8a2QvYK5wNAb8WjDGZZWQss92cdBn9ssRqd6evu4thMaF4SV4cmNQAHWEyeCBpEYrEh8VrwUMdgktrLGVkx2CE6MSCkZ3xRZA3wuswhq4Z6LnXxkTXrfF34qcba8pU7DdmVwRzyM8fM8SUQ2WLMBnFHrdsYCPtpCAnGgGSTDL8zEbvbVLJLjeWz3pXaYY7GQPn7jef4s6XEsZPS9SngPSEMSH', 'end_ruffle_mingame', { coins: coins, game: game, stamps: stamps })
+		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game, stamps: stamps })
 		
 	}
 	

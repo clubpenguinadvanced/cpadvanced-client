@@ -26,6 +26,46 @@ export default class Main extends BaseScene {
     constructor() {
         super("Main");
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.dock;
+        /** @type {Phaser.GameObjects.Image} */
+        this.chat_box;
+        /** @type {Phaser.GameObjects.Image} */
+        this.chat_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.chat_icon;
+        /** @type {Phaser.GameObjects.Image} */
+        this.emote_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.emote_icon;
+        /** @type {Phaser.GameObjects.Image} */
+        this.action_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.action_icon;
+        /** @type {Phaser.GameObjects.Image} */
+        this.snowball_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.snowball_icon;
+        /** @type {Phaser.GameObjects.Image} */
+        this.chat_send_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.chat_send_icon;
+        /** @type {Phaser.GameObjects.Image} */
+        this.player_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.badge_member;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buddies_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buddies_icon;
+        /** @type {Phaser.GameObjects.Image} */
+        this.igloo_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.igloo_icon;
+        /** @type {Phaser.GameObjects.Image} */
+        this.help_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.help_icon;
         /** @type {Phaser.GameObjects.Container} */
         this.onlinePopup;
         /** @type {Phaser.GameObjects.Image} */
@@ -36,10 +76,16 @@ export default class Main extends BaseScene {
         this.chatLog;
         /** @type {Phaser.GameObjects.Image} */
         this.crosshair;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.map_button;
         /** @type {Phaser.GameObjects.Image} */
         this.request_button;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.mod_m;
+        /** @type {Phaser.GameObjects.Image} */
+        this.mail_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.news_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.discord_button;
         /** @type {Waddle} */
         this.waddle;
         /** @type {Buddy} */
@@ -60,6 +106,8 @@ export default class Main extends BaseScene {
         this.settings;
         /** @type {Array<PlayerCard|Buddy|Map|Waddle|Settings|Moderator>} */
         this.hideOnSleep;
+        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image|ChatLog>} */
+        this.interfaceList;
 
 
         /* START-USER-CTR-CODE */
@@ -79,55 +127,55 @@ export default class Main extends BaseScene {
         const chat_button = this.add.image(246, 931, "main", "blue-button");
 
         // chat_icon
-        this.add.image(246, 929, "main", "chat-icon");
+        const chat_icon = this.add.image(246, 929, "main", "chat-icon");
 
         // emote_button
         const emote_button = this.add.image(306, 931, "main", "blue-button");
 
         // emote_icon
-        this.add.image(306, 929, "main", "emote-icon");
+        const emote_icon = this.add.image(306, 929, "main", "emote-icon");
 
         // action_button
         const action_button = this.add.image(366, 931, "main", "blue-button");
 
         // action_icon
-        this.add.image(366, 927, "main", "action-icon");
+        const action_icon = this.add.image(366, 927, "main", "action-icon");
 
         // snowball_button
         const snowball_button = this.add.image(426, 931, "main", "blue-button");
 
         // snowball_icon
-        this.add.image(426, 930, "main", "snowball-icon");
+        const snowball_icon = this.add.image(426, 930, "main", "snowball-icon");
 
         // chat_send_button
         const chat_send_button = this.add.image(1026, 931, "main", "blue-button");
 
         // chat_send_icon
-        this.add.image(1026, 929, "main", "chat-icon");
+        const chat_send_icon = this.add.image(1026, 929, "main", "chat-icon");
 
         // player_button
         const player_button = this.add.image(1086, 931, "main", "blue-button");
 
         // badge_member
-        this.add.image(1086, 929, "main", "badge-member");
+        const badge_member = this.add.image(1086, 929, "main", "badge-member");
 
         // buddies_button
         const buddies_button = this.add.image(1146, 931, "main", "blue-button");
 
         // buddies_icon
-        this.add.image(1146, 929, "main", "buddies-icon");
+        const buddies_icon = this.add.image(1146, 929, "main", "buddies-icon");
 
         // igloo_button
         const igloo_button = this.add.image(1206, 931, "main", "blue-button");
 
         // igloo_icon
-        this.add.image(1206, 929, "main", "igloo-icon");
+        const igloo_icon = this.add.image(1206, 929, "main", "igloo-icon");
 
         // help_button
         const help_button = this.add.image(1266, 931, "main", "blue-button");
 
         // help_icon
-        this.add.image(1266, 929, "main", "help-icon");
+        const help_icon = this.add.image(1266, 929, "main", "help-icon");
 
         // onlinePopup
         const onlinePopup = this.add.container(1155, 857);
@@ -159,16 +207,14 @@ export default class Main extends BaseScene {
         request_button.visible = false;
 
         // mail_button
-        const mail_button = this.add.image(170, 49, "main", "mail-button");
+        const mail_button = this.add.image(1446, 49, "main", "mail-button");
 
         // news_button
-        const news_button = this.add.image(70, 61, "main", "news-button");
+        const news_button = this.add.image(175, 61, "main", "news-button");
+        news_button.visible = false;
 
-        // mod_button
-        const mod_button = this.add.image(1434, 69, "main", "mod/button");
-
-        // mod_m
-        const mod_m = this.add.sprite(1434, 69, "main", "mod/m");
+        // discord_button
+        const discord_button = this.add.image(70, 60, "main", "discord-button");
 
         // waddle
         const waddle = new Waddle(this, 1099, 332);
@@ -217,6 +263,7 @@ export default class Main extends BaseScene {
 
         // lists
         const hideOnSleep = [playerCard, buddy, map, waddle, settings, moderator];
+        const interfaceList = [map_button, discord_button, chatLog, mail_button, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, badge_member, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_icon, emote_button, chat_icon, chat_button, chat_box, dock];
 
         // dock (components)
         new Interactive(dock);
@@ -315,19 +362,42 @@ export default class Main extends BaseScene {
         news_buttonButton.callback = () => this.unimplementedPrompt();
         news_buttonButton.activeFrame = false;
 
-        // mod_button (components)
-        const mod_buttonSimpleButton = new SimpleButton(mod_button);
-        mod_buttonSimpleButton.hoverCallback = () => this.onModOver();
-        mod_buttonSimpleButton.hoverOutCallback = () => this.onModOut();
-        mod_buttonSimpleButton.callback = () => this.onModClick();
+        // discord_button (components)
+        const discord_buttonButton = new Button(discord_button);
+        discord_buttonButton.spriteName = "discord-button";
+        discord_buttonButton.callback = () => window.open("https://discord.gg/qfDz3VDXV3", '_blank').focus();;
+        discord_buttonButton.activeFrame = false;
 
+        this.dock = dock;
+        this.chat_box = chat_box;
+        this.chat_button = chat_button;
+        this.chat_icon = chat_icon;
+        this.emote_button = emote_button;
+        this.emote_icon = emote_icon;
+        this.action_button = action_button;
+        this.action_icon = action_icon;
+        this.snowball_button = snowball_button;
+        this.snowball_icon = snowball_icon;
+        this.chat_send_button = chat_send_button;
+        this.chat_send_icon = chat_send_icon;
+        this.player_button = player_button;
+        this.badge_member = badge_member;
+        this.buddies_button = buddies_button;
+        this.buddies_icon = buddies_icon;
+        this.igloo_button = igloo_button;
+        this.igloo_icon = igloo_icon;
+        this.help_button = help_button;
+        this.help_icon = help_icon;
         this.onlinePopup = onlinePopup;
         this.popup = popup;
         this.popupText = popupText;
         this.chatLog = chatLog;
         this.crosshair = crosshair;
+        this.map_button = map_button;
         this.request_button = request_button;
-        this.mod_m = mod_m;
+        this.mail_button = mail_button;
+        this.news_button = news_button;
+        this.discord_button = discord_button;
         this.waddle = waddle;
         this.buddy = buddy;
         this.playerCard = playerCard;
@@ -338,6 +408,7 @@ export default class Main extends BaseScene {
         this.moderator = moderator;
         this.settings = settings;
         this.hideOnSleep = hideOnSleep;
+        this.interfaceList = interfaceList;
 
         this.events.emit("scene-awake");
     }
@@ -388,6 +459,15 @@ export default class Main extends BaseScene {
 
         let anims = this.cache.json.get('main-anims')
         this.anims.fromJSON(anims)
+
+        // Window functions
+
+        window.hide = this.hide
+        window.hide = hide.bind(this)
+
+        window.show = this.show
+        window.show = show.bind(this)
+
     }
 
     onSleep(sys, data) {
@@ -552,6 +632,29 @@ export default class Main extends BaseScene {
     unimplementedPrompt(){
         let prompt = this.game.scene.getScene('InterfaceController').prompt
         prompt.showError('This feature is not yet implemented!\nCPA is in beta, and is being actively\nupdated. Check back soon!',)
+    }
+
+    hide(){
+        for (let item of this.interfaceList) {
+            item.visible = false
+        }
+		
+		for (let penguin of Object.values(this.world.room.penguins)) {
+            penguin.visible = false
+            penguin.nameTag.visible = false
+        }
+		
+    }
+
+    show(){
+        for (let item of this.interfaceList) {
+            item.visible = true
+        }
+		
+		for (let penguin of Object.values(this.world.room.penguins)) {
+            penguin.visible = true
+            penguin.nameTag.visible = true
+        }
     }
 
     /* END-USER-CODE */
