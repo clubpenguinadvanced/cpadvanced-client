@@ -19,21 +19,15 @@ export default class Attic extends RoomScene {
         this.roomTriggers = {
             'lodge': () => this.triggerRoom(220, 1146, 562)
         }
-		this.music = "884"
+        this.music = "884"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("attic-pack", "assets/media/rooms/attic/attic-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("884", "assets/media/music/884.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

@@ -17,21 +17,15 @@ export default class Berg extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomAnims = true
-		this.music = "584"
+        this.music = "584"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("berg-pack", "assets/media/rooms/berg/berg-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("584", "assets/media/music/584.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

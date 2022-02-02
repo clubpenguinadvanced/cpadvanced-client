@@ -20,22 +20,16 @@ export default class Forest extends RoomScene {
             'cove': () => this.triggerRoom(810, 520, 416),
             'lake': () => this.unimplementedPrompt()
         }
-		
-		this.music = "1168"
+
+        this.music = "1168"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("forest-pack", "assets/media/rooms/forest/forest-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1168", "assets/media/music/1168.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

@@ -19,22 +19,16 @@ export default class Mine extends RoomScene {
             'shack': () => this.triggerRoom(807, 1200, 400),
             'surfer': () => this.unimplementedPrompt()
         }
-		
-		this.music = "675"
+
+        this.music = "675"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("mine-pack", "assets/media/rooms/mine/mine-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("675", "assets/media/music/675.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

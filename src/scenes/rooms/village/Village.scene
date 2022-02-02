@@ -5,6 +5,7 @@
         "compilerInsertSpaces": true,
         "exportClass": true,
         "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
             "cpadvanced-client/assets/media/rooms/skiVillage/skiVillage-pack.json"
         ],

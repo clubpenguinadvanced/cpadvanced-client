@@ -19,20 +19,14 @@ export default class Cavemine extends RoomScene {
             //                                         id   xpos  ypos
         }
 
-		this.music = "532"
+        this.music = "532"
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("goldMine-pack", "assets/media/rooms/goldMine/goldMine-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("532", "assets/media/music/532.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

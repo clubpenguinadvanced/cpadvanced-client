@@ -13,22 +13,16 @@ export default class School extends RoomScene {
             'rink': () => this.triggerRoom(802, 1200, 400),
             'shack': () => this.triggerRoom(807, 360, 520)
         }
-		
-		this.music = "436"
-		
+
+        this.music = "436"
+
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("school-pack", "assets/media/rooms/school/school-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("436", "assets/media/music/436.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

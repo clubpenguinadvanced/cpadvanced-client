@@ -27,22 +27,16 @@ export default class Agentlobby extends RoomScene {
                 'hq': () => this.triggerRoom(800, 1200, 400)
             }
         }
-		
-		this.music = 1167
+
+        this.music = 1167
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("everydayPhoningFacility-pack", "assets/media/rooms/everydayPhoningFacility/everydayPhoningFacility-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1167", "assets/media/music/1167.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

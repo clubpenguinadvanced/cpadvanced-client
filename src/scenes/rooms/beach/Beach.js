@@ -25,21 +25,15 @@ export default class Beach extends RoomScene {
             'ship': null
         }
         this.roomAnims = true
-		this.music = "582"
+        this.music = "582"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("beach-pack", "assets/media/rooms/beach/beach-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("582", "assets/media/music/582.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

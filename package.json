@@ -1,6 +1,6 @@
 {
   "name": "cpadvanced",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A HTML5 Club Penguin Private Server",
   "scripts": {
     "dev": "webpack serve",
@@ -10,14 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wizguin/yukon.git"
+    "url": "git+https://github.com/clubpenguinadvanced/cpadvanced-client.git"
   },
   "author": "floogal",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wizguin/yukon/issues"
+    "url": "https://github.com/clubpenguinadvanced/cpadvanced-client/issues"
   },
-  "homepage": "https://github.com/wizguin/yukon#readme",
+  "homepage": "https://github.com/clubpenguinadvanced/cpadvanced-client#readme",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",

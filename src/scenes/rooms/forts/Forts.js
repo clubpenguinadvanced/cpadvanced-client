@@ -19,15 +19,9 @@ export default class Forts extends RoomScene {
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("snowForts-pack", "assets/media/rooms/snowForts/snowForts-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1169", "assets/media/music/1169.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

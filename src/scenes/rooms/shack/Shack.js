@@ -18,22 +18,16 @@ export default class Shack extends RoomScene {
             'mine': () => this.triggerRoom(808, 1200, 400),
             'forest': () => this.triggerRoom(809, 1200, 400)
         }
-		
-		this.music = "1172"
+
+        this.music = "1172"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("mineShack-pack", "assets/media/rooms/mineShack/mineShack-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1172", "assets/media/music/1172.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

@@ -23,22 +23,16 @@ export default class Plaza extends RoomScene {
             'shack': () => this.triggerRoom(809, 1200, 400)
 
         }
-		
-		this.music = "1170"
+
+        this.music = "1170"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("plaza-pack", "assets/media/rooms/plaza/plaza-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1170", "assets/media/music/1170.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

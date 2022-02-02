@@ -21,22 +21,16 @@ export default class Pet extends RoomScene {
             'pufflescape': () => this.unimplementedPrompt()
             //                                    id   xpos  ypos
         }
-		
-		this.music = "659"
+
+        this.music = "659"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("petShop-pack", "assets/media/rooms/petShop/petShop-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("659", "assets/media/music/659.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

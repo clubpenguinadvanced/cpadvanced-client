@@ -19,22 +19,16 @@ export default class Dance extends RoomScene {
             'soundstudio': () => this.unimplementedPrompt(),
             'town': () => this.triggerRoom(100, 1200, 400),
         }
-		
-		this.music = "1165"
+
+        this.music = "1165"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("danceClub-pack", "assets/media/rooms/danceClub/danceClub-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1165", "assets/media/music/1165.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

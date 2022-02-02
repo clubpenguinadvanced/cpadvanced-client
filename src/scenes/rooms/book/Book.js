@@ -81,7 +81,7 @@ export default class Book extends RoomScene {
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("bookRoom-pack", "assets/media/rooms/bookRoom/bookRoom-pack.json");
     }

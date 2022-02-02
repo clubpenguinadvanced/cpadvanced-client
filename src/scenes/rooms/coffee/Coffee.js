@@ -18,22 +18,16 @@ export default class Coffee extends RoomScene {
             'smoothie': () => this.unimplementedPrompt(),
             'town': () => this.triggerRoom(100, 1200, 400)
         }
-		
-		this.music = "1163"
+
+        this.music = "1163"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("coffeeShop-pack", "assets/media/rooms/coffeeShop/coffeeShop-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1163", "assets/media/music/1163.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

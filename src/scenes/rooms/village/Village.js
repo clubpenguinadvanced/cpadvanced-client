@@ -19,22 +19,16 @@ export default class Village extends RoomScene {
             'lodge': () => this.triggerRoom(221, 1200, 400),
             'mtn': () => this.triggerRoom(230, 1200, 400)
         }
-		
-		this.music = "1174"
+
+        this.music = "1174"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("skiVillage-pack", "assets/media/rooms/skiVillage/skiVillage-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1174", "assets/media/music/1174.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

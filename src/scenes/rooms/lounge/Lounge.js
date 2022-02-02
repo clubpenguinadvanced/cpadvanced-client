@@ -26,7 +26,7 @@ export default class Lounge extends RoomScene {
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("lounge-pack", "assets/media/rooms/lounge/lounge-pack.json");
     }

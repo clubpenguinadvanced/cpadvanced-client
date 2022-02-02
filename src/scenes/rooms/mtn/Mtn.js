@@ -13,22 +13,16 @@ export default class Mtn extends RoomScene {
             'village': () => this.triggerRoom(200, 1200, 400),
             'village2': () => this.triggerRoom(200, 360, 520)
         }
-		
-		this.music = 1174
-		
+
+        this.music = 1174
+
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("skiHill-pack", "assets/media/rooms/skiHill/skiHill-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1174", "assets/media/music/1174.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

@@ -23,7 +23,7 @@ export default class Pizza extends RoomScene {
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("pizzaParlor-pack", "assets/media/rooms/pizzaParlor/pizzaParlor-pack.json");
     }

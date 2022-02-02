@@ -16,22 +16,16 @@ export default class DojoExt extends RoomScene {
             'dojo': () => this.unimplementedPrompt(),
             'shack': () => this.triggerRoom(807, 1200, 400)
         }
-		
-		this.music = "1166"
+
+        this.music = "1166"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("dojoCourtyard-pack", "assets/media/rooms/dojoCourtyard/dojoCourtyard-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1166", "assets/media/music/1166.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

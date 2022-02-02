@@ -14,22 +14,16 @@ export default class Rink extends RoomScene {
             'school': () => this.triggerRoom(122, 1200, 400),
             'forts': () => this.triggerRoom(801, 360, 520)
         }
-		
-		this.music = "1171"
+
+        this.music = "1171"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("pool-pack", "assets/media/rooms/pool/pool-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1171", "assets/media/music/1171.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

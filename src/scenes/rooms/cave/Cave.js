@@ -15,21 +15,15 @@ export default class Cave extends RoomScene {
             'mine': () => this.triggerRoom(808, 360, 520),
             'plaza': () => this.triggerRoom(300, 700, 450)
         }
-		
-		this.music = "670"
+
+        this.music = "670"
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("undergroundPool-pack", "assets/media/rooms/undergroundPool/undergroundPool-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("670", "assets/media/music/670.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

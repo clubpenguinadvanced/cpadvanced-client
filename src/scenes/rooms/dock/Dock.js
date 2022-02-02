@@ -25,22 +25,16 @@ export default class Dock extends RoomScene {
             'village': () => this.triggerRoom(200, 1300, 760),
             'town': () => this.triggerRoom(100, 368, 640)
         }
-		
-		this.music = "1162"
+
+        this.music = "1162"
 
         /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
-    preload() {
+    editorPreload() {
 
         this.load.pack("dock-pack", "assets/media/rooms/dock/dock-pack.json");
-		
-		/* START-USER-CTR-CODE */
-
-        this.load.audio("1162", "assets/media/music/1162.mp3");
-
-        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */

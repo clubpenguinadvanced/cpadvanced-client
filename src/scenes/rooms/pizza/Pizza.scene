@@ -5,6 +5,7 @@
         "compilerInsertSpaces": true,
         "exportClass": true,
         "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
             "testEnvironment/assets/media/rooms/pizzaParlor/pizzaParlor-pack.json"
         ],

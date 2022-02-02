@@ -6,6 +6,7 @@
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
         "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
             "yukon/assets/media/rooms/lounge/lounge-pack.json"
         ],

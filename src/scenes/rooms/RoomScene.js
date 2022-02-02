@@ -44,6 +44,14 @@ export default class RoomScene extends BaseScene {
 
         this.interface.showInterface()
     }
+	
+	preload() {
+		if (this.music && !this.cache.audio.exists(this.music)) {
+    		this.load.audio(this.music, `assets/media/music/${this.music}.mp3`)
+		}
+		
+		this.editorPreload()
+	}
 
     sortChildren() {
         if (!this.sort) return
@@ -79,7 +87,9 @@ export default class RoomScene extends BaseScene {
     }
 
     addMusic() {
-        if (localStorage.muteMusic != 'true') this.sound.play(this.music, { loop: true })
+		if (this.cache.audio.exists(this.music)){
+        	if (localStorage.muteMusic != 'true') this.sound.play(this.music, { loop: true })
+		}
     }
 
     getWaddles() {
