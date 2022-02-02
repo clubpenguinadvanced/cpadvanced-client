@@ -203,7 +203,7 @@ export default class Main extends BaseScene {
         const map_button = this.add.sprite(90, 888, "main", "map-button");
 
         // request_button
-        const request_button = this.add.image(270, 62, "main", "buddy-button");
+        const request_button = this.add.image(170, 62, "main", "buddy-button");
         request_button.visible = false;
 
         // mail_button
@@ -524,7 +524,7 @@ export default class Main extends BaseScene {
         this.chatInput.clearText()
 
         this.balloonFactory.showTextBalloon(this.world.client.id, text)
-        this.network.send('JrKvJh5xBaQgJad7KXB56ty7uY77rhnVPLHe5M4caj2fDCW3gnTvBePwDcbnrre3fhyaEcRNVYRt3g8wzzbWPAyppa4pUzT5mLHXpSMHEe5NzA3E2JFhkvnhQQMGDLtH4wuLkKtLUXDKadNhpgxsrdpXc9YnzLEvEQpvxcsZtuWHteXP44AHNWxbJTX9g995zEK7PmUUmjEEHJ3WsFPHm5Y82tQDerKQKDrZtCfNxwYV7JBKPNGw55MvYBfrYb7AHxXajK2YGrvw3SamnT2cLQttd3WxE8b6M3MwCFr8a2QvYK5wNAb8WjDGZZWQss92cdBn9ssRqd6evu4thMaF4SV4cmNQAHWEyeCBpEYrEh8VrwUMdgktrLGVkx2CE6MSCkZ3xRZA3wuswhq4Z6LnXxkTXrfF34qcba8pU7DdmVwRzyM8fM8SUQ2WLMBnFHrdsYCPtpCAnGgGSTDL8zEbvbVLJLjeWz3pXaYY7GQPn7jef4s6XEsZPS9SngPSEMSH', 'send_message', { message: text })
+        this.network.send('send_message', { message: text })
     }
 
     onBuddyClick() {
@@ -538,7 +538,7 @@ export default class Main extends BaseScene {
         }
 
         this.interface.showLoading(this.getString('joining', 'igloo'))
-        this.network.send('JrKvJh5xBaQgJad7KXB56ty7uY77rhnVPLHe5M4caj2fDCW3gnTvBePwDcbnrre3fhyaEcRNVYRt3g8wzzbWPAyppa4pUzT5mLHXpSMHEe5NzA3E2JFhkvnhQQMGDLtH4wuLkKtLUXDKadNhpgxsrdpXc9YnzLEvEQpvxcsZtuWHteXP44AHNWxbJTX9g995zEK7PmUUmjEEHJ3WsFPHm5Y82tQDerKQKDrZtCfNxwYV7JBKPNGw55MvYBfrYb7AHxXajK2YGrvw3SamnT2cLQttd3WxE8b6M3MwCFr8a2QvYK5wNAb8WjDGZZWQss92cdBn9ssRqd6evu4thMaF4SV4cmNQAHWEyeCBpEYrEh8VrwUMdgktrLGVkx2CE6MSCkZ3xRZA3wuswhq4Z6LnXxkTXrfF34qcba8pU7DdmVwRzyM8fM8SUQ2WLMBnFHrdsYCPtpCAnGgGSTDL8zEbvbVLJLjeWz3pXaYY7GQPn7jef4s6XEsZPS9SngPSEMSH', 'join_igloo', { igloo: this.world.client.id, x: 0, y: 0 })
+        this.network.send('join_igloo', { igloo: this.world.client.id, x: 0, y: 0 })
     }
 
     onRequestClick() {
@@ -565,11 +565,11 @@ export default class Main extends BaseScene {
         let text = `${request.username} has asked to be your buddy.\nDo you accept?`
 
         this.interface.prompt.showWindow(text, 'dual', () => {
-            this.network.send('JrKvJh5xBaQgJad7KXB56ty7uY77rhnVPLHe5M4caj2fDCW3gnTvBePwDcbnrre3fhyaEcRNVYRt3g8wzzbWPAyppa4pUzT5mLHXpSMHEe5NzA3E2JFhkvnhQQMGDLtH4wuLkKtLUXDKadNhpgxsrdpXc9YnzLEvEQpvxcsZtuWHteXP44AHNWxbJTX9g995zEK7PmUUmjEEHJ3WsFPHm5Y82tQDerKQKDrZtCfNxwYV7JBKPNGw55MvYBfrYb7AHxXajK2YGrvw3SamnT2cLQttd3WxE8b6M3MwCFr8a2QvYK5wNAb8WjDGZZWQss92cdBn9ssRqd6evu4thMaF4SV4cmNQAHWEyeCBpEYrEh8VrwUMdgktrLGVkx2CE6MSCkZ3xRZA3wuswhq4Z6LnXxkTXrfF34qcba8pU7DdmVwRzyM8fM8SUQ2WLMBnFHrdsYCPtpCAnGgGSTDL8zEbvbVLJLjeWz3pXaYY7GQPn7jef4s6XEsZPS9SngPSEMSH', 'buddy_accept', request)
+            this.network.send('buddy_accept', request)
             this.interface.prompt.window.visible = false
 
         }, () => {
-            this.network.send('JrKvJh5xBaQgJad7KXB56ty7uY77rhnVPLHe5M4caj2fDCW3gnTvBePwDcbnrre3fhyaEcRNVYRt3g8wzzbWPAyppa4pUzT5mLHXpSMHEe5NzA3E2JFhkvnhQQMGDLtH4wuLkKtLUXDKadNhpgxsrdpXc9YnzLEvEQpvxcsZtuWHteXP44AHNWxbJTX9g995zEK7PmUUmjEEHJ3WsFPHm5Y82tQDerKQKDrZtCfNxwYV7JBKPNGw55MvYBfrYb7AHxXajK2YGrvw3SamnT2cLQttd3WxE8b6M3MwCFr8a2QvYK5wNAb8WjDGZZWQss92cdBn9ssRqd6evu4thMaF4SV4cmNQAHWEyeCBpEYrEh8VrwUMdgktrLGVkx2CE6MSCkZ3xRZA3wuswhq4Z6LnXxkTXrfF34qcba8pU7DdmVwRzyM8fM8SUQ2WLMBnFHrdsYCPtpCAnGgGSTDL8zEbvbVLJLjeWz3pXaYY7GQPn7jef4s6XEsZPS9SngPSEMSH', 'buddy_reject', { id: request.id })
+            this.network.send('buddy_reject', { id: request.id })
             this.interface.prompt.window.visible = false
         })
     }
@@ -638,20 +638,20 @@ export default class Main extends BaseScene {
         for (let item of this.interfaceList) {
             item.visible = false
         }
-		
-		for (let penguin of Object.values(this.world.room.penguins)) {
+
+        for (let penguin of Object.values(this.world.room.penguins)) {
             penguin.visible = false
             penguin.nameTag.visible = false
         }
-		
+
     }
 
     show(){
         for (let item of this.interfaceList) {
             item.visible = true
         }
-		
-		for (let penguin of Object.values(this.world.room.penguins)) {
+
+        for (let penguin of Object.values(this.world.room.penguins)) {
             penguin.visible = true
             penguin.nameTag.visible = true
         }
