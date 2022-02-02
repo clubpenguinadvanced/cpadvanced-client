@@ -20,8 +20,8 @@ const game = {
         default: 'matter',
         matter: {
             debug: {
-                renderFill: false,
-                renderLine: false,
+                renderFill: true,
+                renderLine: true,
                 showInternalEdges: true
             },
             gravity: false

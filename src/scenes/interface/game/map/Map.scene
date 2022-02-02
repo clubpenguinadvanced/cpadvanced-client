@@ -74,8 +74,7 @@
                         "key": "map",
                         "frame": "overlay/main"
                     },
-                    "y": 23,
-                    "visible": false
+                    "y": 23
                 },
                 {
                     "type": "Container",
@@ -829,8 +828,7 @@
                         "frame": "overlay/placesbutton0001"
                     },
                     "x": -649,
-                    "y": -378,
-                    "visible": false
+                    "y": -378
                 },
                 {
                     "type": "Text",
@@ -839,7 +837,6 @@
                     "components": [],
                     "x": -690,
                     "y": -326,
-                    "visible": false,
                     "text": "Places",
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
@@ -860,8 +857,7 @@
                         "frame": "overlay/gamesbutton0001"
                     },
                     "x": -520,
-                    "y": -378,
-                    "visible": false
+                    "y": -378
                 },
                 {
                     "type": "Text",
@@ -870,7 +866,6 @@
                     "components": [],
                     "x": -557,
                     "y": -326,
-                    "visible": false,
                     "text": "Games",
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
@@ -891,8 +886,7 @@
                         "frame": "overlay/shopsbutton0001"
                     },
                     "x": -393,
-                    "y": -378,
-                    "visible": false
+                    "y": -378
                 },
                 {
                     "type": "Text",
@@ -901,7 +895,6 @@
                     "components": [],
                     "x": -429,
                     "y": -326,
-                    "visible": false,
                     "text": "Shops",
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",

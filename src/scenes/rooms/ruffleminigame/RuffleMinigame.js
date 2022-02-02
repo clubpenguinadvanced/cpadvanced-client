@@ -52,6 +52,8 @@ export default class RuffleMinigame extends RoomScene {
 
     create() {
         super.create()
+		
+		window.hide()
 
         var sprite = Phaser.Math.RND.between(0, 15)
         if (sprite < 6) {

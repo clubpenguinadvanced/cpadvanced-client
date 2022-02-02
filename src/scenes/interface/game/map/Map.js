@@ -134,7 +134,6 @@ export default class Map extends BaseContainer {
 
         // overlay
         const overlay = scene.add.sprite(0, 23, "map", "overlay/main");
-        overlay.visible = false;
         this.add(overlay);
 
         // places_container
@@ -337,36 +336,30 @@ export default class Map extends BaseContainer {
 
         // places_btn
         const places_btn = scene.add.sprite(-649, -378, "map", "overlay/placesbutton0001");
-        places_btn.visible = false;
         this.add(places_btn);
 
         // places_txt
         const places_txt = scene.add.text(-690, -326, "", {});
-        places_txt.visible = false;
         places_txt.text = "Places";
         places_txt.setStyle({ "color": "#7f7f7fff", "fontFamily": "Burbank Small", "fontSize": "24px", "fontStyle": "bold" });
         this.add(places_txt);
 
         // games_btn
         const games_btn = scene.add.sprite(-520, -378, "map", "overlay/gamesbutton0001");
-        games_btn.visible = false;
         this.add(games_btn);
 
         // games_txt
         const games_txt = scene.add.text(-557, -326, "", {});
-        games_txt.visible = false;
         games_txt.text = "Games";
         games_txt.setStyle({ "color": "#7f7f7fff", "fontFamily": "Burbank Small", "fontSize": "24px", "fontStyle": "bold" });
         this.add(games_txt);
 
         // shops_btn
         const shops_btn = scene.add.sprite(-393, -378, "map", "overlay/shopsbutton0001");
-        shops_btn.visible = false;
         this.add(shops_btn);
 
         // shops_txt
         const shops_txt = scene.add.text(-429, -326, "", {});
-        shops_txt.visible = false;
         shops_txt.text = "Shops";
         shops_txt.setStyle({ "color": "#7f7f7fff", "fontFamily": "Burbank Small", "fontSize": "24px", "fontStyle": "bold" });
         this.add(shops_txt);

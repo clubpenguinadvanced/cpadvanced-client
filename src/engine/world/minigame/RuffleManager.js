@@ -87,6 +87,7 @@ export default class RuffleManager {
         this.world.client.sendJoinRoom(roomid, room.key)
 		
 		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game, stamps: stamps })
+		window.show()
 		
 	}
 	
