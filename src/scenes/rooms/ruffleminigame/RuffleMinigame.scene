@@ -5,7 +5,10 @@
         "compilerInsertSpaces": true,
         "exportClass": true,
         "superClassName": "RoomScene",
-        "preloadPackFiles": [],
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "cpadvanced-client/assets/media/interface/menus/load/load-pack.json"
+        ],
         "createMethodName": "_create",
         "sceneKey": "RuffleMinigame",
         "borderWidth": 1520,
@@ -13,15 +16,31 @@
     },
     "displayList": [
         {
-            "type": "Rectangle",
-            "id": "cb286770-4726-4772-8c2e-6238cff0d5a9",
+            "type": "Image",
+            "id": "c808c39c-6ee3-4a56-96de-e4c00015a226",
             "label": "bg",
+            "components": [
+                "Interactive"
+            ],
+            "texture": {
+                "key": "load",
+                "frame": "bg"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "91d45509-620f-4dfd-ac20-3e35e0bb766a",
+            "label": "loading",
+            "scope": "CLASS",
             "components": [],
+            "texture": {
+                "key": "loading_assets",
+                "frame": "shovelling0001.png"
+            },
             "x": 760,
-            "y": 480,
-            "isFilled": true,
-            "width": 1520,
-            "height": 960
+            "y": 410
         }
     ],
     "plainObjects": [],
