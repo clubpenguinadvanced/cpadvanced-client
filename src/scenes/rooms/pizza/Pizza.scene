@@ -141,12 +141,14 @@
             "scope": "CLASS",
             "components": [
                 "SimpleButton",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
             "SimpleButton.hoverCallback": "() => this.onPizzatronOver()",
             "SimpleButton.hoverOutCallback": "() => this.onPizzatronOut()",
             "MoveTo.x": 320,
             "MoveTo.y": 300,
+            "ShowHint.text": "Pizzatron 3000",
             "texture": {
                 "key": "pizzaParlor",
                 "frame": "pizzatronFlap0001.png"

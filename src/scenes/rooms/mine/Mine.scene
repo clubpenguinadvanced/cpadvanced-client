@@ -164,12 +164,14 @@
             "scope": "CLASS",
             "components": [
                 "SimpleButton",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
             "SimpleButton.hoverCallback": "() => this.onRescueOver()",
             "SimpleButton.hoverOutCallback": "() => this.onRescueOut()",
             "MoveTo.x": 540,
             "MoveTo.y": 400,
+            "ShowHint.text": "Puffle Rescue",
             "texture": {
                 "key": "mine",
                 "frame": "rescueBoard0001.png"
@@ -299,12 +301,14 @@
             "label": "cart_btn",
             "components": [
                 "SimpleButton",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
             "SimpleButton.hoverCallback": "() => this.onCartOver()",
             "SimpleButton.hoverOutCallback": "() => this.onCartOut()",
             "MoveTo.x": 1230,
             "MoveTo.y": 370,
+            "ShowHint.text": "Cart Surfer",
             "x": 1228,
             "y": 370,
             "angle": -25,

@@ -15,9 +15,9 @@ export default class Mine extends RoomScene {
         this.roomTriggers = {
             'cave': () => this.triggerRoom(806, 1200, 400),
             'gold': () => this.triggerRoom(813, 1200, 400),
-            'rescue': () => this.unimplementedPrompt(),
+            'rescue': () => this.triggerGame("puffleRescue"),
             'shack': () => this.triggerRoom(807, 1200, 400),
-            'surfer': () => this.unimplementedPrompt()
+            'surfer': () => this.triggerGame("cartSurfer")
         }
 
         this.music = "675"
@@ -128,6 +128,8 @@ export default class Mine extends RoomScene {
         const rescueBoardMoveTo = new MoveTo(rescueBoard);
         rescueBoardMoveTo.x = 540;
         rescueBoardMoveTo.y = 400;
+        const rescueBoardShowHint = new ShowHint(rescueBoard);
+        rescueBoardShowHint.text = "Puffle Rescue";
 
         // surfaceLight (components)
         const surfaceLightSimpleButton = new SimpleButton(surfaceLight);
@@ -152,6 +154,8 @@ export default class Mine extends RoomScene {
         const cart_btnMoveTo = new MoveTo(cart_btn);
         cart_btnMoveTo.x = 1230;
         cart_btnMoveTo.y = 370;
+        const cart_btnShowHint = new ShowHint(cart_btn);
+        cart_btnShowHint.text = "Cart Surfer";
 
         this.bg = bg;
         this.cartAnim = cartAnim;

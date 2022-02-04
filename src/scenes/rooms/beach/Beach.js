@@ -11,8 +11,26 @@ export default class Beach extends RoomScene {
         super("Beach");
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.bucket;
-        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
+        this.woodrailing;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.leftrocks;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.lighthousedoor;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.lighthouserailing;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.rightchair;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.rightchairarm;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.leftchair;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.snowcastle;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.trees;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.rightrocks;
+        /** @type {Phaser.GameObjects.Sprite[]} */
         this.sort;
 
 
@@ -21,10 +39,9 @@ export default class Beach extends RoomScene {
         this.roomTriggers = {
             'village': () => this.triggerRoom(200, 450, 750),
             'dock': () => this.triggerRoom(800, 240, 420),
-            'lighthouse': () => this.unimplementedPrompt(),
+            'light': () => this.unimplementedPrompt(),
             'ship': null
         }
-        this.roomAnims = true
         this.music = "582"
 
         /* END-USER-CTR-CODE */
@@ -40,78 +57,63 @@ export default class Beach extends RoomScene {
     _create() {
 
         // bg
-        const bg = this.add.image(-20, -20, "beach", "bg");
-        bg.setOrigin(0, 0);
+        this.add.image(726, 456, "beach", "bg");
 
-        // lighthouse_door
-        const lighthouse_door = this.add.image(388, 216, "beach", "lighthouse_door");
-        lighthouse_door.setOrigin(0, 0);
+        // woodrailing
+        const woodrailing = this.add.sprite(161, 524, "beach", "woodrailing");
 
-        // cage
-        const cage = this.add.image(232, 352, "beach", "cage");
-        cage.setOrigin(0.4935064935064935, 0.5);
+        // leftrocks
+        const leftrocks = this.add.sprite(249, 650, "beach", "leftrocks");
 
-        // buoy
-        const buoy = this.add.image(194, 428, "beach", "buoy");
-        buoy.setOrigin(0.5185185185185185, 0.4965034965034965);
+        // lighthousedoor
+        const lighthousedoor = this.add.sprite(397, 322, "beach", "lighthousedoor");
 
-        // fish
-        const fish = this.add.image(297, 392, "beach", "fish");
-        fish.setOrigin(0.4782608695652174, 0.4956521739130435);
+        // lighthouserailing
+        const lighthouserailing = this.add.sprite(382, 411, "beach", "lighthouserailing");
 
-        // net
-        const net = this.add.image(290, 465, "beach", "net");
-        net.setOrigin(0.49767441860465117, 0.5);
+        // rightchair
+        const rightchair = this.add.sprite(1013, 480, "beach", "rightchair");
 
-        // fg
-        const fg = this.add.image(1217, 293, "beach", "fg");
-        fg.setOrigin(0, 0);
+        // rightchairarm
+        const rightchairarm = this.add.sprite(948.0086684597807, 559.7832885054825, "beach", "rightchairarm");
+        rightchairarm.setOrigin(0.48642011588740636, 0.7478328850548246);
 
-        // sign
-        const sign = this.add.image(1146, 323, "beach", "sign");
-        sign.setOrigin(0, 0);
+        // leftchair
+        const leftchair = this.add.sprite(850, 545, "beach", "leftchair");
 
-        // chair_ground
-        const chair_ground = this.add.image(906, 524, "beach", "chair_ground");
-        chair_ground.setOrigin(0, 0);
+        // snowcastle
+        const snowcastle = this.add.sprite(775, 690, "beach", "snowcastle");
 
-        // chair_2
-        const chair_2 = this.add.image(1060, 501, "beach", "chair_2");
-        chair_2.setOrigin(0.5185185185185185, 0.6060606060606061);
+        // trees
+        const trees = this.add.sprite(1382, 441, "beach", "trees");
 
-        // chair_2_front
-        const chair_2_front = this.add.image(1053, 522, "beach", "chair_2_front");
-        chair_2_front.setOrigin(0.5, 0.6764705882352942);
-
-        // chair_1
-        const chair_1 = this.add.image(961, 526, "beach", "chair_1");
-        chair_1.setOrigin(0.5, 0.58778626);
-
-        // chair_1_front
-        const chair_1_front = this.add.image(943, 542, "beach", "chair_1_front");
-        chair_1_front.setOrigin(0.4, 0.67054264);
+        // rightrocks
+        const rightrocks = this.add.sprite(1352, 616, "beach", "rightrocks");
 
         // bucket
-        const bucket = this.add.sprite(1078, 612, "beach", "bucket/bucket0001");
-        bucket.setOrigin(0.8863109, 0.94611727);
+        this.add.image(1100, 575, "beach", "bucket");
 
         // lists
-        const sort = [bucket, chair_1_front, chair_1, chair_2_front, chair_2, net, fish, buoy, cage];
+        const sort = [rightrocks, trees, snowcastle, leftchair, rightchairarm, rightchair, lighthouserailing, lighthousedoor];
 
-        // lighthouse_door (components)
-        const lighthouse_doorButton = new Button(lighthouse_door);
-        lighthouse_doorButton.spriteName = "lighthouse_door";
-        lighthouse_doorButton.activeFrame = false;
-        const lighthouse_doorMoveTo = new MoveTo(lighthouse_door);
-        lighthouse_doorMoveTo.x = 480;
-        lighthouse_doorMoveTo.y = 400;
+        // lighthousedoor (components)
+        const lighthousedoorButton = new Button(lighthousedoor);
+        lighthousedoorButton.spriteName = "lighthousedoor";
+        lighthousedoorButton.activeFrame = false;
+        const lighthousedoorMoveTo = new MoveTo(lighthousedoor);
+        lighthousedoorMoveTo.x = 420;
+        lighthousedoorMoveTo.y = 400;
 
-        // bucket (components)
-        const bucketSimpleButton = new SimpleButton(bucket);
-        bucketSimpleButton.hoverCallback = () => this.onBucketOver();
-        bucketSimpleButton.pixelPerfect = true;
-
-        this.bucket = bucket;
+        this.woodrailing = woodrailing;
+        this.leftrocks = leftrocks;
+        this.lighthousedoor = lighthousedoor;
+        this.lighthouserailing = lighthouserailing;
+        this.rightchair = rightchair;
+        this.rightchairarm = rightchairarm;
+        this.leftchair = leftchair;
+        this.snowcastle = snowcastle;
+        this.trees = trees;
+        this.rightrocks = rightrocks;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -119,33 +121,6 @@ export default class Beach extends RoomScene {
 
 
     /* START-USER-CODE */
-
-    onBucketOver() {
-        let frame = this.bucket.frame.name
-        frame = frame.substr(frame.length - 4)
-
-        switch (frame) {
-            case '0001':
-            case '0346':
-                this.bucket.play('bucket1')
-                break
-            case '0070':
-                this.bucket.play('bucket2')
-                break
-            case '0137':
-                this.bucket.play('bucket3')
-                break
-            case '0210':
-                this.bucket.play('bucket4')
-                break
-            case '0269':
-                this.bucket.play('bucket5')
-                break
-            default:
-                break
-        }
-    }
-
     /* END-USER-CODE */
 }
 

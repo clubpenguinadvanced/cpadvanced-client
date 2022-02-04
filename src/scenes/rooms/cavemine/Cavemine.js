@@ -14,7 +14,7 @@ export default class Cavemine extends RoomScene {
 
         this.roomTriggers = {
             'hats': () => this.interface.prompt.showItem(429),
-            'lake': () => this.triggerRoom(814, 1200, 400),
+            'lake': () => this.unimplementedPrompt(),
             'mine': () => this.triggerRoom(808, 1200, 400)
             //                                         id   xpos  ypos
         }

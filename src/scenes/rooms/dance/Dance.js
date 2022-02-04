@@ -15,7 +15,7 @@ export default class Dance extends RoomScene {
         this.roomTriggers = {
             'arcade': () => this.triggerRoom(121, 1200, 400),
             'boiler': () => this.unimplementedPrompt(),
-            'contest': () => this.unimplementedPrompt(),
+            'contest': () => this.triggerGame("danceContest"),
             'soundstudio': () => this.unimplementedPrompt(),
             'town': () => this.triggerRoom(100, 1200, 400),
         }
@@ -155,6 +155,8 @@ export default class Dance extends RoomScene {
         const danceContestMoveTo = new MoveTo(danceContest);
         danceContestMoveTo.x = 1100;
         danceContestMoveTo.y = 480;
+        const danceContestShowHint = new ShowHint(danceContest);
+        danceContestShowHint.text = "Dance Contest";
 
         // boiler_btn (components)
         const boiler_btnSimpleButton = new SimpleButton(boiler_btn);

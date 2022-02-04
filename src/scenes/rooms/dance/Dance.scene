@@ -278,12 +278,14 @@
             "scope": "CLASS",
             "components": [
                 "SimpleButton",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
             "SimpleButton.hoverCallback": "() => this.onContestOver()",
             "SimpleButton.hoverOutCallback": "() => this.onContestOut()",
             "MoveTo.x": 1100,
             "MoveTo.y": 480,
+            "ShowHint.text": "Dance Contest",
             "texture": {
                 "key": "danceClub",
                 "frame": "danceContest0001.png"

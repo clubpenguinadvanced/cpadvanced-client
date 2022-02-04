@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
-            "yukon/assets/media/rooms/lodge/lodge-pack.json"
+            "cpadvanced-client/assets/media/rooms/lodge/lodge-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Lodge",
@@ -17,333 +17,372 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "76eaef0a-15dc-43f1-9bc8-5622f0ec228e",
+            "type": "Sprite",
+            "id": "998576af-c208-49ea-901a-84a889ee8e0f",
             "label": "bg",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "lodge",
                 "frame": "bg"
             },
-            "x": -17,
-            "y": -2,
-            "originX": 0,
-            "originY": 0
+            "x": 760,
+            "y": 285
         },
         {
-            "type": "Image",
-            "id": "88448b99-23ca-4433-82a8-40b75fe91423",
-            "label": "door",
+            "type": "Sprite",
+            "id": "50f9927b-7977-44b7-a1b6-ad5699d72ac6",
+            "label": "maindoor",
+            "scope": "CLASS",
             "components": [
                 "Button",
                 "MoveTo"
             ],
-            "Button.spriteName": "door",
+            "Button.spriteName": "maindoor",
             "Button.activeFrame": false,
-            "MoveTo.x": 184,
-            "MoveTo.y": 626,
+            "MoveTo.x": 140,
+            "MoveTo.y": 490,
             "texture": {
                 "key": "lodge",
-                "frame": "door"
+                "frame": "maindoor"
             },
-            "x": 136,
-            "y": 461
-        },
-        {
-            "type": "Image",
-            "id": "53e3dc25-0ed5-456d-ab6b-fcf13df0fceb",
-            "label": "footrest",
-            "components": [],
-            "texture": {
-                "key": "lodge",
-                "frame": "footrest"
-            },
-            "x": 1279,
-            "y": 747,
-            "originX": 0.49295775,
-            "originY": 0.47222222
-        },
-        {
-            "type": "Image",
-            "id": "c015247e-c4dd-45b4-a287-6530da7dbc01",
-            "label": "chair",
-            "components": [],
-            "texture": {
-                "key": "lodge",
-                "frame": "chair"
-            },
-            "x": 1365,
-            "y": 763,
-            "originX": 0.5017064846416383,
-            "originY": 0.5018450184501845
+            "x": 115,
+            "y": 410
         },
         {
             "type": "Sprite",
-            "id": "043cb8a8-f3ae-44fd-ad07-20c2ca07c4a2",
-            "label": "fire",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "fire",
-            "Animation.end": 10,
-            "texture": {
-                "key": "lodge",
-                "frame": "fire0001"
-            },
-            "x": 1334,
-            "y": 473,
-            "originX": 0.5061728395061729
-        },
-        {
-            "type": "Image",
-            "id": "a63ca841-5066-4bac-9805-f6730b8850a4",
-            "label": "fishing_door",
+            "id": "3d3748c1-8bba-4e98-b32d-e464bd1597bf",
+            "label": "fishingdoor",
+            "scope": "CLASS",
             "components": [
                 "Button",
                 "MoveTo",
                 "ShowHint"
             ],
-            "Button.spriteName": "fishing_door",
-            "Button.hoverCallback": "() => this.onFishOver()",
-            "Button.hoverOutCallback": "() => this.onFishOut()",
+            "Button.spriteName": "fishingdoor",
             "Button.activeFrame": false,
-            "MoveTo.x": 960,
-            "MoveTo.y": 460,
-            "ShowHint.text": "Go Fishing",
+            "MoveTo.x": 1000,
+            "MoveTo.y": 310,
+            "ShowHint.text": "Ice Fishing",
             "texture": {
                 "key": "lodge",
-                "frame": "fishing_door"
+                "frame": "fishingdoor"
             },
-            "x": 949,
-            "y": 249,
-            "originX": 0.2916666666666667,
-            "originY": 0.3961218836565097
+            "x": 1012,
+            "y": 176
         },
         {
-            "type": "Image",
-            "id": "77cd1882-69fd-448c-979f-f284c45113b8",
-            "label": "rods",
+            "type": "Sprite",
+            "id": "cac60816-53de-4619-8cde-3f11f2110fff",
+            "label": "bottomrailing",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "lodge",
-                "frame": "rods"
+                "frame": "bottomrailing"
             },
-            "x": 820,
-            "y": 328
+            "x": 553,
+            "y": 758
         },
         {
-            "type": "Image",
-            "id": "62189c22-d3e4-4dbd-9c11-3402e58a1215",
+            "type": "Sprite",
+            "id": "3712298d-2559-4def-bc9e-3ff89fbacd5a",
+            "label": "railing2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "railing2"
+            },
+            "x": 608.8665100325047,
+            "y": 474.78866293912046,
+            "originX": 0.39408475832665096,
+            "originY": 0.21025083989237348
+        },
+        {
+            "type": "Sprite",
+            "id": "9435734b-9f7c-48ee-894f-aa94732cc89a",
+            "label": "railing3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "railing3"
+            },
+            "x": 883.6084060118849,
+            "y": 424.9719799603836,
+            "originX": 0.524448870259249,
+            "originY": 0.19497123771793884
+        },
+        {
+            "type": "Sprite",
+            "id": "d8cf624b-bfde-4615-82fc-62fbd311a7ee",
+            "label": "bluechair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "bluechair"
+            },
+            "x": 682.7797146531126,
+            "y": 477.3705865327877,
+            "originX": 0.4003419977308072,
+            "originY": 0.3886443011867641
+        },
+        {
+            "type": "Sprite",
+            "id": "87e87e1e-81bf-4b52-b235-b08bc2238114",
+            "label": "bluechairarm",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "bluechairarm"
+            },
+            "x": 672,
+            "y": 587
+        },
+        {
+            "type": "Sprite",
+            "id": "68a7c229-b31c-4689-998e-2217446f3506",
+            "label": "railing4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "railing4"
+            },
+            "x": 1397,
+            "y": 438
+        },
+        {
+            "type": "Container",
+            "id": "1197db64-3dcd-4746-9efb-780a41874941",
+            "label": "fireplace",
+            "components": [],
+            "x": 1434,
+            "y": 392,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "cefd834f-5c16-486f-8698-a02f87489552",
+                    "label": "fireplace_lower",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "lodge",
+                        "frame": "fireplace_lower"
+                    },
+                    "x": -0.6740658385836014,
+                    "y": 198.66703726374038
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e15650ef-5776-4aba-9fba-22757edfa7b8",
+                    "label": "fire",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "lodge",
+                        "frame": "fireanim0001"
+                    },
+                    "x": -1.6740658385836014,
+                    "y": 165.66703726374038
+                },
+                {
+                    "type": "Sprite",
+                    "id": "79f2d2f4-bc04-4930-8f59-bde83b45b35d",
+                    "label": "fireplace_upper",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "lodge",
+                        "frame": "fireplace_upper"
+                    },
+                    "x": 40.3259341614164,
+                    "y": -75.33296273625962
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "35de5b14-593c-47ae-b792-43e433aff689",
+            "label": "greenchair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "greenchair"
+            },
+            "x": 754.3481316771671,
+            "y": 773.7114322952416,
+            "originX": 0.5221730574646827,
+            "originY": 0.16518683228329023
+        },
+        {
+            "type": "Sprite",
+            "id": "360776a4-a93e-4c38-b26d-114af2966bce",
+            "label": "redchair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "redchair"
+            },
+            "x": 1356.3037366456658,
+            "y": 776.3854981338252,
+            "originX": 0.45076276945342514,
+            "originY": 0.1669397808053675
+        },
+        {
+            "type": "Sprite",
+            "id": "e6757597-1a93-4b8e-a1e3-1d27998dd269",
+            "label": "stool",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "stool"
+            },
+            "x": 1076.5653971553033,
+            "y": 498.2739923371362,
+            "originX": 0.4957805549058577,
+            "originY": 0.15515209062104543
+        },
+        {
+            "type": "Sprite",
+            "id": "c090952e-b547-49b3-9d31-1a18d6db315a",
+            "label": "findfour",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "findfour"
+            },
+            "x": 1008,
+            "y": 537,
+            "scaleX": -1
+        },
+        {
+            "type": "Sprite",
+            "id": "03e76b44-6744-4d24-b635-d28e02574be7",
+            "label": "stool_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "stool"
+            },
+            "x": 928.4346028446968,
+            "y": 574.058758200775,
+            "originX": 0.5042194450941434,
+            "originY": 0.09846476305190159
+        },
+        {
+            "type": "Sprite",
+            "id": "967c3833-af6d-4aa1-bd0a-d99888658ce4",
+            "label": "findfour_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "findfour"
+            },
+            "x": 886,
+            "y": 671,
+            "scaleX": -1
+        },
+        {
+            "type": "Sprite",
+            "id": "36db08be-8901-4c51-92eb-097cf8c6ba6c",
+            "label": "findfour_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "findfour"
+            },
+            "x": 1114,
+            "y": 663
+        },
+        {
+            "type": "Sprite",
+            "id": "137f4134-67ba-4086-96e2-2d597be4a7d3",
+            "label": "desk",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "desk"
+            },
+            "x": 153,
+            "y": 689
+        },
+        {
+            "type": "Sprite",
+            "id": "97eb1e45-07ce-428f-b9a5-96db75bbf70c",
+            "label": "deskchair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "deskchair"
+            },
+            "x": 118,
+            "y": 623
+        },
+        {
+            "type": "Sprite",
+            "id": "a968f392-7e8a-4595-8203-c7a1808cf7bd",
             "label": "bait",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "bait",
-            "Button.activeFrame": false,
+            "scope": "CLASS",
+            "components": [],
             "texture": {
                 "key": "lodge",
                 "frame": "bait"
             },
-            "x": 838,
-            "y": 416,
-            "originX": 0.5060240963855421
+            "x": 877,
+            "y": 297
         },
         {
             "type": "Sprite",
-            "id": "1bcadf52-0e40-4659-a7fd-d782d5681eda",
-            "label": "catalog_small",
-            "components": [
-                "Animation",
-                "SimpleButton"
-            ],
-            "Animation.key": "catalog_small",
-            "Animation.end": 7,
-            "Animation.repeat": 0,
-            "Animation.autoPlay": false,
-            "Animation.onHover": true,
-            "SimpleButton.pixelPerfect": true,
-            "texture": {
-                "key": "lodge",
-                "frame": "catalog_small0001"
-            },
-            "x": 830,
-            "y": 240,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "74960a23-c275-47bd-89f3-9f7d6f6e3cd1",
-            "label": "catalog_small_tape",
+            "id": "f4bb2e95-22a0-4010-b76c-594f98024b1d",
+            "label": "safe",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "lodge",
-                "frame": "catalog_small_tape"
+                "frame": "safe"
             },
-            "x": 847,
-            "y": 238,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "815121c9-6c0c-4a5c-9bfa-44290eeb376c",
-            "label": "table3",
-            "components": [
-                "Button",
-                "MoveTo",
-                "ShowHint"
-            ],
-            "Button.spriteName": "table3",
-            "Button.activeFrame": false,
-            "ShowHint.text": "Play Find Four",
-            "texture": {
-                "key": "lodge",
-                "frame": "table3"
-            },
-            "x": 600,
-            "y": 515,
-            "originY": 0.6985294117647058
-        },
-        {
-            "type": "Image",
-            "id": "116a3627-102f-4436-ade3-2a3a1d84b925",
-            "label": "table2",
-            "components": [
-                "Button",
-                "MoveTo",
-                "ShowHint"
-            ],
-            "Button.spriteName": "table2",
-            "Button.activeFrame": false,
-            "ShowHint.text": "Play Find Four",
-            "texture": {
-                "key": "lodge",
-                "frame": "table2"
-            },
-            "x": 583,
-            "y": 792,
-            "originY": 0.7586206896551724
-        },
-        {
-            "type": "Image",
-            "id": "92344cad-eff7-4748-9a84-6ce047322bc4",
-            "label": "table4",
-            "components": [
-                "Button",
-                "MoveTo",
-                "ShowHint"
-            ],
-            "Button.spriteName": "table4",
-            "Button.activeFrame": false,
-            "ShowHint.text": "Play Find Four",
-            "texture": {
-                "key": "lodge",
-                "frame": "table4"
-            },
-            "x": 1020,
-            "y": 812,
-            "originY": 0.7727272727272727
-        },
-        {
-            "type": "Image",
-            "id": "0503fb33-c16c-42c7-8a78-de9df070e30f",
-            "label": "candle",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onCandleOver()",
-            "SimpleButton.pixelPerfect": true,
-            "texture": {
-                "key": "lodge",
-                "frame": "candle"
-            },
-            "x": 453,
-            "y": 259,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Sprite",
-            "id": "e8d1f6c0-99c5-4d3b-b85e-7caa97bdc37b",
-            "label": "flame",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "flame",
-            "Animation.end": 14,
-            "texture": {
-                "key": "lodge",
-                "frame": "flame0001"
-            },
-            "x": 518,
-            "y": 230,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Sprite",
-            "id": "4c73c395-fe4c-4c5e-bf81-76e1385e4876",
-            "label": "flame_out",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "flame_out",
-            "Animation.end": 30,
-            "Animation.repeat": 0,
-            "Animation.autoPlay": false,
-            "Animation.showOnStart": true,
-            "Animation.hideOnComplete": true,
-            "texture": {
-                "key": "lodge",
-                "frame": "flame_out0001"
-            },
-            "x": 518,
-            "y": 198,
-            "originX": 0,
-            "originY": 0,
-            "visible": false
-        },
-        {
-            "type": "Sprite",
-            "id": "d96d756f-7e3a-4a54-ba16-adf5fd7580d7",
-            "label": "fish",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "fish",
-            "Animation.end": 18,
-            "Animation.repeat": 0,
-            "Animation.autoPlay": false,
-            "Animation.showOnStart": true,
-            "texture": {
-                "key": "lodge",
-                "frame": "fish0001"
-            },
-            "x": 1010,
-            "y": 365,
-            "originX": 0,
-            "originY": 0,
-            "visible": false
+            "x": -34,
+            "y": 684
         },
         {
             "type": "Rectangle",
-            "id": "5769c896-bdcb-4fa6-b7e7-e2d1871577be",
-            "label": "zone",
-            "components": [
-                "Zone"
-            ],
-            "Zone.callback": "() => this.onZoneClick()",
-            "x": 1227,
-            "y": 215,
-            "alpha": 0.5,
+            "id": "4027b333-cfdf-44b4-9b05-841a7452f182",
+            "label": "rectangle",
+            "components": [],
+            "x": 102,
+            "y": 47,
+            "angle": 65,
             "isFilled": true,
-            "fillColor": "#00ff00",
-            "width": 115,
-            "height": 430
+            "fillColor": "#634a2f",
+            "width": 30,
+            "height": 250
+        },
+        {
+            "type": "Sprite",
+            "id": "7f83a9cf-7f1d-4c77-9022-64608c589864",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "fg"
+            },
+            "x": 821,
+            "y": 1015.5,
+            "originY": 1
         }
     ],
     "plainObjects": [],
@@ -358,12 +397,25 @@
             "id": "c17b59e1-6b76-4fd3-8fcf-ba6c957a2587",
             "label": "sort",
             "objectIds": [
-                "88448b99-23ca-4433-82a8-40b75fe91423",
-                "815121c9-6c0c-4a5c-9bfa-44290eeb376c",
-                "116a3627-102f-4436-ade3-2a3a1d84b925",
-                "92344cad-eff7-4748-9a84-6ce047322bc4",
-                "53e3dc25-0ed5-456d-ab6b-fcf13df0fceb",
-                "c015247e-c4dd-45b4-a287-6530da7dbc01"
+                "cac60816-53de-4619-8cde-3f11f2110fff",
+                "7f83a9cf-7f1d-4c77-9022-64608c589864",
+                "f4bb2e95-22a0-4010-b76c-594f98024b1d",
+                "a968f392-7e8a-4595-8203-c7a1808cf7bd",
+                "97eb1e45-07ce-428f-b9a5-96db75bbf70c",
+                "137f4134-67ba-4086-96e2-2d597be4a7d3",
+                "36db08be-8901-4c51-92eb-097cf8c6ba6c",
+                "967c3833-af6d-4aa1-bd0a-d99888658ce4",
+                "03e76b44-6744-4d24-b635-d28e02574be7",
+                "c090952e-b547-49b3-9d31-1a18d6db315a",
+                "e6757597-1a93-4b8e-a1e3-1d27998dd269",
+                "360776a4-a93e-4c38-b26d-114af2966bce",
+                "35de5b14-593c-47ae-b792-43e433aff689",
+                "68a7c229-b31c-4689-998e-2217446f3506",
+                "87e87e1e-81bf-4b52-b235-b08bc2238114",
+                "d8cf624b-bfde-4615-82fc-62fbd311a7ee",
+                "9435734b-9f7c-48ee-894f-aa94732cc89a",
+                "3712298d-2559-4def-bc9e-3ff89fbacd5a",
+                "1197db64-3dcd-4746-9efb-780a41874941"
             ]
         }
     ]

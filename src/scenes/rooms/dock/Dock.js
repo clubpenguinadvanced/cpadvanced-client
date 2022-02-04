@@ -1,6 +1,6 @@
 import RoomScene from '../RoomScene'
 
-import { Animation, Button, MoveTo, ShowHint, Zone } from '@components/components'
+import { SimpleButton, Button, MoveTo, ShowHint } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -11,10 +11,38 @@ export default class Dock extends RoomScene {
         super("Dock");
 
         /** @type {Phaser.GameObjects.Sprite} */
+        this.bg;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.bench;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.bencharm;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.trees;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fence;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.stairs;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.lantern;
+        /** @type {Phaser.GameObjects.Sprite} */
         this.boat;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.rings;
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+        this.wharf;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.barrier2;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.barrier;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.tubes;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.table;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.board;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.uncurl;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.tape;
+        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
         this.sort;
 
 
@@ -23,7 +51,8 @@ export default class Dock extends RoomScene {
         this.roomTriggers = {
             'beach': () => this.triggerRoom(400, 950, 430),
             'village': () => this.triggerRoom(200, 1300, 760),
-            'town': () => this.triggerRoom(100, 368, 640)
+            'town': () => this.triggerRoom(100, 368, 640),
+			'hydro': () => this.triggerGame("hydroHopper")
         }
 
         this.music = "1162"
@@ -41,91 +70,95 @@ export default class Dock extends RoomScene {
     _create() {
 
         // bg
-        const bg = this.add.image(-48, 0, "dock", "bg");
-        bg.setOrigin(0, 0);
+        const bg = this.add.sprite(843, 457, "dock", "bg");
 
-        // post_1
-        const post_1 = this.add.image(443, 592, "dock", "post_1");
-        post_1.setOrigin(0.55, 0.54782609);
+        // bench
+        const bench = this.add.sprite(177, 336, "dock", "bench");
+
+        // bencharm
+        const bencharm = this.add.sprite(117, 385.10402802800803, "dock", "bencharm");
+        bencharm.setOrigin(0.5, 0.621806677645226);
+
+        // trees
+        const trees = this.add.sprite(1469, 531, "dock", "trees");
+
+        // fence
+        const fence = this.add.sprite(1219, 679, "dock", "fence");
+
+        // stairs
+        const stairs = this.add.sprite(368, 502, "dock", "stairs");
+
+        // lantern
+        const lantern = this.add.sprite(475, 510, "dock", "lantern");
 
         // boat
-        const boat = this.add.sprite(231, 639, "dock", "boat");
-        boat.setOrigin(0.49477351916376305, 0.5091743119266054);
+        const boat = this.add.sprite(174, 652, "dock", "floatyboaty0001");
 
-        // dock
-        const dock = this.add.image(187, 593, "dock", "dock");
-        dock.setOrigin(0, 0);
+        // wharf
+        const wharf = this.add.sprite(232, 633, "dock", "wharf");
 
-        // post_2
-        const post_2 = this.add.image(572, 619, "dock", "post_2");
-        post_2.setOrigin(0.43243243243243246, 0.49137931034482757);
+        // barrier2
+        const barrier2 = this.add.sprite(532, 637, "dock", "barrier2");
 
-        // post_3
-        const post_3 = this.add.image(367, 882, "dock", "post_3");
-        post_3.setOrigin(0.5384615384615384, 0.806282722513089);
+        // barrier
+        const barrier = this.add.sprite(296, 839, "dock", "barrier");
 
-        // post_4
-        const post_4 = this.add.image(164, 832, "dock", "post_4");
-        post_4.setOrigin(0.4943820224719101, 0.7960526315789473);
+        // tubes
+        const tubes = this.add.sprite(536, 678, "dock", "tubes0001");
 
-        // box
-        const box = this.add.image(434, 652, "dock", "box");
-        box.setOrigin(0.4915254237288136, 0.7142857142857143);
+        // table
+        const table = this.add.sprite(939, 342, "dock", "table");
 
-        // bollard_1
-        const bollard_1 = this.add.image(353, 689, "dock", "bollard_1");
-        bollard_1.setOrigin(0.5, 0.9302325581395349);
+        // board_container
+        const board_container = this.add.container(753, 656);
 
-        // bollard_2
-        const bollard_2 = this.add.image(279, 732, "dock", "bollard_2");
-        bollard_2.setOrigin(0.5, 0.9215686274509803);
+        // board
+        const board = this.add.sprite(34, 0, "dock", "board");
+        board_container.add(board);
 
-        // rings
-        const rings = this.add.sprite(632, 668, "dock", "rings0001");
-        rings.setOrigin(0.4975124378109453, 0.8127659574468085);
+        // uncurl
+        const uncurl = this.add.sprite(0, 8, "dock", "uncurl0001");
+        uncurl.scaleX = -1.5;
+        uncurl.scaleY = 1.5;
+        board_container.add(uncurl);
 
-        // right_sign
-        this.add.image(1366, 270, "dock", "right_sign");
-
-        // left_sign
-        this.add.image(120, 345, "dock", "left_sign");
-
-        // boards
-        const boards = this.add.image(740, 746, "dock", "boards");
-        boards.setOrigin(0.5, 0.7721088435374149);
-
-        // zone
-        const zone = this.add.rectangle(631, 633, 135, 160);
-        zone.alpha = 0.5;
-        zone.isFilled = true;
-        zone.fillColor = 65280;
+        // tape
+        const tape = this.add.sprite(7, -25, "dock", "tape");
+        tape.scaleX = -1.5;
+        tape.scaleY = 1.5;
+        board_container.add(tape);
 
         // lists
-        const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box, boards];
+        const sort = [barrier2, tubes, barrier, bencharm, bench, lantern, table, board_container];
 
         // boat (components)
-        const boatButton = new Button(boat);
-        boatButton.spriteName = "boat";
-        boatButton.activeFrame = false;
-        boatButton.pixelPerfect = true;
-        new MoveTo(boat);
         const boatShowHint = new ShowHint(boat);
         boatShowHint.text = "Hydro Hopper";
+        const boatMoveTo = new MoveTo(boat);
+        boatMoveTo.x = 200;
+        boatMoveTo.y = 650;
+        new SimpleButton(boat);
 
-        // rings (components)
-        const ringsAnimation = new Animation(rings);
-        ringsAnimation.key = "rings";
-        ringsAnimation.end = 34;
-        ringsAnimation.repeat = 0;
-        ringsAnimation.autoPlay = false;
-        ringsAnimation.stopOnOut = false;
+        // tubes (components)
+        const tubesSimpleButton = new SimpleButton(tubes);
+        tubesSimpleButton.hoverCallback = () => this.onTubesHover();
 
-        // zone (components)
-        const zoneZone = new Zone(zone);
-        zoneZone.hoverCallback = () => this.onRingsOver();
-
+        this.bg = bg;
+        this.bench = bench;
+        this.bencharm = bencharm;
+        this.trees = trees;
+        this.fence = fence;
+        this.stairs = stairs;
+        this.lantern = lantern;
         this.boat = boat;
-        this.rings = rings;
+        this.wharf = wharf;
+        this.barrier2 = barrier2;
+        this.barrier = barrier;
+        this.tubes = tubes;
+        this.table = table;
+        this.board = board;
+        this.uncurl = uncurl;
+        this.tape = tape;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -137,24 +170,13 @@ export default class Dock extends RoomScene {
     create() {
         super.create()
 
-        this.up = false
-
-        this.time.addEvent({
-            delay: 1500,
-            callback: () => this.floatBoat(),
-            loop: true
-        })
+        this.boat.play("floatyboaty")
     }
 
-    onRingsOver() {
-        this.rings.__Animation.play()
+    onTubesHover(){
+        this.tubes.play("docktubes")
     }
 
-    floatBoat() {
-        let value = (this.up) ? -2 : 2
-        this.boat.y += value
-        this.up = !this.up
-    }
 
     /* END-USER-CODE */
 }

@@ -1,6 +1,6 @@
 import RoomScene from '../RoomScene'
 
-import { Animation, Button, MoveTo, ShowHint, SimpleButton, Zone } from '@components/components'
+import { Button, MoveTo, ShowHint } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -11,20 +11,63 @@ export default class Lodge extends RoomScene {
         super("Lodge");
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.flame;
+        this.bg;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.flame_out;
+        this.maindoor;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fish;
-        /** @type {Phaser.GameObjects.Image[]} */
+        this.fishingdoor;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.bottomrailing;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.railing2;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.railing3;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.bluechair;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.bluechairarm;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.railing4;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fireplace_lower;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fire;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fireplace_upper;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.greenchair;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.redchair;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.stool;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.findfour;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.stool_1;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.findfour_1;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.findfour_2;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.desk;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.deskchair;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.bait;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.safe;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fg;
+        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
         this.sort;
 
 
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'attic': () => this.triggerRoom(221, 966, 560),
-            'village': () => this.triggerRoom(200, 940, 540)
+            'attic': () => this.unimplementedPrompt(),
+            'village': () => this.triggerRoom(200, 940, 540),
+            'fishing': () => this.triggerGame("iceFishing")
         }
         this.music = '589'
 
@@ -41,180 +84,144 @@ export default class Lodge extends RoomScene {
     _create() {
 
         // bg
-        const bg = this.add.image(-17, -2, "lodge", "bg");
-        bg.setOrigin(0, 0);
+        const bg = this.add.sprite(760, 285, "lodge", "bg");
 
-        // door
-        const door = this.add.image(136, 461, "lodge", "door");
+        // maindoor
+        const maindoor = this.add.sprite(115, 410, "lodge", "maindoor");
 
-        // footrest
-        const footrest = this.add.image(1279, 747, "lodge", "footrest");
-        footrest.setOrigin(0.49295775, 0.47222222);
+        // fishingdoor
+        const fishingdoor = this.add.sprite(1012, 176, "lodge", "fishingdoor");
 
-        // chair
-        const chair = this.add.image(1365, 763, "lodge", "chair");
-        chair.setOrigin(0.5017064846416383, 0.5018450184501845);
+        // bottomrailing
+        const bottomrailing = this.add.sprite(553, 758, "lodge", "bottomrailing");
+
+        // railing2
+        const railing2 = this.add.sprite(608.8665100325047, 474.78866293912046, "lodge", "railing2");
+        railing2.setOrigin(0.39408475832665096, 0.21025083989237348);
+
+        // railing3
+        const railing3 = this.add.sprite(883.6084060118849, 424.9719799603836, "lodge", "railing3");
+        railing3.setOrigin(0.524448870259249, 0.19497123771793884);
+
+        // bluechair
+        const bluechair = this.add.sprite(682.7797146531126, 477.3705865327877, "lodge", "bluechair");
+        bluechair.setOrigin(0.4003419977308072, 0.3886443011867641);
+
+        // bluechairarm
+        const bluechairarm = this.add.sprite(672, 587, "lodge", "bluechairarm");
+
+        // railing4
+        const railing4 = this.add.sprite(1397, 438, "lodge", "railing4");
+
+        // fireplace
+        const fireplace = this.add.container(1434, 392);
+
+        // fireplace_lower
+        const fireplace_lower = this.add.sprite(-0.6740658385836014, 198.66703726374038, "lodge", "fireplace_lower");
+        fireplace.add(fireplace_lower);
 
         // fire
-        const fire = this.add.sprite(1334, 473, "lodge", "fire0001");
-        fire.setOrigin(0.5061728395061729, 0.5);
+        const fire = this.add.sprite(-1.6740658385836014, 165.66703726374038, "lodge", "fireanim0001");
+        fireplace.add(fire);
 
-        // fishing_door
-        const fishing_door = this.add.image(949, 249, "lodge", "fishing_door");
-        fishing_door.setOrigin(0.2916666666666667, 0.3961218836565097);
+        // fireplace_upper
+        const fireplace_upper = this.add.sprite(40.3259341614164, -75.33296273625962, "lodge", "fireplace_upper");
+        fireplace.add(fireplace_upper);
 
-        // rods
-        this.add.image(820, 328, "lodge", "rods");
+        // greenchair
+        const greenchair = this.add.sprite(754.3481316771671, 773.7114322952416, "lodge", "greenchair");
+        greenchair.setOrigin(0.5221730574646827, 0.16518683228329023);
+
+        // redchair
+        const redchair = this.add.sprite(1356.3037366456658, 776.3854981338252, "lodge", "redchair");
+        redchair.setOrigin(0.45076276945342514, 0.1669397808053675);
+
+        // stool
+        const stool = this.add.sprite(1076.5653971553033, 498.2739923371362, "lodge", "stool");
+        stool.setOrigin(0.4957805549058577, 0.15515209062104543);
+
+        // findfour
+        const findfour = this.add.sprite(1008, 537, "lodge", "findfour");
+        findfour.scaleX = -1;
+
+        // stool_1
+        const stool_1 = this.add.sprite(928.4346028446968, 574.058758200775, "lodge", "stool");
+        stool_1.setOrigin(0.5042194450941434, 0.09846476305190159);
+
+        // findfour_1
+        const findfour_1 = this.add.sprite(886, 671, "lodge", "findfour");
+        findfour_1.scaleX = -1;
+
+        // findfour_2
+        const findfour_2 = this.add.sprite(1114, 663, "lodge", "findfour");
+
+        // desk
+        const desk = this.add.sprite(153, 689, "lodge", "desk");
+
+        // deskchair
+        const deskchair = this.add.sprite(118, 623, "lodge", "deskchair");
 
         // bait
-        const bait = this.add.image(838, 416, "lodge", "bait");
-        bait.setOrigin(0.5060240963855421, 0.5);
+        const bait = this.add.sprite(877, 297, "lodge", "bait");
 
-        // catalog_small
-        const catalog_small = this.add.sprite(830, 240, "lodge", "catalog_small0001");
-        catalog_small.setOrigin(0, 0);
+        // safe
+        const safe = this.add.sprite(-34, 684, "lodge", "safe");
 
-        // catalog_small_tape
-        const catalog_small_tape = this.add.image(847, 238, "lodge", "catalog_small_tape");
-        catalog_small_tape.setOrigin(0, 0);
+        // rectangle
+        const rectangle = this.add.rectangle(102, 47, 30, 250);
+        rectangle.angle = 65;
+        rectangle.isFilled = true;
+        rectangle.fillColor = 6507055;
 
-        // table3
-        const table3 = this.add.image(600, 515, "lodge", "table3");
-        table3.setOrigin(0.5, 0.6985294117647058);
-
-        // table2
-        const table2 = this.add.image(583, 792, "lodge", "table2");
-        table2.setOrigin(0.5, 0.7586206896551724);
-
-        // table4
-        const table4 = this.add.image(1020, 812, "lodge", "table4");
-        table4.setOrigin(0.5, 0.7727272727272727);
-
-        // candle
-        const candle = this.add.image(453, 259, "lodge", "candle");
-        candle.setOrigin(0, 0);
-
-        // flame
-        const flame = this.add.sprite(518, 230, "lodge", "flame0001");
-        flame.setOrigin(0, 0);
-
-        // flame_out
-        const flame_out = this.add.sprite(518, 198, "lodge", "flame_out0001");
-        flame_out.setOrigin(0, 0);
-        flame_out.visible = false;
-
-        // fish
-        const fish = this.add.sprite(1010, 365, "lodge", "fish0001");
-        fish.setOrigin(0, 0);
-        fish.visible = false;
-
-        // zone
-        const zone = this.add.rectangle(1227, 215, 115, 430);
-        zone.alpha = 0.5;
-        zone.isFilled = true;
-        zone.fillColor = 65280;
+        // fg
+        const fg = this.add.sprite(821, 1015.5, "lodge", "fg");
+        fg.setOrigin(0.5, 1);
 
         // lists
-        const sort = [door, table3, table2, table4, footrest, chair];
+        const sort = [bottomrailing, fg, safe, bait, deskchair, desk, findfour_2, findfour_1, stool_1, findfour, stool, redchair, greenchair, railing4, bluechairarm, bluechair, railing3, railing2, fireplace];
 
-        // door (components)
-        const doorButton = new Button(door);
-        doorButton.spriteName = "door";
-        doorButton.activeFrame = false;
-        const doorMoveTo = new MoveTo(door);
-        doorMoveTo.x = 184;
-        doorMoveTo.y = 626;
+        // maindoor (components)
+        const maindoorButton = new Button(maindoor);
+        maindoorButton.spriteName = "maindoor";
+        maindoorButton.activeFrame = false;
+        const maindoorMoveTo = new MoveTo(maindoor);
+        maindoorMoveTo.x = 140;
+        maindoorMoveTo.y = 490;
 
-        // fire (components)
-        const fireAnimation = new Animation(fire);
-        fireAnimation.key = "fire";
-        fireAnimation.end = 10;
+        // fishingdoor (components)
+        const fishingdoorButton = new Button(fishingdoor);
+        fishingdoorButton.spriteName = "fishingdoor";
+        fishingdoorButton.activeFrame = false;
+        const fishingdoorMoveTo = new MoveTo(fishingdoor);
+        fishingdoorMoveTo.x = 1000;
+        fishingdoorMoveTo.y = 310;
+        const fishingdoorShowHint = new ShowHint(fishingdoor);
+        fishingdoorShowHint.text = "Ice Fishing";
 
-        // fishing_door (components)
-        const fishing_doorButton = new Button(fishing_door);
-        fishing_doorButton.spriteName = "fishing_door";
-        fishing_doorButton.hoverCallback = () => this.onFishOver();
-        fishing_doorButton.hoverOutCallback = () => this.onFishOut();
-        fishing_doorButton.activeFrame = false;
-        const fishing_doorMoveTo = new MoveTo(fishing_door);
-        fishing_doorMoveTo.x = 960;
-        fishing_doorMoveTo.y = 460;
-        const fishing_doorShowHint = new ShowHint(fishing_door);
-        fishing_doorShowHint.text = "Go Fishing";
-
-        // bait (components)
-        const baitButton = new Button(bait);
-        baitButton.spriteName = "bait";
-        baitButton.activeFrame = false;
-
-        // catalog_small (components)
-        const catalog_smallAnimation = new Animation(catalog_small);
-        catalog_smallAnimation.key = "catalog_small";
-        catalog_smallAnimation.end = 7;
-        catalog_smallAnimation.repeat = 0;
-        catalog_smallAnimation.autoPlay = false;
-        catalog_smallAnimation.onHover = true;
-        const catalog_smallSimpleButton = new SimpleButton(catalog_small);
-        catalog_smallSimpleButton.pixelPerfect = true;
-
-        // table3 (components)
-        const table3Button = new Button(table3);
-        table3Button.spriteName = "table3";
-        table3Button.activeFrame = false;
-        new MoveTo(table3);
-        const table3ShowHint = new ShowHint(table3);
-        table3ShowHint.text = "Play Find Four";
-
-        // table2 (components)
-        const table2Button = new Button(table2);
-        table2Button.spriteName = "table2";
-        table2Button.activeFrame = false;
-        new MoveTo(table2);
-        const table2ShowHint = new ShowHint(table2);
-        table2ShowHint.text = "Play Find Four";
-
-        // table4 (components)
-        const table4Button = new Button(table4);
-        table4Button.spriteName = "table4";
-        table4Button.activeFrame = false;
-        new MoveTo(table4);
-        const table4ShowHint = new ShowHint(table4);
-        table4ShowHint.text = "Play Find Four";
-
-        // candle (components)
-        const candleSimpleButton = new SimpleButton(candle);
-        candleSimpleButton.hoverCallback = () => this.onCandleOver();
-        candleSimpleButton.pixelPerfect = true;
-
-        // flame (components)
-        const flameAnimation = new Animation(flame);
-        flameAnimation.key = "flame";
-        flameAnimation.end = 14;
-
-        // flame_out (components)
-        const flame_outAnimation = new Animation(flame_out);
-        flame_outAnimation.key = "flame_out";
-        flame_outAnimation.end = 30;
-        flame_outAnimation.repeat = 0;
-        flame_outAnimation.autoPlay = false;
-        flame_outAnimation.showOnStart = true;
-        flame_outAnimation.hideOnComplete = true;
-
-        // fish (components)
-        const fishAnimation = new Animation(fish);
-        fishAnimation.key = "fish";
-        fishAnimation.end = 18;
-        fishAnimation.repeat = 0;
-        fishAnimation.autoPlay = false;
-        fishAnimation.showOnStart = true;
-
-        // zone (components)
-        const zoneZone = new Zone(zone);
-        zoneZone.callback = () => this.onZoneClick();
-
-        this.flame = flame;
-        this.flame_out = flame_out;
-        this.fish = fish;
+        this.bg = bg;
+        this.maindoor = maindoor;
+        this.fishingdoor = fishingdoor;
+        this.bottomrailing = bottomrailing;
+        this.railing2 = railing2;
+        this.railing3 = railing3;
+        this.bluechair = bluechair;
+        this.bluechairarm = bluechairarm;
+        this.railing4 = railing4;
+        this.fireplace_lower = fireplace_lower;
+        this.fire = fire;
+        this.fireplace_upper = fireplace_upper;
+        this.greenchair = greenchair;
+        this.redchair = redchair;
+        this.stool = stool;
+        this.findfour = findfour;
+        this.stool_1 = stool_1;
+        this.findfour_1 = findfour_1;
+        this.findfour_2 = findfour_2;
+        this.desk = desk;
+        this.deskchair = deskchair;
+        this.bait = bait;
+        this.safe = safe;
+        this.fg = fg;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -226,30 +233,7 @@ export default class Lodge extends RoomScene {
     create() {
         super.create()
 
-        this.flame_out.on('animationcomplete', () => this.onFlameOutComplete())
-    }
-
-    onCandleOver() {
-        if (!this.flame.visible) return
-        this.flame.visible = false
-        this.flame_out.__Animation.play()
-    }
-
-    onFlameOutComplete() {
-        this.flame.visible = true
-    }
-
-    onFishOver() {
-        this.fish.__Animation.play()
-    }
-
-    onFishOut() {
-        this.fish.__Animation.stop()
-        this.fish.visible = false
-    }
-
-    onZoneClick() {
-        this.world.client.penguin.move(1210, 460)
+        this.fire.play("fireanim")
     }
 
     /* END-USER-CODE */

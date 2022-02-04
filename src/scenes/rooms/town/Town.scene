@@ -5,6 +5,7 @@
         "compilerInsertSpaces": true,
         "exportClass": true,
         "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
             "yukon/assets/media/rooms/town/town-pack.json"
         ],
@@ -307,6 +308,24 @@
             "y": 476.3085517350086,
             "originX": 0.5222867233277427,
             "originY": 0.7080516274288713
+        },
+        {
+            "type": "Sprite",
+            "id": "2bbb0926-adf8-44af-8cd0-eb3a53ad70d4",
+            "label": "betahats",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "MoveTo.x": 1200,
+            "MoveTo.y": 665,
+            "texture": {
+                "key": "town",
+                "frame": "betahats.png"
+            },
+            "x": 1234,
+            "y": 688
         }
     ],
     "plainObjects": [],

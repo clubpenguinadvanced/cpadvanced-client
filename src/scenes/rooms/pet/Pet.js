@@ -14,9 +14,9 @@ export default class Pet extends RoomScene {
 
         this.roomTriggers = {
             'adoption': () => this.unimplementedPrompt(),
-            'cannon': () => this.triggerGame("puffleLaunch"),
+            'cannon': () => this.unimplementedPrompt(),
             'hotel': () => this.unimplementedPrompt(),
-            'park': () => this.unimplementedPrompt(),
+            'park': () => this.triggerGame("puffleRoundup"),
             'plaza': () => this.triggerRoom(300, 1200, 400),
             'pufflescape': () => this.unimplementedPrompt()
             //                                    id   xpos  ypos
@@ -244,8 +244,10 @@ export default class Pet extends RoomScene {
         park_btnSimpleButton.hoverCallback = () => this.onParkDoorOver();
         park_btnSimpleButton.hoverOutCallback = () => this.onParkDoorOut();
         const park_btnMoveTo = new MoveTo(park_btn);
-        park_btnMoveTo.x = 1450;
+        park_btnMoveTo.x = 1400;
         park_btnMoveTo.y = 500;
+        const park_btnShowHint = new ShowHint(park_btn);
+        park_btnShowHint.text = "Puffle Roundup";
 
         this.bg_outside = bg_outside;
         this.pufflescape = pufflescape;

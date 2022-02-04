@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
-            "yukon/assets/media/rooms/lounge/lounge-pack.json"
+            "cpadvanced-client/assets/media/rooms/arcade/arcade-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Lounge",
@@ -17,287 +17,717 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "c9d8a072-5746-43ad-99db-a0707d77be3a",
-            "label": "bg",
+            "type": "Rectangle",
+            "id": "6ad246d4-f0f4-4ea8-a830-72ae4d4b7e2e",
+            "label": "rectangle",
+            "components": [],
+            "x": 769,
+            "y": 773,
+            "isFilled": true,
+            "fillColor": "#1f0321",
+            "width": 350,
+            "height": 250
+        },
+        {
+            "type": "Sprite",
+            "id": "95707805-15e9-46dd-9f81-21a2df9d884b",
+            "label": "danceFloor",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "bg"
+                "key": "arcade",
+                "frame": "danceFloor0001.png"
             },
-            "x": -2,
-            "originX": 0,
-            "originY": 0
+            "x": 761,
+            "y": 801,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         },
         {
-            "type": "Image",
-            "id": "a1e9f797-d571-4134-b86e-b6fec7486917",
-            "label": "astro",
-            "components": [
-                "Button",
-                "MoveTo",
-                "ShowHint"
-            ],
-            "Button.spriteName": "astro",
-            "Button.activeFrame": false,
-            "Button.pixelPerfect": true,
-            "MoveTo.x": 940,
-            "MoveTo.y": 520,
-            "ShowHint.text": "Astro Barrier",
+            "type": "Sprite",
+            "id": "50a67ba7-562a-4c3f-ad6e-a8f0701c73b8",
+            "label": "dancingPenguin1",
+            "scope": "CLASS",
+            "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "astro"
+                "key": "arcade",
+                "frame": "dancingPenguin0001.png"
             },
-            "x": 1033,
-            "y": 380,
-            "originX": 0.5022222222222222,
-            "originY": 0.501577287066246
+            "x": 822,
+            "y": 778
         },
         {
-            "type": "Image",
-            "id": "3396b008-0eaa-4b47-8d21-f2c6056f64c1",
-            "label": "ice",
+            "type": "Sprite",
+            "id": "b26f299f-ae56-4878-abc6-7be8a5849051",
+            "label": "dancingPenguin2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "dancingPenguin0001.png"
+            },
+            "x": 771,
+            "y": 814
+        },
+        {
+            "type": "Sprite",
+            "id": "b4375e8d-6129-4e04-a47e-6c69e76b8073",
+            "label": "dancingPenguin3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "dancingPenguin0001.png"
+            },
+            "x": 663,
+            "y": 809
+        },
+        {
+            "type": "Sprite",
+            "id": "b4f358f4-559d-419d-a0f2-40eab884f839",
+            "label": "dancingPenguin4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "dancingPenguin0001.png"
+            },
+            "x": 707,
+            "y": 846
+        },
+        {
+            "type": "Sprite",
+            "id": "ef80b823-1379-4529-9a7c-9db05a594b16",
+            "label": "dancingPenguin5",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "dancingPenguin0001.png"
+            },
+            "x": 812,
+            "y": 850
+        },
+        {
+            "type": "Sprite",
+            "id": "cc003cd8-0b51-4725-b4a5-721634d09a09",
+            "label": "dancingPenguin6",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "dancingPenguin0001.png"
+            },
+            "x": 723,
+            "y": 777
+        },
+        {
+            "type": "Sprite",
+            "id": "b14ec331-8a94-42aa-825a-b1d5eea97ce9",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bg.png"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "c01166aa-bfe3-4b57-bb2e-ab814b223ec4",
+            "label": "leftSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "leftSpeaker0001.png"
+            },
+            "x": 298,
+            "y": 124
+        },
+        {
+            "type": "Sprite",
+            "id": "032cb94e-94d4-4231-8571-d09d664bb712",
+            "label": "rightSpeaker",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "rightSpeaker0001.png"
+            },
+            "x": 1239,
+            "y": 124
+        },
+        {
+            "type": "Sprite",
+            "id": "2061d131-2d96-497d-8fab-71c6f29a9acb",
+            "label": "targetBg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "targetBg.png"
+            },
+            "x": 760,
+            "y": 237
+        },
+        {
+            "type": "Sprite",
+            "id": "5a0aea52-8e71-4023-aadf-99c2e69cf868",
+            "label": "layer1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "layer1.png"
+            },
+            "x": 760,
+            "y": 242
+        },
+        {
+            "type": "Sprite",
+            "id": "2061bfde-433e-494e-ba2e-9acbc1aba2d0",
+            "label": "layer2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "layer2.png"
+            },
+            "x": 760,
+            "y": 279
+        },
+        {
+            "type": "Sprite",
+            "id": "70669efe-b2bd-43bc-b84d-90ed07f5d739",
+            "label": "layer3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "layer3.png"
+            },
+            "x": 760,
+            "y": 304
+        },
+        {
+            "type": "Sprite",
+            "id": "47e127f8-a115-41c0-adfd-5fdbca12da6a",
+            "label": "targetFg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "targetFg.png"
+            },
+            "x": 760,
+            "y": 313
+        },
+        {
+            "type": "Sprite",
+            "id": "9de21284-472b-49c1-8079-5ac0d5b397ab",
+            "label": "stairsRailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "stairsRailing.png"
+            },
+            "x": 1412,
+            "y": 716
+        },
+        {
+            "type": "Sprite",
+            "id": "80cd5287-3943-493a-b30f-06842ceac23e",
+            "label": "vsRailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "vsRailing.png"
+            },
+            "x": 760,
+            "y": 440
+        },
+        {
+            "type": "Sprite",
+            "id": "3d0a1344-deff-410b-b0b9-559f4fa4f738",
+            "label": "scoreboardBg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "scoreboardBg.png"
+            },
+            "x": 760,
+            "y": 59
+        },
+        {
+            "type": "Sprite",
+            "id": "fdafae2a-94ac-4d2e-b877-4231573d8e57",
+            "label": "scoreboard",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "scoreboardBlueWin0334.png"
+            },
+            "x": 760,
+            "y": 88
+        },
+        {
+            "type": "Sprite",
+            "id": "043362b9-813d-45a7-a163-274d26cbdbb9",
+            "label": "scoreboardFg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "scoreboardFg.png"
+            },
+            "x": 760,
+            "y": 86
+        },
+        {
+            "type": "Sprite",
+            "id": "e44f9d00-85ab-4129-a2e8-a73053b8f04d",
+            "label": "blankMachine",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "blankMachine.png"
+            },
+            "x": 364,
+            "y": 300
+        },
+        {
+            "type": "Sprite",
+            "id": "4babac08-853a-4d9e-bf92-565f0400442b",
+            "label": "bitsAndBoltsAnim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bitsAndBoltsAnim.png0001.png"
+            },
+            "x": 235,
+            "y": 391
+        },
+        {
+            "type": "Sprite",
+            "id": "94ac228c-3c42-4cd9-87dc-271279060d6e",
+            "label": "bitsAndBoltsHover",
+            "scope": "CLASS",
             "components": [
-                "Button",
+                "SimpleButton",
                 "MoveTo",
                 "ShowHint"
             ],
-            "Button.spriteName": "ice",
-            "Button.activeFrame": false,
-            "Button.pixelPerfect": true,
-            "MoveTo.x": 672,
-            "MoveTo.y": 512,
+            "SimpleButton.hoverCallback": "() => this.onBoltsOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onBoltsOut()",
+            "MoveTo.x": 310,
+            "MoveTo.y": 485,
+            "ShowHint.text": "Bits And Bolts",
+            "texture": {
+                "key": "arcade",
+                "frame": "bitsAndBoltsHover0001.png"
+            },
+            "x": 216,
+            "y": 393
+        },
+        {
+            "type": "Sprite",
+            "id": "46c048a6-4295-46b1-80ae-06adce133e8b",
+            "label": "bitsAndBoltsMachine",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bitsAndBoltsMachine.png"
+            },
+            "x": 233,
+            "y": 406
+        },
+        {
+            "type": "Sprite",
+            "id": "3579f230-2254-4b8e-aead-f7e06af725dc",
+            "label": "bitsAndBoltsStool",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "bitsAndBoltsStool.png"
+            },
+            "x": 311.5891140376454,
+            "y": 484.5944387857579,
+            "originX": 0.49315190062742337,
+            "originY": 0.16587295368964744
+        },
+        {
+            "type": "Sprite",
+            "id": "4f0fbc95-4e08-4ed0-9f09-a8b041a0431c",
+            "label": "thinIceAnim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "thinIceAnim0001.png"
+            },
+            "x": 1176,
+            "y": 272
+        },
+        {
+            "type": "Sprite",
+            "id": "e4e0c542-e792-486a-b648-548a119c98e0",
+            "label": "thinIceHover",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onIceOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onIceOut()",
+            "MoveTo.x": 1100,
+            "MoveTo.y": 375,
             "ShowHint.text": "Thin Ice",
             "texture": {
-                "key": "lounge",
-                "frame": "ice"
+                "key": "arcade",
+                "frame": "thinIceHover0001.png"
             },
-            "x": 626,
-            "y": 377,
-            "originX": 0.5026178010471204
+            "x": 1201,
+            "y": 265
         },
         {
-            "type": "Image",
-            "id": "da775854-13dc-41bc-8d75-dc350847eb90",
-            "label": "plant",
+            "type": "Sprite",
+            "id": "f709b91c-6d54-4ab5-a2d8-73e6974371b4",
+            "label": "thinIceMachine",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "plant"
+                "key": "arcade",
+                "frame": "thinIceMachine0001.png"
             },
-            "x": 30,
-            "y": 701,
-            "originX": 0.45652173913043476,
-            "originY": 0.9061224489795918
+            "x": 1178,
+            "y": 297
         },
         {
-            "type": "Image",
-            "id": "acf8e866-b719-4a94-94e1-899322db2b4a",
-            "label": "chair_1",
+            "type": "Sprite",
+            "id": "b16de9fa-2273-4adf-a041-7824ed4cdcdd",
+            "label": "astroBarrierAnim",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "astroBarrierAnim0001.png"
+            },
+            "x": 1253,
+            "y": 373
+        },
+        {
+            "type": "Sprite",
+            "id": "227a7d7c-205f-40ce-93fe-2938deab5155",
+            "label": "astroBarrierHover",
+            "scope": "CLASS",
             "components": [
                 "SimpleButton",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
-            "SimpleButton.pixelPerfect": true,
-            "MoveTo.y": 488,
+            "SimpleButton.hoverCallback": "() => this.onAstroOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onAstroOut()",
+            "MoveTo.x": 1190,
+            "MoveTo.y": 460,
+            "ShowHint.text": "Astro Barrier",
             "texture": {
-                "key": "lounge",
-                "frame": "chair_1"
+                "key": "arcade",
+                "frame": "astroBarrierHover0001.png"
             },
-            "x": 264,
-            "y": 478,
-            "originX": 0.5225225225225225,
-            "originY": 0.4567901234567901
+            "x": 1273,
+            "y": 377
         },
         {
-            "type": "Image",
-            "id": "3661acca-77f6-4faa-b5da-8105ab82118a",
-            "label": "chair_2",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.pixelPerfect": true,
-            "MoveTo.y": 466,
-            "texture": {
-                "key": "lounge",
-                "frame": "chair_2"
-            },
-            "x": 431,
-            "y": 456,
-            "originX": 0.3867924528301887,
-            "originY": 0.38181818181818183
-        },
-        {
-            "type": "Image",
-            "id": "bff848fe-51ca-467e-a12d-e16ebee675e5",
-            "label": "table_1",
+            "type": "Sprite",
+            "id": "9a781682-98e6-48ef-b085-98f6b1f5015d",
+            "label": "astroBarrierMachine",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "table_1"
+                "key": "arcade",
+                "frame": "astroBarrierMachine.png"
             },
-            "x": 356,
-            "y": 540,
-            "originY": 0.6330935251798561
+            "x": 1263,
+            "y": 404
         },
         {
-            "type": "Image",
-            "id": "9571ee18-a150-41b4-bc41-0115cf9189db",
-            "label": "chair_1_1",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.pixelPerfect": true,
-            "MoveTo.y": 690,
-            "texture": {
-                "key": "lounge",
-                "frame": "chair_1"
-            },
-            "x": 164,
-            "y": 680,
-            "originX": 0.5225225225225225,
-            "originY": 0.4567901234567901
-        },
-        {
-            "type": "Image",
-            "id": "606ff56e-cfcb-4333-95aa-e407be181b27",
-            "label": "chair_2_1",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.pixelPerfect": true,
-            "MoveTo.y": 667,
-            "texture": {
-                "key": "lounge",
-                "frame": "chair_2"
-            },
-            "x": 371,
-            "y": 657,
-            "originX": 0.3867924528301887,
-            "originY": 0.38181818181818183
-        },
-        {
-            "type": "Image",
-            "id": "e9b341be-b019-4c84-95b3-59a1d2c8277d",
-            "label": "table_2",
+            "type": "Sprite",
+            "id": "1716a77f-5a3c-433a-95d5-d40d85652c3e",
+            "label": "vendingMachine",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "table_2"
+                "key": "arcade",
+                "frame": "vendingMachine0001.png"
             },
-            "x": 274,
-            "y": 761,
-            "originX": 0.4824120603015075,
-            "originY": 0.7052631578947368
+            "x": 94,
+            "y": 538
         },
         {
-            "type": "Image",
-            "id": "88625929-070a-459f-a34d-a84cd8232ea1",
-            "label": "chair_1_2",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.pixelPerfect": true,
-            "MoveTo.y": 728,
-            "texture": {
-                "key": "lounge",
-                "frame": "chair_1"
-            },
-            "x": 627,
-            "y": 718,
-            "originX": 0.5225225225225225,
-            "originY": 0.4567901234567901
-        },
-        {
-            "type": "Image",
-            "id": "bdb0be30-f3d8-4277-bcca-8906f4c7f884",
-            "label": "chair_1_3",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.pixelPerfect": true,
-            "MoveTo.y": 739,
-            "texture": {
-                "key": "lounge",
-                "frame": "chair_1"
-            },
-            "x": 841,
-            "y": 729,
-            "originX": 0.5225225225225225,
-            "originY": 0.4567901234567901,
-            "flipX": true
-        },
-        {
-            "type": "Image",
-            "id": "3494e81b-643b-4756-927a-23d08ea4f2ff",
-            "label": "table_3",
+            "type": "Sprite",
+            "id": "4f91f0b0-b885-452e-9f7f-2e044c9ffcb3",
+            "label": "bin",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "table_3"
+                "key": "arcade",
+                "frame": "bin.png"
             },
-            "x": 733,
-            "y": 778,
-            "originX": 0.4691358024691358,
-            "originY": 0.5379310344827586
+            "x": 33,
+            "y": 663
         },
         {
-            "type": "Image",
-            "id": "71108d45-7bfb-4447-bd20-66a33691e012",
-            "label": "rail_2",
+            "type": "Sprite",
+            "id": "f222b4f0-077c-48c0-adff-44e4d5e8a3e3",
+            "label": "astroBarrierStool",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "rail_2"
+                "key": "arcade",
+                "frame": "astroBarrierStool.png"
             },
-            "x": 1512,
-            "y": 698,
-            "originX": 0.5142857142857142
+            "x": 1188.0732063867658,
+            "y": 463.3426043765047,
+            "originX": 0.48455343977943055,
+            "originY": 0.17409455358796386
         },
         {
-            "type": "Image",
-            "id": "5d9a6895-145f-4097-b222-3c834ae23e32",
-            "label": "rail_3",
+            "type": "Sprite",
+            "id": "e281c86e-ef81-4afa-81ba-a48237546884",
+            "label": "thinIceStool",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "rail_3"
+                "key": "arcade",
+                "frame": "thinIceStool.png"
             },
-            "x": 1419,
-            "y": 627,
-            "originY": 0.5038167938931297
+            "x": 1101.0732063867658,
+            "y": 376.9524139566534,
+            "originX": 0.48455343977943055,
+            "originY": 0.15881773578740002
         },
         {
-            "type": "Image",
-            "id": "7f2a52f5-cc21-422d-8d37-dab1fb490290",
-            "label": "rail_4",
+            "type": "Sprite",
+            "id": "631c5899-b65c-47d3-bc9c-ecde8427a9a8",
+            "label": "leftChair1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "rail_4"
+                "key": "arcade",
+                "frame": "leftChair1.png"
             },
-            "x": 1343,
-            "y": 573,
-            "originX": 0.5121951219512195
+            "x": 317.6951414295994,
+            "y": 701.6806776606555,
+            "originX": 0.5632793492177711,
+            "originY": 0.4283129050819656
         },
         {
-            "type": "Image",
-            "id": "0f779640-c5cb-4432-a51d-6fdff91bba81",
-            "label": "rail_1",
+            "type": "Sprite",
+            "id": "cfe90218-4697-452f-a80a-15a133a5b536",
+            "label": "leftChair2",
+            "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "lounge",
-                "frame": "rail_1"
+                "key": "arcade",
+                "frame": "leftChair2.png"
             },
-            "x": 1438,
-            "y": 636,
-            "originX": 0.5027932960893855,
-            "originY": 1
+            "x": 390.787118440437,
+            "y": 824.0065527220394,
+            "originX": 0.4213559296257846,
+            "originY": 0.11850727265841281
+        },
+        {
+            "type": "Sprite",
+            "id": "ed0da8a1-7ae5-4a5d-8056-36a7c32b58ef",
+            "label": "leftChair2Back",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "leftChair2Back.png"
+            },
+            "x": 426,
+            "y": 848
+        },
+        {
+            "type": "Sprite",
+            "id": "c51f61d5-d9a9-40e2-9659-0ef620150c10",
+            "label": "leftChair3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "leftChair3.png"
+            },
+            "x": 208.87254272923522,
+            "y": 854.2194342816024,
+            "originX": 0.6342289225831509,
+            "originY": 0.1836032539111443
+        },
+        {
+            "type": "Sprite",
+            "id": "02a4bccc-d846-4d99-b5f4-d59d2a93870c",
+            "label": "leftChair3Back",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "leftChair3Back.png"
+            },
+            "x": 174,
+            "y": 882
+        },
+        {
+            "type": "Sprite",
+            "id": "243fa117-e371-4833-a729-1d54b8ab0211",
+            "label": "leftChair4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "leftChair4.png"
+            },
+            "x": 181.9224867581063,
+            "y": 761.0919770108376,
+            "originX": 0.7719443106879423,
+            "originY": 0.40623603945541403
+        },
+        {
+            "type": "Sprite",
+            "id": "f80a8821-86ee-47bb-979b-6f23e6197371",
+            "label": "leftTable",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "leftTable.png"
+            },
+            "x": 267,
+            "y": 783
+        },
+        {
+            "type": "Sprite",
+            "id": "7e37939f-f0bf-4c3d-b33d-ab332c9b1f90",
+            "label": "rightChair1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "rightChair1.png"
+            },
+            "x": 1200.8305378033951,
+            "y": 729.7438181781602,
+            "originX": 0.4758951700825163,
+            "originY": 0.4287987842808539
+        },
+        {
+            "type": "Sprite",
+            "id": "758b4935-15ee-4ace-8b49-4f7950a0f2b8",
+            "label": "rightChair2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "rightChair2.png"
+            },
+            "x": 1345.0918066277738,
+            "y": 765.9046605109634,
+            "originX": 0.369614208361352,
+            "originY": 0.4598792166217588
+        },
+        {
+            "type": "Sprite",
+            "id": "d7961ab7-7c79-4178-8422-e27934dbb16c",
+            "label": "rightChair3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "rightChair3.png"
+            },
+            "x": 1343.1144073868438,
+            "y": 854.069205868704,
+            "originX": 0.5754865109486892,
+            "originY": 0.05651674817644429
+        },
+        {
+            "type": "Sprite",
+            "id": "342847f8-5fa4-4ad5-b7a0-108bcc05b2fd",
+            "label": "rightChair3Back",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "rightChair3Back.png"
+            },
+            "x": 1361,
+            "y": 898
+        },
+        {
+            "type": "Sprite",
+            "id": "750bc843-4faf-4a6f-911b-fb9c94f90563",
+            "label": "rightChair4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "rightChair4.png"
+            },
+            "x": 1131.793785985382,
+            "y": 833.7104486716275,
+            "originX": 0.5859972909542038,
+            "originY": 0.06197958778457297
+        },
+        {
+            "type": "Sprite",
+            "id": "6b93b0ea-a58d-4efe-b209-3b5ab7d342de",
+            "label": "rightChair4Back",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "rightChair4Back.png"
+            },
+            "x": 1095,
+            "y": 868
+        },
+        {
+            "type": "Sprite",
+            "id": "368f7edd-ef2c-4b21-8bda-066ddff9bee4",
+            "label": "rightTable",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "rightTable.png"
+            },
+            "x": 1246,
+            "y": 802
+        },
+        {
+            "type": "Sprite",
+            "id": "14c19142-9f47-465d-a0d5-5df3495b35aa",
+            "label": "lights",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "arcade",
+                "frame": "lights.png"
+            },
+            "x": 760,
+            "y": 57
         }
     ],
     "plainObjects": [],
@@ -312,20 +742,20 @@
             "id": "1deb63f7-8547-4b4f-baeb-5ff892618e32",
             "label": "sort",
             "objectIds": [
-                "88625929-070a-459f-a34d-a84cd8232ea1",
-                "bdb0be30-f3d8-4277-bcca-8906f4c7f884",
-                "3494e81b-643b-4756-927a-23d08ea4f2ff",
-                "e9b341be-b019-4c84-95b3-59a1d2c8277d",
-                "606ff56e-cfcb-4333-95aa-e407be181b27",
-                "9571ee18-a150-41b4-bc41-0115cf9189db",
-                "acf8e866-b719-4a94-94e1-899322db2b4a",
-                "bff848fe-51ca-467e-a12d-e16ebee675e5",
-                "3661acca-77f6-4faa-b5da-8105ab82118a",
-                "da775854-13dc-41bc-8d75-dc350847eb90",
-                "7f2a52f5-cc21-422d-8d37-dab1fb490290",
-                "5d9a6895-145f-4097-b222-3c834ae23e32",
-                "71108d45-7bfb-4447-bd20-66a33691e012",
-                "0f779640-c5cb-4432-a51d-6fdff91bba81"
+                "631c5899-b65c-47d3-bc9c-ecde8427a9a8",
+                "368f7edd-ef2c-4b21-8bda-066ddff9bee4",
+                "6b93b0ea-a58d-4efe-b209-3b5ab7d342de",
+                "750bc843-4faf-4a6f-911b-fb9c94f90563",
+                "342847f8-5fa4-4ad5-b7a0-108bcc05b2fd",
+                "d7961ab7-7c79-4178-8422-e27934dbb16c",
+                "758b4935-15ee-4ace-8b49-4f7950a0f2b8",
+                "7e37939f-f0bf-4c3d-b33d-ab332c9b1f90",
+                "f80a8821-86ee-47bb-979b-6f23e6197371",
+                "243fa117-e371-4833-a729-1d54b8ab0211",
+                "02a4bccc-d846-4d99-b5f4-d59d2a93870c",
+                "c51f61d5-d9a9-40e2-9659-0ef620150c10",
+                "ed0da8a1-7ae5-4a5d-8056-36a7c32b58ef",
+                "cfe90218-4697-452f-a80a-15a133a5b536"
             ]
         }
     ]

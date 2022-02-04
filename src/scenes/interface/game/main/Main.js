@@ -638,12 +638,19 @@ export default class Main extends BaseScene {
         for (let item of this.interfaceList) {
             item.visible = false
         }
+		
+		try {
+  			for (let penguin of Object.values(this.world.room.penguins)) {
+            	penguin.visible = false
+            	penguin.nameTag.visible = false
+        	}
+		}
+		
+		catch(err) {
+  			console.error(err)
+		}
 
-        for (let penguin of Object.values(this.world.room.penguins)) {
-            penguin.visible = false
-            penguin.nameTag.visible = false
-        }
-
+        
     }
 
     show(){
@@ -651,10 +658,16 @@ export default class Main extends BaseScene {
             item.visible = true
         }
 
-        for (let penguin of Object.values(this.world.room.penguins)) {
-            penguin.visible = true
-            penguin.nameTag.visible = true
-        }
+        try {
+  			for (let penguin of Object.values(this.world.room.penguins)) {
+            	penguin.visible = true
+            	penguin.nameTag.visible = true
+        	}
+		}
+		
+		catch(err) {
+  			console.error(err)
+		}
     }
 
     /* END-USER-CODE */

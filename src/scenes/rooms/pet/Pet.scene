@@ -665,12 +665,14 @@
             "label": "park_btn",
             "components": [
                 "SimpleButton",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
             "SimpleButton.hoverCallback": "() => this.onParkDoorOver()",
             "SimpleButton.hoverOutCallback": "() => this.onParkDoorOut()",
-            "MoveTo.x": 1450,
+            "MoveTo.x": 1400,
             "MoveTo.y": 500,
+            "ShowHint.text": "Puffle Roundup",
             "x": 1457,
             "y": 337,
             "angle": 5,

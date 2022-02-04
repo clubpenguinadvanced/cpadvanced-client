@@ -120,11 +120,11 @@ export default class Map extends BaseContainer {
 
         // unselected
         const unselected = scene.add.sprite(0, 24, "map", "background/unselected");
+        unselected.visible = false;
         this.add(unselected);
 
         // places
         const places = scene.add.sprite(0, 24, "map", "background/placesselected");
-        places.visible = false;
         this.add(places);
 
         // other
@@ -145,11 +145,11 @@ export default class Map extends BaseContainer {
         places_container.add(cove);
 
         // dock
-        const dock = scene.add.sprite(229, 541, "map", "places/dock0001");
+        const dock = scene.add.sprite(221, 541, "map", "places/dock0001");
         places_container.add(dock);
 
         // dojo
-        const dojo = scene.add.sprite(865, 24, "map", "places/dojoexterior0001");
+        const dojo = scene.add.sprite(865, 23, "map", "places/dojoexterior0001");
         places_container.add(dojo);
 
         // forest
@@ -161,7 +161,7 @@ export default class Map extends BaseContainer {
         places_container.add(berg);
 
         // igloos
-        const igloos = scene.add.sprite(524, 468, "map", "places/igloomap0001");
+        const igloos = scene.add.sprite(523, 469, "map", "places/igloomap0001");
         places_container.add(igloos);
 
         // beach
@@ -173,7 +173,7 @@ export default class Map extends BaseContainer {
         places_container.add(shack);
 
         // plaza
-        const plaza = scene.add.sprite(934, 288, "map", "places/plaza0001");
+        const plaza = scene.add.sprite(930, 288, "map", "places/plaza0001");
         places_container.add(plaza);
 
         // rink
@@ -189,11 +189,11 @@ export default class Map extends BaseContainer {
         places_container.add(village);
 
         // forts
-        const forts = scene.add.sprite(708, 261, "map", "places/snowforts0001");
+        const forts = scene.add.sprite(705, 262, "map", "places/snowforts0001");
         places_container.add(forts);
 
         // town
-        const town = scene.add.sprite(506, 324, "map", "places/town0001");
+        const town = scene.add.sprite(502, 322, "map", "places/town0001");
         places_container.add(town);
 
         // games_container
@@ -247,6 +247,7 @@ export default class Map extends BaseContainer {
 
         // jetpack
         const jetpack = scene.add.sprite(6, 341, "map", "games/jetpackadventure0001");
+        jetpack.visible = false;
         games_container.add(jetpack);
 
         // pizzatron
@@ -255,6 +256,7 @@ export default class Map extends BaseContainer {
 
         // cannon
         const cannon = scene.add.sprite(749, 422, "map", "games/pufflelaunch0001");
+        cannon.visible = false;
         games_container.add(cannon);
 
         // rescue
@@ -482,32 +484,38 @@ export default class Map extends BaseContainer {
         townSimpleButton.callback = () => this.onRoomClick(100);
 
         // aqua (components)
-        new SimpleButton(aqua);
+        const aquaSimpleButton = new SimpleButton(aqua);
+        aquaSimpleButton.callback = () => this.onRoomClick(805);
         const aquaShowHint = new ShowHint(aqua);
         aquaShowHint.text = "Aqua Grabber";
 
         // arcade (components)
-        new SimpleButton(arcade);
+        const arcadeSimpleButton = new SimpleButton(arcade);
+        arcadeSimpleButton.callback = () => this.onRoomClick(121);
         const arcadeShowHint = new ShowHint(arcade);
         arcadeShowHint.text = "Arcade";
 
         // surfer (components)
-        new SimpleButton(surfer);
+        const surferSimpleButton = new SimpleButton(surfer);
+        surferSimpleButton.callback = () => this.onRoomClick(808);
         const surferShowHint = new ShowHint(surfer);
         surferShowHint.text = "Cart Surfer";
 
         // dancecontest (components)
-        new SimpleButton(dancecontest);
+        const dancecontestSimpleButton = new SimpleButton(dancecontest);
+        dancecontestSimpleButton.callback = () => this.onRoomClick(120);
         const dancecontestShowHint = new ShowHint(dancecontest);
         dancecontestShowHint.text = "Dance Contest";
 
         // hydro (components)
-        new SimpleButton(hydro);
+        const hydroSimpleButton = new SimpleButton(hydro);
+        hydroSimpleButton.callback = () => this.onRoomClick(800);
         const hydroShowHint = new ShowHint(hydro);
         hydroShowHint.text = "Hydro Hopper";
 
         // fishing (components)
-        new SimpleButton(fishing);
+        const fishingSimpleButton = new SimpleButton(fishing);
+        fishingSimpleButton.callback = () => this.onRoomClick(220);
         const fishingShowHint = new ShowHint(fishing);
         fishingShowHint.text = "Ice Fishing";
 
@@ -517,22 +525,26 @@ export default class Map extends BaseContainer {
         jetpackShowHint.text = "Jetpack Adventure";
 
         // pizzatron (components)
-        new SimpleButton(pizzatron);
+        const pizzatronSimpleButton = new SimpleButton(pizzatron);
+        pizzatronSimpleButton.callback = () => this.onRoomClick(330);
         const pizzatronShowHint = new ShowHint(pizzatron);
         pizzatronShowHint.text = "Pizzatron 3000";
 
         // cannon (components)
-        new SimpleButton(cannon);
+        const cannonSimpleButton = new SimpleButton(cannon);
+        cannonSimpleButton.callback = () => this.onRoomClick(310);
         const cannonShowHint = new ShowHint(cannon);
         cannonShowHint.text = "Puffle Launch";
 
         // rescue (components)
-        new SimpleButton(rescue);
+        const rescueSimpleButton = new SimpleButton(rescue);
+        rescueSimpleButton.callback = () => this.onRoomClick(808);
         const rescueShowHint = new ShowHint(rescue);
         rescueShowHint.text = "Puffle Rescue";
 
         // roundup (components)
-        new SimpleButton(roundup);
+        const roundupSimpleButton = new SimpleButton(roundup);
+        roundupSimpleButton.callback = () => this.onRoomClick(310);
         const roundupShowHint = new ShowHint(roundup);
         roundupShowHint.text = "Puffle Roundup\n";
 

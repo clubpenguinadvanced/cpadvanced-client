@@ -1,5 +1,5 @@
 import RoomScene from '../RoomScene'
-import { SimpleButton, MoveTo } from '@components/components'
+import { SimpleButton, MoveTo, ShowHint } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -135,6 +135,8 @@ export default class Pizza extends RoomScene {
         const pizzatronFlapMoveTo = new MoveTo(pizzatronFlap);
         pizzatronFlapMoveTo.x = 320;
         pizzatronFlapMoveTo.y = 300;
+        const pizzatronFlapShowHint = new ShowHint(pizzatronFlap);
+        pizzatronFlapShowHint.text = "Pizzatron 3000";
 
         // doors (components)
         const doorsSimpleButton = new SimpleButton(doors);

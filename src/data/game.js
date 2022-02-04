@@ -20,8 +20,8 @@ const game = {
         default: 'matter',
         matter: {
             debug: {
-                renderFill: false,
-                renderLine: false,
+                renderFill: (localStorage.debugMode == 'true') ? true : false,
+                renderLine: (localStorage.debugMode == 'true') ? true : false,
                 showInternalEdges: true
             },
             gravity: false
