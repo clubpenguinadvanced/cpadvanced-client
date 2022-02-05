@@ -219,9 +219,13 @@
                 {
                     "type": "Sprite",
                     "id": "963316e0-4746-44b0-8d5a-bb16ddbb73e9",
-                    "label": "uncurl",
+                    "label": "shop",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onShopOver()",
+                    "SimpleButton.hoverOutCallback": "() => this.onShopOut()",
                     "texture": {
                         "key": "dock",
                         "frame": "uncurl0001"

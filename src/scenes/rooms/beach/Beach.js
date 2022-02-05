@@ -90,9 +90,6 @@ export default class Beach extends RoomScene {
         // rightrocks
         const rightrocks = this.add.sprite(1352, 616, "beach", "rightrocks");
 
-        // bucket
-        this.add.image(1100, 575, "beach", "bucket");
-
         // lists
         const sort = [rightrocks, trees, snowcastle, leftchair, rightchairarm, rightchair, lighthouserailing, lighthousedoor];
 

@@ -84,24 +84,30 @@ export default class Main extends BaseScene {
         this.mail_button;
         /** @type {Phaser.GameObjects.Image} */
         this.news_button;
+        /** @type {Phaser.GameObjects.Container} */
+        this.mod_btn;
+        /** @type {Phaser.GameObjects.Image} */
+        this.mod_button;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.mod_m;
         /** @type {Phaser.GameObjects.Image} */
         this.discord_button;
         /** @type {Waddle} */
         this.waddle;
         /** @type {Buddy} */
         this.buddy;
-        /** @type {PlayerCard} */
-        this.playerCard;
         /** @type {ActionsMenu} */
         this.actionsMenu;
         /** @type {EmotesMenu} */
         this.emotesMenu;
         /** @type {Safe} */
         this.safe;
-        /** @type {Map} */
-        this.map;
         /** @type {Moderator} */
         this.moderator;
+        /** @type {PlayerCard} */
+        this.playerCard;
+        /** @type {Map} */
+        this.map;
         /** @type {Settings} */
         this.settings;
         /** @type {Array<PlayerCard|Buddy|Map|Waddle|Settings|Moderator>} */
@@ -213,6 +219,18 @@ export default class Main extends BaseScene {
         const news_button = this.add.image(175, 61, "main", "news-button");
         news_button.visible = false;
 
+        // mod_btn
+        const mod_btn = this.add.container(1338, 64);
+        mod_btn.visible = false;
+
+        // mod_button
+        const mod_button = this.add.image(0, 0, "main", "mod/button");
+        mod_btn.add(mod_button);
+
+        // mod_m
+        const mod_m = this.add.sprite(0, 0, "main", "mod/m");
+        mod_btn.add(mod_m);
+
         // discord_button
         const discord_button = this.add.image(70, 60, "main", "discord-button");
 
@@ -225,11 +243,6 @@ export default class Main extends BaseScene {
         const buddy = new Buddy(this, 1140, 436);
         this.add.existing(buddy);
         buddy.visible = false;
-
-        // playerCard
-        const playerCard = new PlayerCard(this, 446, 436);
-        this.add.existing(playerCard);
-        playerCard.visible = false;
 
         // actionsMenu
         const actionsMenu = new ActionsMenu(this, 366, 872);
@@ -246,15 +259,20 @@ export default class Main extends BaseScene {
         this.add.existing(safe);
         safe.visible = false;
 
-        // map
-        const map = new Map(this, 760, 460);
-        this.add.existing(map);
-        map.visible = false;
-
         // moderator
         const moderator = new Moderator(this, 760, 480);
         this.add.existing(moderator);
         moderator.visible = false;
+
+        // playerCard
+        const playerCard = new PlayerCard(this, 446, 436);
+        this.add.existing(playerCard);
+        playerCard.visible = false;
+
+        // map
+        const map = new Map(this, 760, 460);
+        this.add.existing(map);
+        map.visible = false;
 
         // settings
         const settings = new Settings(this, 760, 480);
@@ -362,6 +380,12 @@ export default class Main extends BaseScene {
         news_buttonButton.callback = () => this.unimplementedPrompt();
         news_buttonButton.activeFrame = false;
 
+        // mod_button (components)
+        const mod_buttonSimpleButton = new SimpleButton(mod_button);
+        mod_buttonSimpleButton.hoverCallback = () => this.onModOver();
+        mod_buttonSimpleButton.hoverOutCallback = () => this.onModOut();
+        mod_buttonSimpleButton.callback = () => this.onModClick();
+
         // discord_button (components)
         const discord_buttonButton = new Button(discord_button);
         discord_buttonButton.spriteName = "discord-button";
@@ -397,15 +421,18 @@ export default class Main extends BaseScene {
         this.request_button = request_button;
         this.mail_button = mail_button;
         this.news_button = news_button;
+        this.mod_btn = mod_btn;
+        this.mod_button = mod_button;
+        this.mod_m = mod_m;
         this.discord_button = discord_button;
         this.waddle = waddle;
         this.buddy = buddy;
-        this.playerCard = playerCard;
         this.actionsMenu = actionsMenu;
         this.emotesMenu = emotesMenu;
         this.safe = safe;
-        this.map = map;
         this.moderator = moderator;
+        this.playerCard = playerCard;
+        this.map = map;
         this.settings = settings;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
@@ -420,6 +447,10 @@ export default class Main extends BaseScene {
         this._create()
 
         this.events.on('sleep', this.onSleep, this)
+
+        if (this.world.client.penguin.rank > 1){
+            this.mod_btn.visible = true
+        }
 
         // Factories
 
@@ -449,6 +480,20 @@ export default class Main extends BaseScene {
 
         this.chatInput = new TextInput(this, 745, 931, 'text', style, () => this.onChatSend(), 48)
         this.add.existing(this.chatInput)
+
+        // Mod search
+
+        let searchstyle = {
+            width: 250,
+            height: 50,
+            fontFamily: 'Burbank Small',
+            fontSize: 24,
+            color: '#fff',
+			visibility: 'hidden'
+        }
+
+        this.search = new TextInput(this, 814, 118, 'text', searchstyle, () => this.onSearch(), 48, true, 'search')
+        this.add.existing(this.search)
 
         // Input
 
@@ -627,6 +672,7 @@ export default class Main extends BaseScene {
     onModClick() {
         this.onModOut()
         this.moderator.visible = true
+        this.moderator.load()
     }
 
     unimplementedPrompt(){
@@ -638,19 +684,28 @@ export default class Main extends BaseScene {
         for (let item of this.interfaceList) {
             item.visible = false
         }
-		
-		try {
-  			for (let penguin of Object.values(this.world.room.penguins)) {
-            	penguin.visible = false
-            	penguin.nameTag.visible = false
-        	}
-		}
-		
-		catch(err) {
-  			console.error(err)
-		}
 
-        
+        if (this.world.client.penguin.rank > 1){
+            this.mod_btn.visible = true
+        }
+
+        this.input.keyboard.on('keydown-TAB', (event) => null)
+        this.input.keyboard.on('keydown-ENTER', (event) => null)
+
+        this.world.client.blockKeys()
+
+        try {
+              for (let penguin of Object.values(this.world.room.penguins)) {
+                penguin.visible = false
+                penguin.nameTag.visible = false
+            }
+        }
+
+        catch(err) {
+              console.error(err)
+        }
+
+
     }
 
     show(){
@@ -658,16 +713,23 @@ export default class Main extends BaseScene {
             item.visible = true
         }
 
+        this.mod_btn.visible = false
+
+        this.input.keyboard.on('keydown-TAB', (event) => this.onChatKeyDown(event))
+        this.input.keyboard.on('keydown-ENTER', (event) => this.onChatKeyDown(event))
+
+        this.world.client.initKeys()
+
         try {
-  			for (let penguin of Object.values(this.world.room.penguins)) {
-            	penguin.visible = true
-            	penguin.nameTag.visible = true
-        	}
-		}
-		
-		catch(err) {
-  			console.error(err)
-		}
+              for (let penguin of Object.values(this.world.room.penguins)) {
+                penguin.visible = true
+                penguin.nameTag.visible = true
+            }
+        }
+
+        catch(err) {
+              console.error(err)
+        }
     }
 
     /* END-USER-CODE */

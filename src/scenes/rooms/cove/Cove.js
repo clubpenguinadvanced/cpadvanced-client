@@ -311,11 +311,11 @@ export default class Cove extends RoomScene {
     }
 
     onShopOver() {
-        this.shop.play("uncurl")
+        this.shop.play("cove-uncurl")
     }
 
     onShopOut() {
-        this.shop.stop("uncurl")
+        this.shop.stop("cove-uncurl")
         this.shop.setFrame("uncurl0001.png")
     }
     /* END-USER-CODE */

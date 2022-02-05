@@ -39,7 +39,7 @@ export default class Dock extends RoomScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.board;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.uncurl;
+        this.shop;
         /** @type {Phaser.GameObjects.Sprite} */
         this.tape;
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
@@ -52,7 +52,7 @@ export default class Dock extends RoomScene {
             'beach': () => this.triggerRoom(400, 950, 430),
             'village': () => this.triggerRoom(200, 1300, 760),
             'town': () => this.triggerRoom(100, 368, 640),
-			'hydro': () => this.triggerGame("hydroHopper")
+            'hydro': () => this.triggerGame("hydroHopper", 924)
         }
 
         this.music = "1162"
@@ -116,11 +116,11 @@ export default class Dock extends RoomScene {
         const board = this.add.sprite(34, 0, "dock", "board");
         board_container.add(board);
 
-        // uncurl
-        const uncurl = this.add.sprite(0, 8, "dock", "uncurl0001");
-        uncurl.scaleX = -1.5;
-        uncurl.scaleY = 1.5;
-        board_container.add(uncurl);
+        // shop
+        const shop = this.add.sprite(0, 8, "dock", "uncurl0001");
+        shop.scaleX = -1.5;
+        shop.scaleY = 1.5;
+        board_container.add(shop);
 
         // tape
         const tape = this.add.sprite(7, -25, "dock", "tape");
@@ -143,6 +143,11 @@ export default class Dock extends RoomScene {
         const tubesSimpleButton = new SimpleButton(tubes);
         tubesSimpleButton.hoverCallback = () => this.onTubesHover();
 
+        // shop (components)
+        const shopSimpleButton = new SimpleButton(shop);
+        shopSimpleButton.hoverCallback = () => this.onShopOver();
+        shopSimpleButton.hoverOutCallback = () => this.onShopOut();
+
         this.bg = bg;
         this.bench = bench;
         this.bencharm = bencharm;
@@ -157,7 +162,7 @@ export default class Dock extends RoomScene {
         this.tubes = tubes;
         this.table = table;
         this.board = board;
-        this.uncurl = uncurl;
+        this.shop = shop;
         this.tape = tape;
         this.sort = sort;
 
@@ -177,6 +182,14 @@ export default class Dock extends RoomScene {
         this.tubes.play("docktubes")
     }
 
+    onShopOver() {
+        this.shop.play("uncurl")
+    }
+
+    onShopOut() {
+        this.shop.stop("uncurl")
+        this.shop.setFrame("uncurl0001")
+    }
 
     /* END-USER-CODE */
 }

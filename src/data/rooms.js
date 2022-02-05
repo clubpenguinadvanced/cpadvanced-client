@@ -161,9 +161,45 @@ const rooms = {
         x: 760,
         y: 480
     },
-	69420: {
-        key: 'RuffleMinigame',
-        scene: require('@rooms/ruffleminigame/RuffleMinigame').default
+	916: {
+        key: 'aquaGrabber',
+        scene: require('@games/aquagrabber/AquaGrabber').default
+    },
+	900: {
+        key: 'astroBarrier',
+        scene: require('@games/astrobarrier/AstroBarrier').default
+    },
+	905: {
+        key: 'cartSurfer',
+        scene: require('@games/cartsurfer/CartSurfer').default
+    },
+	952: {
+        key: 'danceContest',
+        scene: require('@games/dancecontest/DanceContest').default
+    },
+	924: {
+        key: 'hydroHopper',
+        scene: require('@games/hydrohopper/HydroHopper').default
+    },
+	904: {
+        key: 'iceFishing',
+        scene: require('@games/icefishing/IceFishing').default
+    },
+	910: {
+        key: 'pizzatron',
+        scene: require('@games/pizzatron/Pizzatron').default
+    },
+	949: {
+        key: 'puffleRescue',
+        scene: require('@games/pufflerescue/PuffleRescue').default
+    },
+	925: {
+        key: 'puffleRoundup',
+        scene: require('@games/puffleroundup/PuffleRoundup').default
+    },
+	909: {
+        key: 'thinIce',
+        scene: require('@games/thinice/ThinIce').default
     },
     999: {
         key: 'Sled',

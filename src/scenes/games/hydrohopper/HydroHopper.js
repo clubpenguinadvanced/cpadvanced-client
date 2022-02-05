@@ -5,13 +5,13 @@ import { Interactive } from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class RuffleMinigame extends RoomScene {
+export default class HydroHopper extends RoomScene {
 
     constructor() {
-        super("RuffleMinigame");
+        super("hydroHopper");
 
         /* START-USER-CTR-CODE */
-
+		this.music = "Yessir"
         /* END-USER-CTR-CODE */
     }
 
@@ -52,8 +52,8 @@ export default class RuffleMinigame extends RoomScene {
 
     create() {
         super.create()
-		
-		window.hide()
+
+        window.hide()
 
         var sprite = Phaser.Math.RND.between(0, 15)
         if (sprite < 6) {

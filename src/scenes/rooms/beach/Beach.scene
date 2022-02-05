@@ -166,18 +166,6 @@
             },
             "x": 1352,
             "y": 616
-        },
-        {
-            "type": "Image",
-            "id": "3c4925be-9b8e-42d8-a304-499e09a4eff1",
-            "label": "bucket",
-            "components": [],
-            "texture": {
-                "key": "beach",
-                "frame": "bucket"
-            },
-            "x": 1100,
-            "y": 575
         }
     ],
     "plainObjects": [],

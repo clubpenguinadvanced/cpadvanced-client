@@ -49,142 +49,198 @@
                     "height": 600
                 },
                 {
-                    "type": "Text",
-                    "id": "8d1cc4d7-9fc2-476a-9a7f-1f4a77c03434",
-                    "label": "buddies",
+                    "type": "Container",
+                    "id": "aaf9a6f7-bed4-405d-8e69-e015cea96066",
+                    "label": "settings_container",
+                    "scope": "CLASS",
                     "components": [],
-                    "x": 69,
-                    "y": 173,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "88/100 Buddies",
-                    "fixedWidth": 300,
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "#000000ff"
-                },
-                {
-                    "type": "Image",
-                    "id": "03a270a0-f16e-4e4d-914b-61bfd7ab3bf2",
-                    "label": "icon",
-                    "components": [],
-                    "texture": {
-                        "key": "main",
-                        "frame": "buddy/icon-online"
-                    },
                     "x": -132,
-                    "y": 171
+                    "y": -238,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "8d1cc4d7-9fc2-476a-9a7f-1f4a77c03434",
+                            "label": "buddies",
+                            "components": [],
+                            "x": 201,
+                            "y": 411,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "88/100 Buddies",
+                            "fixedWidth": 300,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "32px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "03a270a0-f16e-4e4d-914b-61bfd7ab3bf2",
+                            "label": "icon",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "buddy/icon-online"
+                            },
+                            "y": 409
+                        },
+                        {
+                            "type": "Image",
+                            "id": "601cc5f2-06bb-4a01-a439-462f0b4932d6",
+                            "label": "button",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "help-button",
+                            "texture": {
+                                "key": "main",
+                                "frame": "help-button"
+                            },
+                            "x": 132,
+                            "y": 305
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d8459f02-8216-49b8-9a56-e9a7ff51b303",
+                            "label": "account",
+                            "components": [],
+                            "x": 153,
+                            "y": 304,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Manage Account",
+                            "fixedWidth": 562,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "8bb0b24c-3cd7-434d-8d31-c69ac4ae9981",
+                            "label": "music",
+                            "components": [],
+                            "x": 263,
+                            "y": 201,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Mute Music",
+                            "fixedWidth": 348,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "32px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "0a157de1-3931-40c1-89c2-df8717cc7928",
+                            "label": "age",
+                            "components": [],
+                            "x": 132,
+                            "y": 130,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Your penguin is 0 days old",
+                            "fixedWidth": 600,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "32px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "502ffa53-fbc7-4cf2-bc81-43262b4d1979",
+                            "label": "server",
+                            "components": [],
+                            "x": 132,
+                            "y": 82,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "You're on Server Name",
+                            "fixedWidth": 600,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "049efdf7-a9e9-4774-81b7-5a3c6b0e7c7e",
+                            "label": "settings",
+                            "components": [],
+                            "x": 132,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "SETTINGS",
+                            "fixedWidth": 600,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "fontStyle": "bold italic",
+                            "stroke": "#003366",
+                            "strokeThickness": 10
+                        },
+                        {
+                            "type": "Image",
+                            "id": "3723c077-1983-4f49-8883-847b483312d2",
+                            "label": "checkbox",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.onMuteClick()",
+                            "texture": {
+                                "key": "login",
+                                "frame": "checkbox"
+                            },
+                            "x": 56,
+                            "y": 199,
+                            "originX": 0.41509,
+                            "originY": 0.5849
+                        }
+                    ]
                 },
                 {
-                    "type": "Image",
-                    "id": "601cc5f2-06bb-4a01-a439-462f0b4932d6",
-                    "label": "button",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "help-button",
-                    "texture": {
-                        "key": "main",
-                        "frame": "help-button"
-                    },
-                    "y": 67
-                },
-                {
-                    "type": "Text",
-                    "id": "d8459f02-8216-49b8-9a56-e9a7ff51b303",
-                    "label": "account",
-                    "components": [],
-                    "x": 21,
-                    "y": 66,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Manage Account",
-                    "fixedWidth": 562,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "40px",
-                    "fontStyle": "bold",
-                    "color": "#ffffffff"
-                },
-                {
-                    "type": "Text",
-                    "id": "8bb0b24c-3cd7-434d-8d31-c69ac4ae9981",
-                    "label": "music",
-                    "components": [],
-                    "x": 131,
-                    "y": -37,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Mute Music",
-                    "fixedWidth": 348,
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "#000000ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "0a157de1-3931-40c1-89c2-df8717cc7928",
-                    "label": "age",
-                    "components": [],
-                    "y": -108,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "Your penguin is 0 days old",
-                    "fixedWidth": 600,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "#000000ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "502ffa53-fbc7-4cf2-bc81-43262b4d1979",
-                    "label": "server",
-                    "components": [],
-                    "y": -156,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "You're on Server Name",
-                    "fixedWidth": 600,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "30px",
-                    "color": "#000000ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "049efdf7-a9e9-4774-81b7-5a3c6b0e7c7e",
-                    "label": "settings",
+                    "type": "Container",
+                    "id": "e70f2f3d-1435-460e-a9d9-a4461297f5c1",
+                    "label": "credits",
+                    "scope": "CLASS",
                     "components": [],
                     "y": -238,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "text": "SETTINGS",
-                    "fixedWidth": 600,
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "40px",
-                    "fontStyle": "bold italic",
-                    "stroke": "#003366",
-                    "strokeThickness": 10
-                },
-                {
-                    "type": "Image",
-                    "id": "3723c077-1983-4f49-8883-847b483312d2",
-                    "label": "checkbox",
-                    "scope": "CLASS",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.onMuteClick()",
-                    "texture": {
-                        "key": "login",
-                        "frame": "checkbox"
-                    },
-                    "x": -76,
-                    "y": -39,
-                    "originX": 0.41509,
-                    "originY": 0.5849
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "9e6c613c-6991-4b92-8894-efb2a92a8fb2",
+                            "label": "credits_body",
+                            "components": [],
+                            "y": 248,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "A massive thanks to:\n\ncomfy#0806 - Developing\nJeff The Rock#1387 - Room Design\nPiter#6645 - Room Design\nTea ♡#8640 - Item Design\n\nAnd all the moderators and\nother staff members in the Club\nPenguin Advanced game and Discord.\n\nCPA would not be possible without you\n\nPowered by github.com/wizguin/yukon",
+                            "fixedWidth": 562,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "00b3a581-9dba-4dbc-a85e-68e22d3eccb5",
+                            "label": "credits_header",
+                            "components": [],
+                            "y": -17,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "CREDITS",
+                            "fixedWidth": 600,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "fontStyle": "bold italic",
+                            "stroke": "#003366",
+                            "strokeThickness": 10
+                        }
+                    ]
                 },
                 {
                     "type": "Image",
@@ -213,6 +269,39 @@
                     },
                     "x": 300,
                     "y": -270
+                },
+                {
+                    "type": "Image",
+                    "id": "b4de0d0d-29cf-47eb-838a-4f01f6516862",
+                    "label": "credits_btn",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.creditsClick()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 239,
+                    "y": -268
+                },
+                {
+                    "type": "Text",
+                    "id": "57ab2e27-a44a-4688-8602-7e255a9cdcd2",
+                    "label": "credits_txt",
+                    "components": [],
+                    "x": 239,
+                    "y": -269,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "?",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "35px",
+                    "fontStyle": "bold",
+                    "stroke": "#003366",
+                    "strokeThickness": 10
                 }
             ]
         }

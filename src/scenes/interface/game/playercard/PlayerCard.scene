@@ -203,6 +203,25 @@
                     "x": -135,
                     "y": 33,
                     "nestedPrefabs": []
+                },
+                {
+                    "type": "Image",
+                    "id": "62196080-f9b1-43b1-8f0f-131133fa387e",
+                    "label": "edit_player_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "edit_player_button",
+                    "Button.callback": "() => this.editPlayer()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "main",
+                        "frame": "edit_player_button"
+                    },
+                    "x": 162,
+                    "y": -174,
+                    "visible": false
                 }
             ]
         }

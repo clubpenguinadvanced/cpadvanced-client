@@ -17,8 +17,7 @@ export default class Town extends RoomScene {
             'snowForts': () => this.triggerRoom(801, 360, 520),
             'coffeeShop': () => this.triggerRoom(110, 700, 450),
             'danceClub': () => this.triggerRoom(120, 300, 560),
-            'clothesShop': () => this.triggerRoom(130, 1036, 520),
-            'hats': () => this.interface.prompt.showItem(413)
+            'clothesShop': () => this.triggerRoom(130, 1036, 520)
         }
 
         this.music = '1160'
@@ -112,9 +111,6 @@ export default class Town extends RoomScene {
         const table = this.add.image(628.362414669051, 476.3085517350086, "town", "table.png");
         table.setOrigin(0.5222867233277427, 0.7080516274288713);
 
-        // betahats
-        const betahats = this.add.sprite(1234, 688, "town", "betahats.png");
-
         // lists
         const sort = [bench_arm, left_chair, right_chair, table];
 
@@ -142,12 +138,6 @@ export default class Town extends RoomScene {
         clothes_doorMoveTo.x = 1130;
         clothes_doorMoveTo.y = 400;
 
-        // betahats (components)
-        new SimpleButton(betahats);
-        const betahatsMoveTo = new MoveTo(betahats);
-        betahatsMoveTo.x = 1200;
-        betahatsMoveTo.y = 665;
-
         this.dc_door = dc_door;
         this.coffee_door = coffee_door;
         this.clothes_door = clothes_door;
@@ -155,7 +145,6 @@ export default class Town extends RoomScene {
         this.main_lights = main_lights;
         this.speakers = speakers;
         this.stars_anim = stars_anim;
-        this.betahats = betahats;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -175,8 +164,6 @@ export default class Town extends RoomScene {
     speakers;
     /** @type {Phaser.GameObjects.Sprite} */
     stars_anim;
-    /** @type {Phaser.GameObjects.Sprite} */
-    betahats;
     /** @type {Phaser.GameObjects.Image[]} */
     sort;
 

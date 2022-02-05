@@ -178,7 +178,8 @@
                         "frame": "igloo-icon-disabled"
                     },
                     "x": -30,
-                    "y": -2
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
                 },
                 {
                     "type": "Image",

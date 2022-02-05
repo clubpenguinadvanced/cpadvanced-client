@@ -73,7 +73,9 @@ export default class Buttons extends BaseContainer {
         this.add(mail_icon);
 
         // igloo_icon
-        const igloo_icon = scene.add.image(-30, -2, "main", "igloo-icon-disabled");
+        const igloo_icon = scene.add.image(-30, 0, "main", "igloo-icon-disabled");
+        igloo_icon.scaleX = 0.9;
+        igloo_icon.scaleY = 0.9;
         this.add(igloo_icon);
 
         // profile_icon

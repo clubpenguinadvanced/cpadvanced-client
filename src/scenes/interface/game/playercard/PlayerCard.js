@@ -31,6 +31,8 @@ export default class PlayerCard extends BaseContainer {
         this.inventorySort;
         /** @type {Inventory} */
         this.inventory;
+        /** @type {Phaser.GameObjects.Image} */
+        this.edit_player_button;
 
 
         // card_photo
@@ -93,6 +95,11 @@ export default class PlayerCard extends BaseContainer {
         const inventory = new Inventory(scene, -135, 33);
         this.add(inventory);
 
+        // edit_player_button
+        const edit_player_button = scene.add.image(162, -174, "main", "edit_player_button");
+        edit_player_button.visible = false;
+        this.add(edit_player_button);
+
         // this (components)
         const thisDraggableContainer = new DraggableContainer(this);
         thisDraggableContainer.handle = card_bg;
@@ -105,6 +112,12 @@ export default class PlayerCard extends BaseContainer {
         x_buttonButton.spriteName = "blue-button";
         x_buttonButton.callback = () => { this.visible = false };
 
+        // edit_player_button (components)
+        const edit_player_buttonButton = new Button(edit_player_button);
+        edit_player_buttonButton.spriteName = "edit_player_button";
+        edit_player_buttonButton.callback = () => this.editPlayer();
+        edit_player_buttonButton.pixelPerfect = true;
+
         this.paperDoll = paperDoll;
         this.buttons = buttons;
         this.stats = stats;
@@ -113,6 +126,7 @@ export default class PlayerCard extends BaseContainer {
         this.badge = badge;
         this.inventorySort = inventorySort;
         this.inventory = inventory;
+        this.edit_player_button = edit_player_button;
 
         /* START-USER-CTR-CODE */
 
@@ -136,7 +150,7 @@ export default class PlayerCard extends BaseContainer {
         // Don't open player's card if it's already open
         if (id == this.id && this.visible && !refresh) return
 
-        if (id in this.world.room.penguins) {
+        if (id == this.world.client.penguin.id) {
             let penguin = this.world.room.penguins[id]
             this._showCard(penguin, penguin.items.flat)
 
@@ -157,35 +171,35 @@ export default class PlayerCard extends BaseContainer {
     _showCard(penguin, items = penguin) {
         // Text
         this.username.text = penguin.username
-		
-		let oneDay = 1000 * 60 * 60 * 24
+
+        let oneDay = 1000 * 60 * 60 * 24
         let timeDiff = Date.now() - Date.parse(penguin.joinTime)
         let daysDiff = Math.round(timeDiff / oneDay)
 
         if (penguin.rank == 2){
-			this.badge.setFrame("card-badge-designer")
-		}
-		else if (penguin.rank == 3){
-			this.badge.setFrame("card-badge-moderator")
-		}
-		else if (penguin.rank == 4){
-			this.badge.setFrame("card-badge-developer")
-		}
+            this.badge.setFrame("card-badge-designer")
+        }
+        else if (penguin.rank == 3){
+            this.badge.setFrame("card-badge-moderator")
+        }
+        else if (penguin.rank == 4){
+            this.badge.setFrame("card-badge-developer")
+        }
         else if (penguin.rank == 5){
-			this.badge.setFrame("card-badge-administrator")
-		}
-		else if (daysDiff > 91){
-			this.badge.setFrame("card-badge-member-three")
-		}
-		else if (daysDiff > 182){
-			this.badge.setFrame("card-badge-member-six")
-		}
-		else if (daysDiff > 273){
-			this.badge.setFrame("card-badge-member-nine")
-		}
-		else if (daysDiff > 364){
-			this.badge.setFrame("card-badge-member-twelve")
-		}
+            this.badge.setFrame("card-badge-administrator")
+        }
+        else if (daysDiff > 91){
+            this.badge.setFrame("card-badge-member-three")
+        }
+        else if (daysDiff > 182){
+            this.badge.setFrame("card-badge-member-six")
+        }
+        else if (daysDiff > 273){
+            this.badge.setFrame("card-badge-member-nine")
+        }
+        else if (daysDiff > 364){
+            this.badge.setFrame("card-badge-member-twelve")
+        }
 
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)
@@ -207,6 +221,8 @@ export default class PlayerCard extends BaseContainer {
         this.inventorySort.closeMenu()
 
         this.id = penguin.id
+
+        if (this.world.client.penguin.rank > 1) this.edit_player_button.visible = true
         // Update buttons
         this.updateButtons()
         this.visible = true
@@ -217,6 +233,10 @@ export default class PlayerCard extends BaseContainer {
             let relationship = this.world.getRelationship(this.id)
             this.buttons.updateButtons(relationship)
         }
+    }
+
+    editPlayer(){
+
     }
 
     /* END-USER-CODE */

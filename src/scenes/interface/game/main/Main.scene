@@ -478,6 +478,45 @@
             "visible": false
         },
         {
+            "type": "Container",
+            "id": "15c8dbdc-6ef2-4063-9e9e-607849f9dd78",
+            "label": "mod_btn",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1338,
+            "y": 64,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c0a4625f-2655-4f2e-b315-d90a4665b903",
+                    "label": "mod_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onModOver()",
+                    "SimpleButton.hoverOutCallback": "() => this.onModOut()",
+                    "SimpleButton.callback": "() => this.onModClick()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "mod/button"
+                    }
+                },
+                {
+                    "type": "Sprite",
+                    "id": "29dd5228-a694-45aa-9334-85dabb9d824e",
+                    "label": "mod_m",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mod/m"
+                    }
+                }
+            ]
+        },
+        {
             "type": "Image",
             "id": "7fdf5bc5-54b8-425b-889b-8a97aa46344d",
             "label": "discord_button",
@@ -523,22 +562,6 @@
             "scope": "CLASS",
             "components": [],
             "x": 1140,
-            "y": 436,
-            "visible": false,
-            "nestedPrefabs": []
-        },
-        {
-            "prefabId": "aa26f680-5a55-46f1-b89f-e40211af8a8d",
-            "id": "9770a528-0c5a-4720-a6db-eabd53c787e1",
-            "unlock": [
-                "visible",
-                "x",
-                "y"
-            ],
-            "label": "playerCard",
-            "scope": "CLASS",
-            "components": [],
-            "x": 446,
             "y": 436,
             "visible": false,
             "nestedPrefabs": []
@@ -592,22 +615,6 @@
             "nestedPrefabs": []
         },
         {
-            "prefabId": "dc649c7a-1824-4b21-8431-e3d1168a4506",
-            "id": "75179079-5eb1-4135-9798-34cea7db0f09",
-            "unlock": [
-                "visible",
-                "x",
-                "y"
-            ],
-            "label": "map",
-            "scope": "CLASS",
-            "components": [],
-            "x": 760,
-            "y": 460,
-            "visible": false,
-            "nestedPrefabs": []
-        },
-        {
             "prefabId": "d44a536e-8824-4c11-8cdd-649f5629a29c",
             "id": "7b10953c-f288-40da-8b3f-44af0dea100d",
             "unlock": [
@@ -620,6 +627,38 @@
             "components": [],
             "x": 760,
             "y": 480,
+            "visible": false,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "aa26f680-5a55-46f1-b89f-e40211af8a8d",
+            "id": "9770a528-0c5a-4720-a6db-eabd53c787e1",
+            "unlock": [
+                "visible",
+                "x",
+                "y"
+            ],
+            "label": "playerCard",
+            "scope": "CLASS",
+            "components": [],
+            "x": 446,
+            "y": 436,
+            "visible": false,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "dc649c7a-1824-4b21-8431-e3d1168a4506",
+            "id": "75179079-5eb1-4135-9798-34cea7db0f09",
+            "unlock": [
+                "visible",
+                "x",
+                "y"
+            ],
+            "label": "map",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 460,
             "visible": false,
             "nestedPrefabs": []
         },

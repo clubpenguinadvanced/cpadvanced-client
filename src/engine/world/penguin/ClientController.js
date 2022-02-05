@@ -49,8 +49,8 @@ export default class ClientController {
         this.lockRotation = false
 
         this.input.on('pointermove', (pointer) => this.onPointerMove(pointer))
-
-        this.input.keyboard.on('keydown', (event) => this.onKeyDown(event))
+		
+		this.initKeys()
     }
 
     get isTweening() {
@@ -84,6 +84,14 @@ export default class ClientController {
     get isModerator() {
         return this.rank > 1
     }
+	
+	initKeys() {
+		this.input.keyboard.on('keydown', (event) => this.onKeyDown(event))
+	}
+	
+	blockKeys() {
+		this.input.keyboard.on('keydown', (event) => null)
+	}
 
     initInventory() {
          // Generates object from slots in format: { color: [], head: [], ... }

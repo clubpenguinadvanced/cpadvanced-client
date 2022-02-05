@@ -1,5 +1,5 @@
 {
-    "id": "edc25d32-222f-4a3d-840e-7d4392cfb6f3",
+    "id": "d017c1b2-728f-4c11-997e-d4a79bdbabaa",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -10,7 +10,7 @@
             "cpadvanced-client/assets/media/interface/menus/load/load-pack.json"
         ],
         "createMethodName": "_create",
-        "sceneKey": "RuffleMinigame",
+        "sceneKey": "puffleRoundup",
         "borderWidth": 1520,
         "borderHeight": 960
     },

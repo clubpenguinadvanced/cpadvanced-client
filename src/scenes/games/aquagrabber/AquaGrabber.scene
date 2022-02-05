@@ -1,0 +1,59 @@
+{
+    "id": "edc25d32-222f-4a3d-840e-7d4392cfb6f3",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "cpadvanced-client/assets/media/interface/menus/load/load-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "aquaGrabber",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c808c39c-6ee3-4a56-96de-e4c00015a226",
+            "label": "bg",
+            "components": [
+                "Interactive"
+            ],
+            "texture": {
+                "key": "load",
+                "frame": "bg"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "91d45509-620f-4dfd-ac20-3e35e0bb766a",
+            "label": "loading",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "loading_assets",
+                "frame": "shovelling0001.png"
+            },
+            "x": 760,
+            "y": 410
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}

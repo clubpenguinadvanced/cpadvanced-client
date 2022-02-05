@@ -42,88 +42,1000 @@
                         "NineSlice"
                     ],
                     "NineSlice.corner": 50,
-                    "y": -70,
+                    "y": -32,
                     "isFilled": true,
                     "fillColor": "#0280CD",
-                    "width": 702,
-                    "height": 504
+                    "width": 700,
+                    "height": 770
                 },
                 {
-                    "type": "Text",
-                    "id": "d2892131-b20b-40e2-93c8-a9e5ce92c66d",
-                    "label": "text3",
+                    "type": "Container",
+                    "id": "cff0f88f-978c-4f78-b1cc-d4cd4e8e3c83",
+                    "label": "player8",
+                    "scope": "CLASS",
                     "components": [],
-                    "x": -44,
-                    "y": 86,
-                    "originX": 0.5,
-                    "text": "to ignore them.",
-                    "fixedWidth": 220,
-                    "fixedHeight": 60,
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "28px",
-                    "fontStyle": "bold",
-                    "color": "#ffffffff",
-                    "shadow.offsetX": 2,
-                    "shadow.offsetY": 2,
-                    "shadow.fill": true,
-                    "shadow.color": "#003366"
+                    "y": 280,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "1c4af436-09e3-49f0-953c-ee5b960dd635",
+                            "label": "name_btn8",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onNameOver(this.name_btn8)",
+                            "SimpleButton.hoverOutCallback": "() => this.onNameOut(this.name_btn8)",
+                            "SimpleButton.callback": "() => this.onNameDown(this.name_txt8)",
+                            "texture": {
+                                "key": "login",
+                                "frame": "larger-button0001"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "021b4ea0-cf56-48bd-80c1-9f8b1c258e21",
+                            "label": "name_txt8",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Username08",
+                            "fixedWidth": 600,
+                            "paddingLeft": 20,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "2364730d-2d24-4737-b081-ccff50c8bea3",
+                            "label": "usernameControls8",
+                            "components": [],
+                            "x": 189,
+                            "y": -1,
+                            "list": [
+                                {
+                                    "type": "Rectangle",
+                                    "id": "5fad524c-32f7-4d1d-9186-0efa3184a3dd",
+                                    "label": "cross8_left",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "9c147b3a-3829-402d-8561-435a10e720e3",
+                                    "label": "cross8_right",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "349e6a82-6311-4d6c-8898-7c0fda76d13b",
+                                    "label": "tick8_left",
+                                    "components": [],
+                                    "y": 7.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 25
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "4c7e11f8-578d-444e-94e5-b2d2f7c4a7d7",
+                                    "label": "tick8_right",
+                                    "components": [],
+                                    "x": 19.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 45
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "311f4d9b-78ac-4927-b2cb-66735c3b6aec",
+                                    "label": "reject_btn_7",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.rejectUsername(this.name_txt8)",
+                                    "x": 80,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "36e863fb-3adb-4ace-8ab7-6d2550b6769b",
+                                    "label": "accept_btn_7",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.acceptUsername(this.name_txt8)",
+                                    "x": 13,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "type": "Text",
-                    "id": "dacbf3a4-8512-4cd5-969b-217ae76289a6",
-                    "label": "text2",
+                    "type": "Container",
+                    "id": "3bc5f8b4-ca9e-4d32-873b-6d8fa4f5b912",
+                    "label": "player7",
+                    "scope": "CLASS",
                     "components": [],
-                    "x": 226,
-                    "y": -22,
-                    "originX": 0.5,
-                    "text": "to report",
-                    "fixedWidth": 200,
-                    "fixedHeight": 60,
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "28px",
-                    "fontStyle": "bold",
-                    "color": "#ffffffff",
-                    "shadow.offsetX": 2,
-                    "shadow.offsetY": 2,
-                    "shadow.fill": true,
-                    "shadow.color": "#003366"
+                    "y": 199,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "bffa3f9b-b5ff-4830-aa8b-1d2d85c2f318",
+                            "label": "name_btn7",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onNameOver(this.name_btn7)",
+                            "SimpleButton.hoverOutCallback": "() => this.onNameOut(this.name_btn7)",
+                            "SimpleButton.callback": "() => this.onNameDown(this.name_txt7)",
+                            "texture": {
+                                "key": "login",
+                                "frame": "larger-button0001"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "83088943-b77f-4c77-8f86-49c43e7940ef",
+                            "label": "name_txt7",
+                            "scope": "CLASS",
+                            "components": [],
+                            "y": 1,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Username07",
+                            "fixedWidth": 600,
+                            "paddingLeft": 20,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "e457b109-bfa0-4927-8a10-3c6bc8b94bb0",
+                            "label": "usernameControls7",
+                            "components": [],
+                            "x": 189,
+                            "y": -2,
+                            "list": [
+                                {
+                                    "type": "Rectangle",
+                                    "id": "a8ff4368-edf2-4118-a37e-d64ef083a191",
+                                    "label": "cross7_left",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "daddc74a-6205-4d26-bba1-9f1d8a5bd410",
+                                    "label": "cross7_right",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "f47578a7-43b7-479d-bad9-9cd38b8fa2d2",
+                                    "label": "tick7_left",
+                                    "components": [],
+                                    "y": 7.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 25
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "e493a90e-7712-4dd3-a442-8f2e1111c805",
+                                    "label": "tick7_right",
+                                    "components": [],
+                                    "x": 19.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 45
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "981092ec-1ba8-4e73-a7a3-51078c55e839",
+                                    "label": "reject_btn_6",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.rejectUsername(this.name_txt7)",
+                                    "x": 80,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "73d73e80-99f9-431a-83bd-503e6eac8868",
+                                    "label": "accept_btn_6",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.acceptUsername(this.name_txt7)",
+                                    "x": 13,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "type": "Text",
-                    "id": "6be961f8-b51a-4438-82a8-4a1107d292a2",
-                    "label": "text1",
+                    "type": "Container",
+                    "id": "67a0cd1f-8f7f-4508-a22a-b4ff2ebeca88",
+                    "label": "player6",
+                    "scope": "CLASS",
                     "components": [],
-                    "x": 21,
-                    "y": -76,
-                    "originX": 0.5,
-                    "text": "If someone is breaking the rules, click on\ntheir penguin then click\nthem to a moderator. You can also click\non",
-                    "fixedWidth": 562,
-                    "fixedHeight": 220,
-                    "lineSpacing": 20,
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "28px",
-                    "fontStyle": "bold",
-                    "color": "#ffffffff",
-                    "shadow.offsetX": 2,
-                    "shadow.offsetY": 2,
-                    "shadow.fill": true,
-                    "shadow.color": "#003366"
+                    "y": 120,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "14c90472-7859-46d3-83da-1b5efea91c8f",
+                            "label": "name_btn6",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onNameOver(this.name_btn6)",
+                            "SimpleButton.hoverOutCallback": "() => this.onNameOut(this.name_btn6)",
+                            "SimpleButton.callback": "() => this.onNameDown(this.name_txt6)",
+                            "texture": {
+                                "key": "login",
+                                "frame": "larger-button0001"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f29e11cd-b28f-4ad2-b648-24bbe73dbcc0",
+                            "label": "name_txt6",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Username06",
+                            "fixedWidth": 600,
+                            "paddingLeft": 20,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "50041b1a-2259-44d8-be7d-a11d23b090c0",
+                            "label": "usernameControls6",
+                            "components": [],
+                            "x": 189,
+                            "list": [
+                                {
+                                    "type": "Rectangle",
+                                    "id": "bd015861-b533-429b-99f6-f0543ad16067",
+                                    "label": "cross6_left",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "fbb7d735-8447-4209-9b76-cac985b53487",
+                                    "label": "cross6_right",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "2f2e79a8-c2b6-4aaa-9308-269609d9f6df",
+                                    "label": "tick6_left",
+                                    "components": [],
+                                    "y": 7.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 25
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "3ea95e8a-fe0f-43aa-b218-e6609124c214",
+                                    "label": "tick6_right",
+                                    "components": [],
+                                    "x": 19.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 45
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "26ccb972-538e-4d73-9af2-5b9399663787",
+                                    "label": "reject_btn_5",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.rejectUsername(this.name_txt6)",
+                                    "x": 80,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "005afd5a-f083-4dc8-b7ed-26f5a985c330",
+                                    "label": "accept_btn_5",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.acceptUsername(this.name_txt6)",
+                                    "x": 13,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "type": "Text",
-                    "id": "96b0d404-05b7-4afa-8248-0f4e7aa1b18c",
-                    "label": "safe",
+                    "type": "Container",
+                    "id": "fedec181-f54a-4103-a644-37928c489dfa",
+                    "label": "player5",
+                    "scope": "CLASS",
                     "components": [],
-                    "y": -151,
-                    "originX": 0.5,
-                    "text": "Help keep the island safe!",
-                    "fixedWidth": 600,
-                    "align": "center",
-                    "fontFamily": "CCFaceFront",
-                    "fontSize": "40px",
-                    "fontStyle": "bold italic",
-                    "stroke": "#003366",
-                    "strokeThickness": 10
+                    "y": 40,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "cad295c9-ef24-47a2-aff4-4addb5c2d701",
+                            "label": "name_btn5",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onNameOver(this.name_btn5)",
+                            "SimpleButton.hoverOutCallback": "() => this.onNameOut(this.name_btn5)",
+                            "SimpleButton.callback": "() => this.onNameDown(this.name_txt5)",
+                            "texture": {
+                                "key": "login",
+                                "frame": "larger-button0001"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "dc8276f5-b4c7-43cb-80d4-e697f2ac8453",
+                            "label": "name_txt5",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Username05",
+                            "fixedWidth": 600,
+                            "paddingLeft": 20,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "fb2de859-0382-4c42-ace1-44867cb44bd5",
+                            "label": "usernameControls5",
+                            "components": [],
+                            "x": 189,
+                            "list": [
+                                {
+                                    "type": "Rectangle",
+                                    "id": "07960b1f-b8f1-4150-8226-27ed0566c140",
+                                    "label": "cross5_left",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "5e3be70a-6f97-4cdf-896a-d8feea2d6601",
+                                    "label": "cross5_right",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "13b18024-3a43-4269-8fe6-50550e6550b2",
+                                    "label": "tick5_left",
+                                    "components": [],
+                                    "y": 7.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 25
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "4411274a-455c-48ee-829f-cd90d4b96565",
+                                    "label": "tick5_right",
+                                    "components": [],
+                                    "x": 19.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 45
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "c9ba479c-1903-4af4-bc9b-5c8a59612eb5",
+                                    "label": "reject_btn_4",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.rejectUsername(this.name_txt5)",
+                                    "x": 80,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "bb9aee56-3c42-4c92-ac30-a5771350cfe5",
+                                    "label": "accept_btn_4",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.acceptUsername(this.name_txt5)",
+                                    "x": 13,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "c0c06147-8879-46a3-bed1-32b1e6852d6f",
+                    "label": "player4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -40,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "1a0ba548-04d1-4518-a494-a9c54512e237",
+                            "label": "name_btn4",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onNameOver(this.name_btn4)",
+                            "SimpleButton.hoverOutCallback": "() => this.onNameOut(this.name_btn4)",
+                            "SimpleButton.callback": "() => this.onNameDown(this.name_txt4)",
+                            "texture": {
+                                "key": "login",
+                                "frame": "larger-button0001"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "ff472523-47ce-4728-83d6-341b1b97f463",
+                            "label": "name_txt4",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Username04",
+                            "fixedWidth": 600,
+                            "paddingLeft": 20,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "f6bc9109-f9a2-4ab4-9fdc-8321d3cbea48",
+                            "label": "usernameControls4",
+                            "components": [],
+                            "x": 189,
+                            "list": [
+                                {
+                                    "type": "Rectangle",
+                                    "id": "5631725b-beb3-49f2-bf1a-f053098f3888",
+                                    "label": "cross4_left",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "7ccd778a-7e0d-4d42-b0d8-9879a830f4bf",
+                                    "label": "cross4_right",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "9c1c903d-5f65-4a05-9326-3357a037d932",
+                                    "label": "tick4_left",
+                                    "components": [],
+                                    "y": 7.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 25
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "59d2a582-d7cc-4413-9225-eba6db05b8dc",
+                                    "label": "tick4_right",
+                                    "components": [],
+                                    "x": 19.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 45
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "0737ed0f-3b45-4e4a-863b-6c6866fec93b",
+                                    "label": "reject_btn_3",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.rejectUsername(this.name_txt4)",
+                                    "x": 80,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "66fb61bb-8c25-4616-97dc-ac52561b45ce",
+                                    "label": "accept_btn_3",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.acceptUsername(this.name_txt4)",
+                                    "x": 13,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "c1169331-0bf9-44fa-a296-3174a82001df",
+                    "label": "player3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -120,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "8dc7e9f5-1dc6-47ac-91bf-e705a90526e5",
+                            "label": "name_btn3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onNameOver(this.name_btn3)",
+                            "SimpleButton.hoverOutCallback": "() => this.onNameOut(this.name_btn3)",
+                            "SimpleButton.callback": "() => this.onNameDown(this.name_txt3)",
+                            "texture": {
+                                "key": "login",
+                                "frame": "larger-button0001"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f663252c-1b24-442c-9711-d5b0ff15802a",
+                            "label": "name_txt3",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Username03",
+                            "fixedWidth": 600,
+                            "paddingLeft": 20,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "a81aa0cd-b017-4ad4-9a5e-956b1ddb0282",
+                            "label": "usernameControls3",
+                            "components": [],
+                            "x": 189,
+                            "y": -1,
+                            "list": [
+                                {
+                                    "type": "Rectangle",
+                                    "id": "01224094-b20c-46d6-bd9d-cf543e547904",
+                                    "label": "cross3_left",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "fa551c5b-a6e4-47ea-bef1-113ce23571ad",
+                                    "label": "cross3_right",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "77b4fe8c-9bde-4bff-a829-933738e523c0",
+                                    "label": "tick3_left",
+                                    "components": [],
+                                    "y": 7.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 25
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "787f00a3-02bb-4c92-95e8-d51f6dbc8971",
+                                    "label": "tick3_right",
+                                    "components": [],
+                                    "x": 19.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 45
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "ab183655-1fea-4c83-b73e-cc747705a244",
+                                    "label": "reject_btn_2",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.rejectUsername(this.name_txt3)",
+                                    "x": 80,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "3f2d3510-e2f3-483c-a87c-fc583e64d591",
+                                    "label": "accept_btn_2",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.acceptUsername(this.name_txt3)",
+                                    "x": 13,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "481de669-7b1e-46a6-bc0b-c53a484e08d8",
+                    "label": "player2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -200,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "97ae276a-8e03-45d0-b4de-e2ada4e6551c",
+                            "label": "name_btn2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onNameOver(this.name_btn2)",
+                            "SimpleButton.hoverOutCallback": "() => this.onNameOut(this.name_btn2)",
+                            "SimpleButton.callback": "() => this.onNameDown(this.name_txt2)",
+                            "texture": {
+                                "key": "login",
+                                "frame": "larger-button0001"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c3f87a00-997f-4e68-9260-c6951b1eff48",
+                            "label": "name_txt2",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Username02",
+                            "fixedWidth": 600,
+                            "paddingLeft": 20,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "36497606-45fe-4303-9709-282d2d791584",
+                            "label": "usernameControls2",
+                            "components": [],
+                            "x": 189,
+                            "y": -1,
+                            "list": [
+                                {
+                                    "type": "Rectangle",
+                                    "id": "ab1a3a6c-16c6-46da-8549-9ec0928cdc18",
+                                    "label": "cross2_left",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "c125e5ae-6562-4c49-b0f8-260b638ca655",
+                                    "label": "cross2_right",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "1575f49a-3191-404f-ba54-9180cadd6e98",
+                                    "label": "tick2_left",
+                                    "components": [],
+                                    "y": 7.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 25
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "61235815-1f7d-42ea-b91e-ecd8731825ae",
+                                    "label": "tick2_right",
+                                    "components": [],
+                                    "x": 19.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 45
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "3a771822-ddc2-4487-9288-c729a869f345",
+                                    "label": "reject_btn_1",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.rejectUsername(this.name_txt2)",
+                                    "x": 80,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "eca4bcaa-c5fa-4952-954c-9d05cc0d94b7",
+                                    "label": "accept_btn_1",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.acceptUsername(this.name_txt2)",
+                                    "x": 13,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "9c794414-b5c2-4630-9016-49bc3bb0eef3",
+                    "label": "player1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -280,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "c666f7e4-7a20-48af-8d4a-df648d936a99",
+                            "label": "name_btn1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onNameOver(this.name_btn1)",
+                            "SimpleButton.hoverOutCallback": "() => this.onNameOut(this.name_btn1)",
+                            "SimpleButton.callback": "() => this.onNameDown(this.name_txt1)",
+                            "texture": {
+                                "key": "login",
+                                "frame": "larger-button0001"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "9108769d-35e6-4348-9794-84a11168060d",
+                            "label": "name_txt1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Username01",
+                            "fixedWidth": 600,
+                            "paddingLeft": 20,
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px"
+                        },
+                        {
+                            "type": "Container",
+                            "id": "4996ffff-d6c5-44d3-b016-38c5a2f0c6d3",
+                            "label": "usernameControls1",
+                            "components": [],
+                            "x": 188.5,
+                            "list": [
+                                {
+                                    "type": "Rectangle",
+                                    "id": "46c14733-c4fa-46a9-a5a8-bf3992485971",
+                                    "label": "cross1_left",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "0dcb2938-0c1a-4113-8f02-c0e0104109e1",
+                                    "label": "cross1_right",
+                                    "components": [],
+                                    "x": 80.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#b31313",
+                                    "width": 8,
+                                    "height": 50
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "9645ffd9-7285-4beb-8eda-086ade4fd4ef",
+                                    "label": "tick1_left",
+                                    "components": [],
+                                    "y": 7.5,
+                                    "angle": -45.00000000000006,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 25
+                                },
+                                {
+                                    "type": "Rectangle",
+                                    "id": "b2f37544-83eb-42f1-a034-4fb25015c0e9",
+                                    "label": "tick1_right",
+                                    "components": [],
+                                    "x": 19.5,
+                                    "angle": 45,
+                                    "isFilled": true,
+                                    "fillColor": "#119a2c",
+                                    "width": 8,
+                                    "height": 45
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "465fd45e-1c37-454d-bd34-e9e3cfe34b4f",
+                                    "label": "reject_btn",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.rejectUsername(this.name_txt1)",
+                                    "x": 80,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                },
+                                {
+                                    "type": "Ellipse",
+                                    "id": "fdef991c-a796-48c7-b9a5-2fca130a147c",
+                                    "label": "accept_btn",
+                                    "components": [
+                                        "SimpleButton"
+                                    ],
+                                    "SimpleButton.callback": "() => this.acceptUsername(this.name_txt1)",
+                                    "x": 13,
+                                    "fillColor": "#ffffff",
+                                    "width": 60,
+                                    "height": 60
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "type": "Image",
@@ -133,13 +1045,13 @@
                         "Button"
                     ],
                     "Button.spriteName": "blue-button",
-                    "Button.callback": "() => { this.visible = false }",
+                    "Button.callback": "() => this.close()",
                     "texture": {
                         "key": "main",
                         "frame": "blue-button"
                     },
-                    "x": 300,
-                    "y": -268
+                    "x": 296,
+                    "y": -364
                 },
                 {
                     "type": "Image",
@@ -150,73 +1062,76 @@
                         "key": "main",
                         "frame": "blue-x"
                     },
-                    "x": 300,
-                    "y": -270
+                    "x": 296,
+                    "y": -366
                 },
                 {
                     "type": "Image",
-                    "id": "e12d01cd-ee58-4c0a-8532-5e749f889e8f",
-                    "label": "report_button",
+                    "id": "d4201261-fb39-4127-a304-0d25904eb339",
+                    "label": "verify_btn",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue-button",
+                    "Button.spriteName": "save-button",
+                    "Button.activeFrame": false,
                     "texture": {
-                        "key": "main",
-                        "frame": "blue-button"
+                        "key": "login",
+                        "frame": "save-button"
                     },
-                    "x": 90,
-                    "y": -5
+                    "x": -232,
+                    "y": -361,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Text",
+                    "id": "90df0f53-59ba-46f8-9c6e-9f67ac8a4363",
+                    "label": "text",
+                    "components": [],
+                    "x": -272,
+                    "y": -380,
+                    "text": "Verify",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "fontStyle": "bold"
                 },
                 {
                     "type": "Image",
-                    "id": "74d0e597-f0d9-4150-ab69-e78d34e8d2cb",
-                    "label": "report_icon",
+                    "id": "cb7ca949-12c4-4e7e-9365-7cf759d32567",
+                    "label": "small_button",
                     "components": [],
                     "texture": {
-                        "key": "main",
-                        "frame": "mod-icon"
+                        "key": "login",
+                        "frame": "small-button0001"
                     },
-                    "x": 90,
-                    "y": -6
+                    "x": 60,
+                    "y": -361,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
                 },
                 {
-                    "type": "Image",
-                    "id": "01ac9dbe-59a2-4eb4-86dd-b4873c3d799b",
-                    "label": "ignore_button",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "blue-button",
-                    "texture": {
-                        "key": "main",
-                        "frame": "blue-button"
-                    },
-                    "x": -190,
-                    "y": 104
-                },
-                {
-                    "type": "Image",
-                    "id": "2362d30f-d6a3-4d53-b3b9-17ec1259bd56",
-                    "label": "ignore_icon",
+                    "type": "Rectangle",
+                    "id": "bea96278-b776-48ac-a159-976593f7a55d",
+                    "label": "magnifying_handle",
                     "components": [],
-                    "texture": {
-                        "key": "main",
-                        "frame": "ignore-icon"
-                    },
-                    "x": -190,
-                    "y": 102
+                    "x": 227,
+                    "y": -349,
+                    "angle": -45.00000000000006,
+                    "isFilled": true,
+                    "width": 4,
+                    "height": 15
                 },
                 {
-                    "type": "Image",
-                    "id": "510247da-d1ef-4bbf-b8f9-c266b5c39048",
-                    "label": "mod",
+                    "type": "Ellipse",
+                    "id": "85be32e3-b792-454b-8054-3f31195d31a8",
+                    "label": "magnifying_body",
                     "components": [],
-                    "texture": {
-                        "key": "main",
-                        "frame": "mod"
-                    },
-                    "y": -222
+                    "x": 211,
+                    "y": -365,
+                    "lineWidth": 3,
+                    "isStroked": true,
+                    "width": 30,
+                    "height": 30
                 }
             ]
         }

@@ -15,7 +15,7 @@ export default class Village extends RoomScene {
         this.roomTriggers = {
             'beach': () => this.triggerRoom(400, 1200, 400),
             'dock': () => this.triggerRoom(800, 1200, 400),
-            'epf': () => this.triggerRoom(212, 1200, 400),
+            'epf': () => this.unimplementedPrompt(),
             'lodge': () => this.triggerRoom(220, 1200, 400),
             'mtn': () => this.triggerRoom(230, 1200, 400)
         }
